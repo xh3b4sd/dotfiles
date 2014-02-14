@@ -18,6 +18,7 @@ export TERM=xterm-256color
 
 # init git bash completion
 [ "$(uname)" == "Darwin" ] && source /usr/local/opt/git/etc/bash_completion.d/*
+[ "$(uname)" == "Linux" ] && source /etc/bash_completion.d/git
 
 
 
