@@ -1,6 +1,9 @@
 # search and replace in a directoy
 # find . -name "*.jade" -print0 | xargs -0 sed -i '' -e 's/columns/column/g'
 
+# enable 256 color terminal
+export TERM=xterm-256color
+
 
 
 # init nvm
