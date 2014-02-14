@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 PWD=$(pwd)
-HOME=${$PWD:26}
+HOME=${PWD:0:5} # very hacky sorry!
 
 # update vi on ubuntu to get vim plugins to work
 echo "#### install vi"
@@ -18,10 +18,10 @@ rm -rf "$HOME/.gitconfig"
 ln -sf "$PWD/.gitconfig" "$HOME/.gitconfig"
 
 rm -rf "$HOME/.vim"
-ln -s "$HOME/.vim" "$HOME/.vim"
+ln -s "$PWD/.vim" "$HOME/.vim"
 
 rm -rf "$HOME/.vimrc"
-ln -sf "$HOME/.vimrc" "$HOME/.vimrc"
+ln -sf "$PWD/.vimrc" "$HOME/.vimrc"
 
 rm -rf "$PWD/.vim/bundle"
 git clone https://github.com/gmarik/vundle.git "$PWD/.vim/bundle/vundle"

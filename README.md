@@ -6,7 +6,7 @@ Just a little dotfile collection.
 ```bash
 mkdir -p ~/projects/private
 cd ~/projects/private
-git clone git@github.com:zyndiecate/dotfiles.git
+git clone https://github.com/zyndiecate/dotfiles.git
 cd dotfiles
 bash ./install.sh
 ```
