@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PWD=$(pwd)
-HOME=${1:-/root/} 
+HOME=${1:-$HOME}
 
 # update vi on ubuntu to get vim plugins to work
 echo "#### install vi"
