@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PWD=$(pwd)
-HOME=${PWD:0:5} # very hacky sorry!
+HOME=${1:-/root/} 
 
 # update vi on ubuntu to get vim plugins to work
 echo "#### install vi"
@@ -11,17 +11,17 @@ fi
 
 echo "#### link dotfiles"
 
-rm -rf "$HOME/.bash_profile"
-ln -sf "$PWD/.bash_profile" "$HOME/.bash_profile"
+rm -rf "$HOME.bash_profile"
+ln -sf "$PWD/.bash_profile" "$HOME.bash_profile"
 
-rm -rf "$HOME/.gitconfig"
-ln -sf "$PWD/.gitconfig" "$HOME/.gitconfig"
+rm -rf "$HOME.gitconfig"
+ln -sf "$PWD/.gitconfig" "$HOME.gitconfig"
 
-rm -rf "$HOME/.vim"
-ln -s "$PWD/.vim" "$HOME/.vim"
+rm -rf "$HOME.vim"
+ln -s "$PWD/.vim" "$HOME.vim"
 
-rm -rf "$HOME/.vimrc"
-ln -sf "$PWD/.vimrc" "$HOME/.vimrc"
+rm -rf "$HOME.vimrc"
+ln -sf "$PWD/.vimrc" "$HOME.vimrc"
 
 rm -rf "$PWD/.vim/bundle"
 git clone https://github.com/gmarik/vundle.git "$PWD/.vim/bundle/vundle"
