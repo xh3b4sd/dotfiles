@@ -34,16 +34,12 @@ set smartcase
 set scrolloff=5
 
 set foldnestmax=1
-set foldmethod=syntax
-
-" Don't screw up folds when inserting text that might affect them, until
-" leaving insert mode. Foldmethod is local to the window.
-autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
-autocmd InsertLeave * let &l:foldmethod=w:last_fdm
+set foldlevelstart=0
+set foldmethod=indent
 
 map <C-f> za
 map <C-c> zi
- 
+
 map - :
 map Y y$
 map R v$hp
