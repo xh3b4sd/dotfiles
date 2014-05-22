@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HOME=${1:-$HOME}
-DW="${HOME}/projects/private/dotfiles"
+WD="${HOME}/projects/private/dotfiles"
 
 # update vi on ubuntu to get vim plugins to work
 echo
