@@ -32,5 +32,3 @@ echo
 echo "#### install vim plugins"
 
 vim +BundleInstall +qall > /dev/null
-
-source "${WD}/.bash_profile"
