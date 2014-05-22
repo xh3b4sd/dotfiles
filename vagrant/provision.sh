@@ -11,8 +11,6 @@ mkdir -p "${HOME}/projects/private/"
 git clone https://github.com/zyndiecate/dotfiles.git "${HOME}/projects/private/dotfiles"
 sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
 
-exit 0
-
 # install go
 wget --no-verbose https://go.googlecode.com/files/go1.2.src.tar.gz
 tar -v -C /usr/local -xzf go1.2.src.tar.gz
