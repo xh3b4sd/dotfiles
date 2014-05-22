@@ -1,15 +1,17 @@
 #!/bin/sh
 
+HOME="/home/vagrant"
+
 # install tools
 apt-get update
 apt-get install -y git mercurial ack-grep curl
 
 # install dotfiles
-mkdir -p ~/projects/private/
-cd ~/projects/private
-git clone https://github.com/zyndiecate/dotfiles.git
-cd dotfiles
-sh ./install.sh /home/vagrant
+mkdir -p "${HOME}/projects/private/"
+git clone https://github.com/zyndiecate/dotfiles.git "${HOME}/projects/private/dotfiles"
+sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
+
+exit 0
 
 # install go
 wget --no-verbose https://go.googlecode.com/files/go1.2.src.tar.gz

@@ -14,16 +14,16 @@ echo
 echo "#### link dotfiles"
 
 rm -rf "${HOME}/.bash_profile"
-ln -sf "${WD}/.bash_profile" "${HOME}/.bash_profile"
+ln -sfv "${WD}/.bash_profile" "${HOME}/.bash_profile"
 
 rm -rf "${HOME}/.gitconfig"
-ln -sf "${WD}/.gitconfig" "${HOME}/.gitconfig"
+ln -sfv "${WD}/.gitconfig" "${HOME}/.gitconfig"
 
 rm -rf "${HOME}/.vim"
-ln -s "${WD}/.vim" "${HOME}/.vim"
+ln -sv "${WD}/.vim" "${HOME}/.vim"
 
 rm -rf "${HOME}/.vimrc"
-ln -sf "${WD}/.vimrc" "${HOME}/.vimrc"
+ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
 rm -rf "${WD}/.vim/bundle"
 git clone https://github.com/gmarik/vundle.git "${WD}/.vim/bundle/vundle"
