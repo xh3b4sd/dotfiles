@@ -26,3 +26,6 @@ curl -s https://get.docker.io/ubuntu/ | sudo sh
 groupadd docker
 gpasswd -a $USER docker
 service docker restart
+
+# set default editor
+update-alternatives --set editor /usr/bin/vim.basic
