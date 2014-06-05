@@ -33,11 +33,18 @@ set ignorecase
 set smartcase
 set scrolloff=5
 
+" ALWAYS close folds by default
+autocmd BufRead *
+  \ exe "normal! zM"
+
+" only fold one indention level
 set foldnestmax=1
 set foldlevelstart=0
 set foldmethod=indent
 
+" toggle current fold
 map <C-f> za
+" toggle all folds
 map <C-c> zi
 
 map - :
@@ -82,8 +89,8 @@ colorscheme wombat256mod
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
 " Remember info about open buffers on close
 set viminfo^=%
