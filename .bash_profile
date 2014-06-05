@@ -6,6 +6,11 @@ export TERM=xterm-256color
 
 
 
+# fix locale foo
+unset LC_ALL
+
+
+
 # init nvm
 [ -f ~/.nvm/nvm.sh ] && source ~/.nvm/nvm.sh
 
