@@ -46,6 +46,10 @@ set foldmethod=indent
 map <C-f> za
 " toggle all folds
 map <C-c> zi
+" move to next fold
+map <C-j> zj
+" move to prev fold
+map <C-k> zk
 
 map - :
 map Y y$
