@@ -44,5 +44,5 @@ npm install cloudflare-cli -g
 
 # install jq
 wget http://stedolan.github.io/jq/download/linux64/jq
-chmod +q jq
+chmod +x jq
 mv jq /usr/local/bin/
