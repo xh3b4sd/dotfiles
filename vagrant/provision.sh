@@ -5,7 +5,7 @@ HOME="/home/${USER}"
 
 # install tools
 apt-get update
-apt-get install -y git mercurial ack-grep curl tree
+apt-get install -y git mercurial ack-grep curl build-essential tree
 
 # install dotfiles
 mkdir -p "${HOME}/projects/private/"
@@ -38,6 +38,7 @@ pip install awscli
 
 # install cloudflare cli
 curl https://raw.githubusercontent.com/creationix/nvm/v0.8.0/install.sh | sh
+source .bash_profile
 nvm install v0.10.24
 nvm alias default 0.10.24
 npm install cloudflare-cli -g
