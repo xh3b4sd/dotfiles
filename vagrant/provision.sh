@@ -5,7 +5,7 @@ HOME="/home/${USER}"
 
 # install tools
 apt-get update
-apt-get install -y git mercurial ack-grep curl
+apt-get install -y git mercurial ack-grep curl tree
 
 # install dotfiles
 mkdir -p "${HOME}/projects/private/"
