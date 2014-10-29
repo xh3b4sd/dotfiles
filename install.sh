@@ -32,3 +32,4 @@ echo
 echo "#### install vim plugins"
 
 vim +BundleInstall +qall > /dev/null
+cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
