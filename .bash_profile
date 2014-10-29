@@ -22,8 +22,8 @@ unset LC_ALL
 
 
 # init git bash completion
-[ "$(uname)" == "Darwin" ] && source /usr/local/opt/git/etc/bash_completion.d/*
-[ "$(uname)" == "Linux" ] && source /etc/bash_completion.d/git
+[ "$(uname)" == "Darwin" ] && [ -d "/usr/local/opt/git/etc/bash_completion.d/" ] && source /usr/local/opt/git/etc/bash_completion.d/*
+[ "$(uname)" == "Linux" ] && [ -d "/usr/local/opt/git/etc/bash_completion.d/" ] && source /etc/bash_completion.d/git
 
 
 
