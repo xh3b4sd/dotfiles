@@ -19,7 +19,7 @@ wget --no-verbose http://golang.org/dl/go${GO_VERSION}.src.tar.gz
 tar -v -C /usr/local -xzf go${GO_VERSION}.src.tar.gz > /dev/null
 cd /usr/local/go/src && ./make.bash --no-clean 2>&1 > /dev/null
 echo "export PATH=$PATH:/usr/local/go/bin" > /etc/bash.bashrc
-rm go${GO_VERSION}.src.tar.gz
+rm -rf ${HOME}/go${GO_VERSION}.src.tar.gz
 
 # update docker
 curl -s https://get.docker.io/ubuntu/ | sudo sh
@@ -32,18 +32,14 @@ service docker restart
 update-alternatives --set editor /usr/bin/vim.basic
 
 # install aws cli
-wget https://bootstrap.pypa.io/get-pip.py
+wget --no-verbose https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 pip install awscli
 
 # install cloudflare cli
-curl https://raw.githubusercontent.com/creationix/nvm/v0.8.0/install.sh | sh
-source .bash_profile
-nvm install v0.10.24
-nvm alias default 0.10.24
-npm install cloudflare-cli -g
+sudo su vagrant -c "wget --no-verbose -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh > /dev/null 2>&1 && source ${HOME}/.bash_profile && nvm install v0.10.24 && nvm alias default 0.10.24 && npm install cloudflare-cli -g"
 
 # install jq
-wget http://stedolan.github.io/jq/download/linux64/jq
+wget --no-verbose http://stedolan.github.io/jq/download/linux64/jq
 chmod +x jq
 mv jq /usr/local/bin/
