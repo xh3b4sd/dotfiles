@@ -12,4 +12,4 @@ cd dotfiles
 ```
 
 ## TODO
-Automatically install https://github.com/bitboxer/de-coding.keylayout
+Automatically install https://github.com/bitboxer/de-coding.keylayout on OSX
