@@ -54,8 +54,8 @@ map <C-k> zk
 map - :
 map Y y$
 map R v$hp
-map <C-n> :tabn<Return>
-map <C-p> :tabp<Return>
+map <C-l> :tabn<Return>
+map <C-h> :tabp<Return>
 map <C-e> :tabe<Space>
 map <C-w> :w<Return>
 map <C-q> :q<Return>
