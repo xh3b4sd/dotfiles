@@ -25,6 +25,9 @@ ln -sv "${WD}/.vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
+rm -rf "${HOME}/.inputrc"
+ln -sfv "${WD}/.inputrc" "${HOME}/.inputrc"
+
 rm -rf "${WD}/.vim/bundle"
 git clone https://github.com/gmarik/vundle.git "${WD}/.vim/bundle/vundle"
 
