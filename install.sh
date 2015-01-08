@@ -25,14 +25,8 @@ ln -sv "${WD}/.vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
-rm -rf "${HOME}/.inputrc"
-ln -sfv "${WD}/.inputrc" "${HOME}/.inputrc"
+rm -rf "${HOME}/.oh-my-zsh"
+ln -sv "${WD}/.oh-my-zsh" "${HOME}/.oh-my-zsh"
 
-rm -rf "${WD}/.vim/bundle"
-git clone https://github.com/gmarik/vundle.git "${WD}/.vim/bundle/vundle"
-
-echo
-echo "#### install vim plugins"
-
-vim +BundleInstall +qall > /dev/null
-cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
+rm -rf "${HOME}/.zshrc"
+ln -sfv "${WD}/.zshrc" "${HOME}/.zshrc"
