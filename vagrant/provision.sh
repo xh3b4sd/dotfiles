@@ -45,4 +45,6 @@ chmod +x jq
 mv jq /usr/local/bin/
 
 # install zsh
-/usr/bin/chsh -s $(which zsh) ${USER}
+# install zsh
+apt-get install -y zsh
+sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
