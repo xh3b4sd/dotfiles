@@ -43,3 +43,6 @@ sudo su vagrant -c "wget --no-verbose -qO- https://raw.github.com/creationix/nvm
 wget --no-verbose http://stedolan.github.io/jq/download/linux64/jq
 chmod +x jq
 mv jq /usr/local/bin/
+
+# install zsh
+chsh -s $(which zsh) ${USER}
