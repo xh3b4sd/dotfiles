@@ -46,7 +46,7 @@ precmd() { echo -ne "\e]1;$(basename $(echo $PWD))\a" }
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode jsontools sudo)
+plugins=(git vi-mode jsontools vagrant)
 
 # User configuration
 
