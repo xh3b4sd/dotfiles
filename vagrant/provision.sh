@@ -45,4 +45,4 @@ chmod +x jq
 mv jq /usr/local/bin/
 
 # install zsh
-chsh -s $(which zsh) ${USER}
+/usr/bin/chsh -s $(which zsh) ${USER}
