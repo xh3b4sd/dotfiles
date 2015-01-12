@@ -19,6 +19,9 @@ ln -sfv "${WD}/.bash_profile" "${HOME}/.bash_profile"
 rm -rf "${HOME}/.gitconfig"
 ln -sfv "${WD}/.gitconfig" "${HOME}/.gitconfig"
 
+rm -rf "${HOME}/.ackrc"
+ln -sfv "${WD}/.ackrc" "${HOME}/.ackrc"
+
 rm -rf "${HOME}/.vim"
 ln -sv "${WD}/.vim" "${HOME}/.vim"
 
