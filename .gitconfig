@@ -6,6 +6,6 @@
     ui = 1
 [user]
     name = Tim Schindler
-    email = tim@giantswarm.com
+    email = tim@giantswarm.io
 [push]
     default = matching
