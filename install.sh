@@ -28,10 +28,22 @@ ln -sv "${WD}/.vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
-rm -rf "${HOME}/.zprezto"
-ln -sv "${WD}/.zprezto" "${HOME}/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${$HOME}/.zprezto"
 
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
+rm -rf "${HOME}/.zlogin"
+ln -sv "${WD}/.zlogin" "${HOME}/.zprezto/runcoms/zlogin"
+
+rm -rf "${HOME}/.zlogout"
+ln -sv "${WD}/.zlogout" "${HOME}/.zprezto/runcoms/.zlogout"
+
+rm -rf "${HOME}/.zpreztorc"
+ln -sv "${WD}/.zpreztorc" "${HOME}/.zprezto/runcoms/.zpreztorc"
+
+rm -rf "${HOME}/.zprofile"
+ln -sv "${WD}/.zprofile" "${HOME}/.zprezto/runcoms/.zprofile"
+
+rm -rf "${HOME}/.zshenv"
+ln -sv "${WD}/.zshenv" "${HOME}/.zprezto/runcoms/.zshenv"
+
+rm -rf "${HOME}/.zshrc"
+ln -sv "${WD}/.zshrc" "${HOME}/.zprezto/runcoms/.zshrc"
