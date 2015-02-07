@@ -30,22 +30,22 @@ ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
 rm -rf "${HOME}/.zprezto"
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${WD}/.zprezto"
-ln -sv "${WD}/.zprezto" "${HOME}/.zprezto/runcoms/zprezto"
+ln -sv "${WD}/.zprezto" "${HOME}/.zprezto"
 
 rm -rf "${HOME}/.zlogin"
-ln -sv "${WD}/.zlogin" "${HOME}/.zprezto/runcoms/zlogin"
+ln -sv "${WD}/.zprezto/runcoms/zlogin" "${HOME}/.zlogin"
 
 rm -rf "${HOME}/.zlogout"
-ln -sv "${WD}/.zlogout" "${HOME}/.zprezto/runcoms/.zlogout"
+ln -sv "${WD}/.zprezto/runcoms/.zlogout" "${HOME}/.zlogout"
 
 rm -rf "${HOME}/.zpreztorc"
-ln -sv "${WD}/.zpreztorc" "${HOME}/.zprezto/runcoms/.zpreztorc"
+ln -sv "${WD}/.zprezto/runcoms/.zpreztorc" "${HOME}/.zpreztorc"
 
 rm -rf "${HOME}/.zprofile"
-ln -sv "${WD}/.zprofile" "${HOME}/.zprezto/runcoms/.zprofile"
+ln -sv "${WD}/.zprezto/runcoms/.zprofile" "${HOME}/.zprofile"
 
 rm -rf "${HOME}/.zshenv"
-ln -sv "${WD}/.zshenv" "${HOME}/.zprezto/runcoms/.zshenv"
+ln -sv "${WD}/.zprezto/runcoms/.zshenv" "${HOME}/.zshenv"
 
 rm -rf "${HOME}/.zshrc"
-ln -sv "${WD}/.zshrc" "${HOME}/.zprezto/runcoms/.zshrc"
+ln -sv "${WD}/.zprezto/runcoms/.zshrc" "${HOME}/.zshrc"
