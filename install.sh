@@ -28,7 +28,9 @@ ln -sv "${WD}/.vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${HOME}/.zprezto"
+rm -rf "${HOME}/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${WD}/.zprezto"
+ln -sv "${WD}/.zprezto" "${HOME}/.zprezto/runcoms/zprezto"
 
 rm -rf "${HOME}/.zlogin"
 ln -sv "${WD}/.zlogin" "${HOME}/.zprezto/runcoms/zlogin"
