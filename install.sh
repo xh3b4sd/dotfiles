@@ -28,8 +28,10 @@ ln -sv "${WD}/.vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
-rm -rf "${HOME}/.oh-my-zsh"
-ln -sv "${WD}/.oh-my-zsh" "${HOME}/.oh-my-zsh"
+rm -rf "${HOME}/.zprezto"
+ln -sv "${WD}/.zprezto" "${HOME}/.zprezto"
 
-rm -rf "${HOME}/.zshrc"
-ln -sfv "${WD}/.zshrc" "${HOME}/.zshrc"
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
