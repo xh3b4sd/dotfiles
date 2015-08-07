@@ -1,7 +1,10 @@
 set backspace=indent,eol,start
 " IMPORTANT to get ctrl + q to work
 silent !stty -ixon > /dev/null 2>/dev/null
-autocmd BufWritePre * :%s/\s\+$//e
+
+" strip trailing spaces on save except for *.t files
+autocmd BufWritePre *\(*.t\)\@<! :%s/\s\+$//e
+
 filetype on
 syntax on
 vnoremap ? !python -m json.tool<Return>
