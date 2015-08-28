@@ -19,7 +19,6 @@ set ruler
 set incsearch
 set lazyredraw
 set nocompatible
-set rtp+=~/.vim/bundle/vundle/
 set wildmenu
 set wildmode=list:full
 set mouse=a
@@ -75,21 +74,29 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
-call vundle#rc()
-Bundle 'lunaru/vim-less'
-Bundle 'gmarik/vundle'
-Bundle 'ervandew/supertab'
-Bundle 'The-NERD-tree'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'ekalinin/Dockerfile.vim'
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'lunaru/vim-less'
+Plugin 'gmarik/vundle'
+Plugin 'ervandew/supertab'
+Plugin 'The-NERD-tree'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " snipmate and dependencies
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 filetype plugin on
 colorscheme wombat256mod

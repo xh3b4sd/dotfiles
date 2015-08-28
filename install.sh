@@ -28,6 +28,19 @@ ln -sv "${WD}/.vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
+rm -rf "${WD}/.vim/bundle"
+git clone git@github.com:VundleVim/Vundle.vim.git "${WD}/.vim/bundle/Vundle.vim"
+cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
+
+echo
+echo "#### install vim plugins"
+
+vim +BundleInstall +qall > /dev/null
+cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
+
+echo
+echo "#### install zprezto"
+
 rm -rf "${HOME}/.zprezto"
 git clone --recursive https://github.com/zyndiecate/prezto.git "${WD}/.zprezto"
 ln -sv "${WD}/.zprezto" "${HOME}/.zprezto"
