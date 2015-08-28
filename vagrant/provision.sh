@@ -5,7 +5,7 @@ HOME="/home/${USER}"
 
 # install tools
 apt-get update
-apt-get install -y git mercurial ack-grep curl build-essential tree
+apt-get install -y git make binutils gcc bison mercurial ack-grep curl build-essential tree
 
 # install dotfiles
 mkdir -p "${HOME}/projects/private/"
@@ -13,13 +13,14 @@ git clone https://github.com/zyndiecate/dotfiles.git "${HOME}/projects/private/d
 sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
 chown -R "${USER}:${USER}" $HOME
 
-# install go
-GO_VERSION="1.5"
-wget --no-verbose http://golang.org/dl/go${GO_VERSION}.src.tar.gz
-tar -v -C /usr/local -xzf go${GO_VERSION}.src.tar.gz > /dev/null
-cd /usr/local/go/src && ./make.bash --no-clean 2>&1 > /dev/null
-echo "export PATH=$PATH:/usr/local/go/bin" > /etc/bash.bashrc
-rm -rf ${HOME}/go${GO_VERSION}.src.tar.gz
+# install go, see https://github.com/moovweb/gvm/issues/155#issuecomment-133059802
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+source ${HOME}/.gvm/scripts/gvm
+gvm install go1.4
+gvm use go1.4
+export GOROOT_BOOTSTRAP=$GOROOT
+gvm install go1.5
+gvm use go1.5
 
 # update docker
 curl -s https://get.docker.io/ubuntu/ | sudo sh
