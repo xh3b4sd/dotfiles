@@ -29,7 +29,7 @@ rm -rf "${HOME}/.vimrc"
 ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
 rm -rf "${WD}/.vim/bundle"
-git clone git@github.com:VundleVim/Vundle.vim.git "${WD}/.vim/bundle/Vundle.vim"
+git clone https://github.com/VundleVim/Vundle.vim.git "${WD}/.vim/bundle/Vundle.vim"
 
 echo
 echo "#### install vim plugins"
