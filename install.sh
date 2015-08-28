@@ -42,3 +42,10 @@ echo "#### install zprezto"
 
 rm -rf "${HOME}/.zprezto"
 git clone --recursive https://github.com/zyndiecate/prezto.git "${HOME}/.zprezto"
+
+ln -sv "${HOME}/.zprezto/runcoms/zlogin" "${HOME}/.zlogin"
+ln -sv "${HOME}/.zprezto/runcoms/zlogout" "${HOME}/.zlogout"
+ln -sv "${HOME}/.zprezto/runcoms/zpreztorc" "${HOME}/.zpreztorc"
+ln -sv "${HOME}/.zprezto/runcoms/zprofile" "${HOME}/.zprofile"
+ln -sv "${HOME}/.zprezto/runcoms/zshenv" "${HOME}/.zshenv"
+ln -sv "${HOME}/.zprezto/runcoms/zshrc" "${HOME}/.zshrc"
