@@ -14,7 +14,7 @@ sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
 chown -R "${USER}:${USER}" $HOME
 
 # install go
-GO_VERSION="1.3"
+GO_VERSION="1.5"
 wget --no-verbose http://golang.org/dl/go${GO_VERSION}.src.tar.gz
 tar -v -C /usr/local -xzf go${GO_VERSION}.src.tar.gz > /dev/null
 cd /usr/local/go/src && ./make.bash --no-clean 2>&1 > /dev/null
