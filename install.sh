@@ -41,4 +41,4 @@ echo
 echo "#### install zprezto"
 
 rm -rf "${HOME}/.zprezto"
-git clone --recursive https://github.com/zyndiecate/prezto.git "${WD}/.zprezto"
+git clone --recursive https://github.com/zyndiecate/prezto.git "${HOME}/.zprezto"
