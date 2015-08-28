@@ -4,10 +4,10 @@ HOME=${1:-$HOME}
 WD="${HOME}/projects/private/dotfiles"
 
 # update vi on ubuntu to get vim plugins to work
-echo
-echo "#### install vi"
 if [ "$(uname)" != "Darwin" ]; then
-   sudo apt-get install -y vim
+  echo
+  echo "#### install vi"
+  sudo apt-get install -y vim
 fi
 
 echo
@@ -30,7 +30,6 @@ ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 
 rm -rf "${WD}/.vim/bundle"
 git clone git@github.com:VundleVim/Vundle.vim.git "${WD}/.vim/bundle/Vundle.vim"
-cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
 
 echo
 echo "#### install vim plugins"
