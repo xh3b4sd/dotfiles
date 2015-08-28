@@ -13,9 +13,6 @@ fi
 echo
 echo "#### link dotfiles"
 
-rm -rf "${HOME}/.bash_profile"
-ln -sfv "${WD}/.bash_profile" "${HOME}/.bash_profile"
-
 rm -rf "${HOME}/.gitconfig"
 ln -sfv "${WD}/.gitconfig" "${HOME}/.gitconfig"
 
