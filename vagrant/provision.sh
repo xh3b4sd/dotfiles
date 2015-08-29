@@ -7,6 +7,10 @@ echo "install deps"
 apt-get update
 apt-get install -y git make binutils gcc bison mercurial ack-grep curl build-essential tree
 
+echo "install zsh"
+apt-get install -y zsh
+sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
+
 echo "install dotfiles"
 mkdir -p "${HOME}/projects/private/"
 git clone https://github.com/zyndiecate/dotfiles.git "${HOME}/projects/private/dotfiles"
@@ -44,10 +48,6 @@ echo "install jq"
 wget http://stedolan.github.io/jq/download/linux64/jq
 chmod +x jq
 mv jq /usr/local/bin/
-
-echo "install zsh"
-apt-get install -y zsh
-sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
 
 echo "cleanup orhpaned deps"
 apt-get autoremove -y
