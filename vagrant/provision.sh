@@ -19,13 +19,14 @@ chown -R "${USER}:${USER}" $HOME
 
 # install go, see https://github.com/moovweb/gvm/issues/155#issuecomment-133059802
 echo "install go"
+export ZSH_NAME=zsh
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 source ${HOME}/.gvm/scripts/gvm
 gvm install go1.4
 gvm use go1.4
 export GOROOT_BOOTSTRAP=$GOROOT
 gvm install go1.5
-gvm use go1.5
+echo "gvm use go1.5 > /dev/null" >> ${HOME}/.zshrc
 
 echo "install docker"
 curl -s https://get.docker.io/ubuntu/ | sudo sh
