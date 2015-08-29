@@ -7,6 +7,10 @@ echo "install deps"
 apt-get update
 apt-get install -y git make binutils gcc bison mercurial ack-grep curl build-essential tree
 
+echo "install zsh"
+apt-get install -y zsh
+sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
+
 echo "install dotfiles"
 mkdir -p "${HOME}/projects/private/"
 git clone https://github.com/zyndiecate/dotfiles.git "${HOME}/projects/private/dotfiles"
@@ -15,19 +19,19 @@ chown -R "${USER}:${USER}" $HOME
 
 # install go, see https://github.com/moovweb/gvm/issues/155#issuecomment-133059802
 echo "install go"
+export ZSH_NAME=zsh
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 source ${HOME}/.gvm/scripts/gvm
 gvm install go1.4
 gvm use go1.4
 export GOROOT_BOOTSTRAP=$GOROOT
 gvm install go1.5
-gvm use go1.5
+echo "gvm use go1.5 > /dev/null" >> ${HOME}/.zshrc
 
 echo "install docker"
-curl -s https://get.docker.io/ubuntu/ | sudo sh
+curl -sSL https://get.docker.com/ | sh
 groupadd docker
 gpasswd -a $USER docker
-service docker restart
 
 echo "set default terminal"
 update-alternatives --set editor /usr/bin/vim.basic
@@ -44,10 +48,6 @@ echo "install jq"
 wget http://stedolan.github.io/jq/download/linux64/jq
 chmod +x jq
 mv jq /usr/local/bin/
-
-echo "install zsh"
-apt-get install -y zsh
-sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
 
 echo "cleanup orhpaned deps"
 apt-get autoremove -y
