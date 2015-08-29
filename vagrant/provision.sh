@@ -29,10 +29,9 @@ gvm install go1.5
 echo "gvm use go1.5 > /dev/null" >> ${HOME}/.zshrc
 
 echo "install docker"
-curl -s https://get.docker.io/ubuntu/ | sudo sh
+curl -sSL https://get.docker.com/ | sh
 groupadd docker
 gpasswd -a $USER docker
-service docker restart
 
 echo "set default terminal"
 update-alternatives --set editor /usr/bin/vim.basic
