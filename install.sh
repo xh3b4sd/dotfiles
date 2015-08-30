@@ -31,7 +31,7 @@ echo "#### install vim plugins"
 rm -rf "${WD}/.vim/bundle/*"
 git clone https://github.com/VundleVim/Vundle.vim.git "${WD}/.vim/bundle/Vundle.vim"
 
-vim +BundleInstall +qall > /dev/null
+vim +PluginInstall +qall > /dev/null
 cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
 
 echo
