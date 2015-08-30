@@ -74,6 +74,8 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+set nocompatible              " be iMproved, required
+filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -83,12 +85,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'lunaru/vim-less'
-Plugin 'gmarik/vundle'
 Plugin 'ervandew/supertab'
 Plugin 'The-NERD-tree'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'digitaltoad/vim-jade'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
 
@@ -98,7 +96,10 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 filetype plugin on
+
 colorscheme wombat256mod
 
 " Return to last edit position when opening files (You want this!)

@@ -28,9 +28,10 @@ ln -sfv "${WD}/.vimrc" "${HOME}/.vimrc"
 echo
 echo "#### install vim plugins"
 
-rm -rf "${WD}/.vim/bundle/*"
+rm -rf "${WD}/.vim/bundle/Vundle.vim"
 git clone https://github.com/VundleVim/Vundle.vim.git "${WD}/.vim/bundle/Vundle.vim"
 
+vim +PluginClean +qall > /dev/null
 vim +PluginInstall +qall > /dev/null
 cp -rf "${WD}/snippets/go.snippets" "${HOME}/.vim/bundle/vim-snippets/snippets/go.snippets"
 
