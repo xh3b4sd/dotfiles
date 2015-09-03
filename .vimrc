@@ -1,3 +1,43 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'fatih/vim-go'
+
+" colorschemes
+Plugin 'flazz/vim-colorschemes'
+Plugin 'https://github.com/vim-scripts/darktango.vim'
+
+Plugin 'ervandew/supertab'
+Plugin 'The-NERD-tree'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'ekalinin/Dockerfile.vim'
+
+" snipmate and dependencies
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin on
+syntax on
+
+colorscheme wombat256mod
+"colorscheme monokai-chris
+
+" vim-go settings
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 set backspace=indent,eol,start
 " IMPORTANT to get ctrl + q to work
 silent !stty -ixon > /dev/null 2>/dev/null
@@ -5,10 +45,8 @@ silent !stty -ixon > /dev/null 2>/dev/null
 " strip trailing spaces on save except for *.t files
 autocmd BufWritePre *\(*.t\)\@<! :%s/\s\+$//e
 
-filetype on
-syntax on
 vnoremap ? !python -m json.tool<Return>
-filetype off
+"filetype off
 let NERDTreeShowHidden=1
 
 let mapleader = ","
@@ -18,11 +56,11 @@ let g:NERDTreeDirArrows=0
 set ruler
 set incsearch
 set lazyredraw
+set ttyfast
 set nocompatible
 set wildmenu
 set wildmode=list:full
 set mouse=a
-set clipboard=unnamed
 set number
 set nowrap
 set nohlsearch
@@ -73,34 +111,6 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
-
-set nocompatible              " be iMproved, required
-filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'ervandew/supertab'
-Plugin 'The-NERD-tree'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'ekalinin/Dockerfile.vim'
-
-" snipmate and dependencies
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin on
-
-colorscheme wombat256mod
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
