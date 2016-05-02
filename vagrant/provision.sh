@@ -5,7 +5,7 @@ HOME="/home/${USER}"
 
 echo "install deps"
 apt-get update
-apt-get install -y git make binutils gcc bison mercurial ack-grep curl build-essential tree
+apt-get install -y git make binutils gcc bison mercurial ack-grep curl build-essential tree htop
 
 echo "install zsh"
 apt-get install -y zsh
@@ -25,8 +25,8 @@ source ${HOME}/.gvm/scripts/gvm
 gvm install go1.4
 gvm use go1.4
 export GOROOT_BOOTSTRAP=$GOROOT
-gvm install go1.5
-echo "gvm use go1.5 > /dev/null" >> ${HOME}/.zshrc
+gvm install go1.6
+echo "gvm use go1.6 > /dev/null" >> ${HOME}/.zshrc
 
 echo "install docker"
 curl -sSL https://get.docker.com/ | sh
