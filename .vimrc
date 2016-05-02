@@ -16,7 +16,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'https://github.com/vim-scripts/darktango.vim'
 
 Plugin 'ervandew/supertab'
-Plugin 'The-NERD-tree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
 
@@ -26,8 +26,12 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+" dash case > cr-
+Plugin 'tpope/vim-abolish'
+
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+" required
+call vundle#end()
 filetype plugin on
 syntax on
 
@@ -69,9 +73,12 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set autoindent
-set ignorecase
 set smartcase
 set scrolloff=5
+" By default, when doing `vim -p $(find a lot of files)`, vim does not open
+" more than 10 tabs. With this setting i is possible to open 100 files at
+" once.
+set tabpagemax=100
 
 " ALWAYS close folds by default
 autocmd BufRead *
