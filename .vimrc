@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'fatih/vim-go'
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
 
 " colorschemes
 Plugin 'flazz/vim-colorschemes'
