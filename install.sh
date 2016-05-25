@@ -39,7 +39,7 @@ echo
 echo "#### install zprezto"
 
 rm -rf "${HOME}/.zprezto"
-git clone --recursive https://github.com/zyndiecate/prezto.git "${HOME}/.zprezto"
+git clone --recursive https://github.com/xh3b4sd/prezto.git "${HOME}/.zprezto"
 
 ln -sv "${HOME}/.zprezto/runcoms/zlogin" "${HOME}/.zlogin"
 ln -sv "${HOME}/.zprezto/runcoms/zlogout" "${HOME}/.zlogout"

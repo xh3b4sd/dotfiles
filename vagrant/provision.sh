@@ -13,7 +13,7 @@ sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
 
 echo "install dotfiles"
 mkdir -p "${HOME}/projects/private/"
-git clone https://github.com/zyndiecate/dotfiles.git "${HOME}/projects/private/dotfiles"
+git clone https://github.com/xh3b4sd/dotfiles.git "${HOME}/projects/private/dotfiles"
 sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
 chown -R "${USER}:${USER}" $HOME
 
