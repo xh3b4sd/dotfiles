@@ -22,6 +22,11 @@ git clone https://github.com/xh3b4sd/dotfiles.git "${HOME}/projects/private/dotf
 sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
 chown -R "${USER}:${USER}" $HOME
 
+echo "fix vim-go gofmt folding issue"
+cd "${HOME}/.vim/bundle/vim-go/"
+git checkout 6c1cc914c35735768e54fc4ab0be900a9d62797b
+cd
+
 # install go, see https://github.com/moovweb/gvm/issues/155#issuecomment-133059802
 echo "install go"
 export ZSH_NAME=zsh
