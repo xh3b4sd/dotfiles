@@ -5,7 +5,12 @@ HOME="/home/${USER}"
 
 echo "install deps"
 apt-get update
-apt-get install -y git make binutils gcc bison mercurial ack-grep curl build-essential tree htop
+apt-get install -y make binutils gcc bison mercurial ack-grep curl build-essential tree htop
+
+echo "install git"
+add-apt-repository ppa:git-core/ppa -y
+apt-get update
+apt-get install -y git
 
 echo "install zsh"
 apt-get install -y zsh
