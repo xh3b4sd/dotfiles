@@ -57,6 +57,7 @@ let NERDTreeShowHidden=1
 let mapleader = ","
 let g:mapleader = ","
 let g:vim_markdown_folding_disabled=1
+let g:go_fmt_experimental = 1
 let g:NERDTreeDirArrows=0
 set ruler
 set incsearch
