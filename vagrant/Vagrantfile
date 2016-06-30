@@ -4,8 +4,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "ubuntu/trusty64"
-  config.vm.hostname = "trusty64"
+  config.vm.box = "boxcutter/ubuntu1604"
+  config.vm.hostname = "xenial"
 
   config.vm.provision :shell, :path => "provision.sh"
 
@@ -13,17 +13,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, guest: 8081, host: 8081
   config.vm.network :forwarded_port, guest: 22, host: 2222, id: 'ssh'
 
-  config.vm.network :private_network, ip: "192.168.33.100"
-  config.vm.network :private_network, ip: "172.17.8.3"
+  config.vm.network :private_network, ip: "172.17.8.100"
 
   config.ssh.forward_agent = true
 
-  config.vm.provider :virtualbox do |vb|
-    vb.memory = 2048
-    vb.cpus = 8
-
-    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-    vb.customize ["modifyvm", :id, "--nictype1", "virtio" ]
-    vb.customize ["modifyvm", :id, "--nictype2", "virtio" ]
+  config.vm.provider "vmware_fusion" do |v|
+    v.vmx["memsize"] = "4096"
+    v.vmx["numvcpus"] = "8"
   end
 end
