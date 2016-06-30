@@ -80,6 +80,7 @@ set shiftwidth=2
 set autoindent
 set smartcase
 set scrolloff=5
+set encoding=utf-8
 " By default, when doing `vim -p $(find a lot of files)`, vim does not open
 " more than 10 tabs. With this setting i is possible to open 100 files at
 " once.
