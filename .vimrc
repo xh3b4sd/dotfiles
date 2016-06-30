@@ -27,7 +27,10 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
-" dash case > cr-
+" cr-    fooBar    to     foo-bar    (dash case)
+" cr_    fooBar    to     foo_bar    (underscore)
+" crm    fooBar    to     FooBar     (mixed case)
+" crc    fooBar    to     fooBar     (camel case)
 Plugin 'tpope/vim-abolish'
 
 " All of your Plugins must be added before the following line
