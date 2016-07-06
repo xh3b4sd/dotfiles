@@ -44,6 +44,7 @@ colorscheme wombat256mod
 
 " vim-go settings
 let g:go_highlight_operators = 1
+let g:go_highlight_types = 1
 let g:go_highlight_build_constraints = 1
 
 set backspace=indent,eol,start
