@@ -4,6 +4,9 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.ssh.insert_key = false
+  config.ssh.forward_agent = true
+
   config.vm.box = "boxcutter/ubuntu1604"
   config.vm.hostname = "xenial"
 
@@ -11,11 +14,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.network :forwarded_port, guest: 8080, host: 8080
   config.vm.network :forwarded_port, guest: 8081, host: 8081
+  config.vm.network :forwarded_port, guest: 8200, host: 8200
   config.vm.network :forwarded_port, guest: 22, host: 2222, id: 'ssh'
 
   config.vm.network :private_network, ip: "172.17.8.100"
-
-  config.ssh.forward_agent = true
 
   config.vm.provider "vmware_fusion" do |v|
     v.vmx["memsize"] = "4096"

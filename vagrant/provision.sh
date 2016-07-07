@@ -5,7 +5,7 @@ HOME="/home/${USER}"
 
 echo "install deps"
 apt-get update
-apt-get install -y make binutils gcc bison mercurial ack-grep curl build-essential tree htop
+apt-get install -y make binutils gcc bison mercurial ack-grep curl build-essential tree htop vim
 
 echo "install git"
 add-apt-repository ppa:git-core/ppa -y
@@ -15,6 +15,7 @@ apt-get install -y git
 echo "install zsh"
 apt-get install -y zsh
 sudo su vagrant -c "sudo /usr/bin/chsh -s $(which zsh) vagrant"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "install dotfiles"
 mkdir -p "${HOME}/projects/private/"
