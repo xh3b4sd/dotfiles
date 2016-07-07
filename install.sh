@@ -14,7 +14,7 @@ FILE=".ackrc"
 rm -rf "${HOME}/${FILE}"
 ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
 
-FILE=".vim/"
+FILE=".vim"
 rm -rf "${HOME}/${FILE}"
 ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
 
