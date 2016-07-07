@@ -70,3 +70,10 @@ else
   alias l='ls -lh --group-directories-first --color'
   alias ll='ls -lah --group-directories-first --color'
 fi
+
+# Show current directory name as iterm tab title
+autoload -Uz add-zsh-hook
+function prompt_cwd_in_tab {
+  echo -ne "\033]0;$(basename $(echo $PWD))\007"
+}
+add-zsh-hook precmd prompt_cwd_in_tab
