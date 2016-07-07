@@ -14,7 +14,11 @@ ZSH_THEME="xh3b4sd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git vi-mode history-substring-search)
+
+# bind k and j for VI mode history substring seach
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # User configuration
 
@@ -59,7 +63,7 @@ alias gpl='git pull'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit
 
 # ls
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
   alias l='ls -lhG'
   alias ll='ls -lahG'
 else
