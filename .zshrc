@@ -10,6 +10,9 @@ export EDITOR='vim'
 # time that oh-my-zsh is loaded.
 ZSH_THEME="xh3b4sd"
 
+# Disable auto-setting terminal title.
+DISABLE_AUTO_TITLE="true"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -77,3 +80,6 @@ function prompt_cwd_in_tab {
   echo -ne "\033]0;$(basename $(echo $PWD))\007"
 }
 add-zsh-hook precmd prompt_cwd_in_tab
+
+# gvm
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
