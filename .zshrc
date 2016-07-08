@@ -13,15 +13,28 @@ ZSH_THEME="xh3b4sd"
 # Disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
 
+# Case-sensitive completion.
+CASE_SENSITIVE="true"
+
+# Disable command auto-correction.
+DISABLE_CORRECTION="true"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git vi-mode history-substring-search)
 
+# Always receive unique search results.
+setopt HIST_IGNORE_ALL_DUPS
 # bind k and j for VI mode history substring seach
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+# Enable shift-tab to access previous completion entries.
+zmodload zsh/complist
+bindkey -M menuselect '^[[Z' reverse-menu-complete
+bindkey -s '^[[Z' '\t'
+
 
 # User configuration
 
@@ -83,3 +96,4 @@ add-zsh-hook precmd prompt_cwd_in_tab
 
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
