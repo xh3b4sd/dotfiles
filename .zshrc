@@ -4,6 +4,23 @@ export ZSH=/home/vagrant/.oh-my-zsh
 # Preferred editor for local sessions
 export EDITOR='vim'
 
+# Add paths to look for completions.
+fpath=(
+  /home/vagrant/projects/giantswarm/builder/completion/zsh
+
+  /home/vagrant/projects/private/anna/completion/zsh
+
+  $fpath
+)
+
+# Add paths to look for executables.
+export PATH=$PATH:/home/vagrant/projects/coreos/fleet/bin/
+
+export PATH=$PATH:/home/vagrant/projects/giantswarm/releaseit/
+export PATH=$PATH:/home/vagrant/projects/giantswarm/builder/
+
+export PATH=$PATH:/home/vagrant/projects/private/anna/.workspace/bin/
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -67,7 +84,7 @@ export KEYTIMEOUT=1
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ga='git add'
-alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git branch -d $FINISHED_BRANCH' # finish and cleanup feature branch
+alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git fetch -p; git branch -d $FINISHED_BRANCH' # finish and cleanup feature branch
 alias tree='tree --dirsfirst'
 alias gb='git branch'
 alias gc='git checkout'
@@ -96,4 +113,3 @@ add-zsh-hook precmd prompt_cwd_in_tab
 
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
