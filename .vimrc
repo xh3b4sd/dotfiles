@@ -18,7 +18,6 @@ Plugin 'https://github.com/vim-scripts/darktango.vim'
 
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
 
 " snipmate and dependencies
@@ -53,6 +52,9 @@ silent !stty -ixon > /dev/null 2>/dev/null
 
 " strip trailing spaces on save except for *.t files
 autocmd BufWritePre *\(*.t\)\@<! :%s/\s\+$//e
+
+" force markdown filetype for proper highlighting on *.md files
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 vnoremap ? !python -m json.tool<Return>
 "filetype off
