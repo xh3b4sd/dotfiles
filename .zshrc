@@ -14,8 +14,7 @@ fpath=(
 )
 
 # Add paths to look for executables.
-export PATH=$PATH:/home/vagrant/projects/coreos/fleet/bin/
-
+export PATH=$PATH:/home/vagrant/projects/giantswarm/fleet/bin/
 export PATH=$PATH:/home/vagrant/projects/giantswarm/releaseit/
 export PATH=$PATH:/home/vagrant/projects/giantswarm/builder/
 
@@ -84,7 +83,7 @@ export KEYTIMEOUT=1
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ga='git add'
-alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git fetch -p; git branch -d $FINISHED_BRANCH' # finish and cleanup feature branch
+alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
 alias tree='tree --dirsfirst'
 alias gb='git branch'
 alias gc='git checkout'
@@ -113,3 +112,6 @@ add-zsh-hook precmd prompt_cwd_in_tab
 
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+export NVM_DIR="/home/vagrant/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
