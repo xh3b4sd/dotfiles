@@ -28,8 +28,8 @@ echo "install go"
 export ZSH_NAME=zsh
 zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 source ${HOME}/.gvm/scripts/gvm
-gvm install go1.6 -B
-gvm use go1.6 --default
+gvm install go1.7 -B
+gvm use go1.7 --default
 
 echo "install docker"
 curl -sSL https://get.docker.com/ | sh

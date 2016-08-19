@@ -46,6 +46,7 @@ colorscheme wombat256mod
 let g:go_highlight_operators = 1
 let g:go_highlight_types = 1
 let g:go_highlight_build_constraints = 1
+let g:go_template_autocreate = 0
 
 set backspace=indent,eol,start
 " IMPORTANT to get ctrl + q to work
