@@ -1,4 +1,6 @@
 .vim/autoload/
+.vim/init.vim
+.vim/plug.vim
+.vim/plug/
 .vim/plugged/
 .vim/view/
-.vim/.netrwhist

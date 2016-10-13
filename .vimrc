@@ -1,12 +1,11 @@
 " Install vim-plug if it is not already insalled.
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  silent !curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 " Define vim-plug plugins to load.
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plug/')
 Plug 'fatih/vim-go'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'flazz/vim-colorschemes'
@@ -43,9 +42,6 @@ set backspace=indent,eol,start
 " IMPORTANT to get ctrl + q to work
 silent !stty -ixon > /dev/null 2>/dev/null
 
-" strip trailing spaces on save except for *.t files
-autocmd BufWritePre *\(*.t\)\@<! :%s/\s\+$//e
-
 vnoremap ? !python -m json.tool<Return>
 "filetype off
 let NERDTreeShowHidden=1
@@ -77,9 +73,6 @@ set encoding=utf-8
 " more than 10 tabs. With this setting i is possible to open 100 files at
 " once.
 set tabpagemax=100
-
-" ALWAYS close folds by default
-"autocmd BufRead * exe "normal! zM"
 
 " only fold one indention level
 set foldnestmax=1
@@ -122,16 +115,6 @@ nnoremap g# g#zz
 
 
 
-" Return to last edit position when opening files (You want this!)
-"autocmd BufReadPost *
-"  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-"  \   exe "normal! g`\"" |
-"  \ endif
-"" Remember info about open buffers on close
-"set viminfo^=%
-
-
-
 " <C-a> in visual block mode on numbers increments them (slow on millions of
 " items).
 function! Incr()
@@ -144,11 +127,13 @@ function! Incr()
 endfunction
 vnoremap <C-a> :call Incr()<CR>
 
-
-
 " auto wrap comments at 80 characters
 set tw=80
 set fo+=t
 
 " incr/decr not in octal number system
 set nrformats-=octal
+
+" Properly display syntax highlighting.
+autocmd BufEnter * :syntax sync fromstart
+autocmd BufWritePost * :syntax sync fromstart

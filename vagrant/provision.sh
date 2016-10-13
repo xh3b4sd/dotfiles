@@ -5,7 +5,7 @@ HOME="/home/${USER}"
 
 echo "install deps"
 apt-get update
-apt-get install -y make binutils gcc bison mercurial ack-grep curl build-essential tree htop vim
+apt-get install -y make binutils gcc bison mercurial ack-grep curl build-essential tree htop vim python-setuptools ruby
 
 echo "install git"
 add-apt-repository ppa:git-core/ppa -y
@@ -22,6 +22,12 @@ mkdir -p "${HOME}/projects/private/"
 git clone https://github.com/xh3b4sd/dotfiles.git "${HOME}/projects/private/dotfiles"
 sh "${HOME}/projects/private/dotfiles/install.sh" $HOME
 chown -R "${USER}:${USER}" $HOME
+
+echo "install linuxbrew"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+
+echo "install neovim"
+brew install neovim/neovim/neovim
 
 # install go, see https://github.com/moovweb/gvm/issues/155#issuecomment-133059802
 echo "install go"
