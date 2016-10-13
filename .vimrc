@@ -1,41 +1,27 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Install vim-plug if it is not already insalled.
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'fatih/vim-go'
-Plugin 'Matt-Deacalion/vim-systemd-syntax'
-
-" colorschemes
-Plugin 'flazz/vim-colorschemes'
-Plugin 'https://github.com/vim-scripts/darktango.vim'
-
-Plugin 'ervandew/supertab'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ekalinin/Dockerfile.vim'
-
-" snipmate and dependencies
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-
+" Define vim-plug plugins to load.
+call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go'
+Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'flazz/vim-colorschemes'
+Plug 'ervandew/supertab'
+Plug 'plasticboy/vim-markdown'
+Plug 'scrooloose/nerdtree'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'honza/vim-snippets'
 " cr-    fooBar    to     foo-bar    (dash case)
 " cr_    fooBar    to     foo_bar    (underscore)
 " crm    fooBar    to     FooBar     (mixed case)
 " crc    fooBar    to     fooBar     (camel case)
-Plugin 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'
+call plug#end()
 
-" All of your Plugins must be added before the following line
-" required
-call vundle#end()
 filetype plugin on
 syntax on
 
@@ -43,9 +29,14 @@ colorscheme wombat256mod
 "colorscheme monokai-chris
 
 " vim-go settings
+let g:go_fmt_experimental = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_types = 1
-let g:go_highlight_build_constraints = 1
 let g:go_template_autocreate = 0
 
 set backspace=indent,eol,start
@@ -62,7 +53,6 @@ let NERDTreeShowHidden=1
 let mapleader = ","
 let g:mapleader = ","
 let g:vim_markdown_folding_disabled=1
-let g:go_fmt_experimental = 1
 let g:NERDTreeDirArrows=0
 set ruler
 set incsearch
@@ -89,8 +79,7 @@ set encoding=utf-8
 set tabpagemax=100
 
 " ALWAYS close folds by default
-autocmd BufRead *
-  \ exe "normal! zM"
+"autocmd BufRead * exe "normal! zM"
 
 " only fold one indention level
 set foldnestmax=1
@@ -114,10 +103,14 @@ map <C-h> :tabp<Return>
 map <C-e> :tabe<Space>
 map <C-w> :w<Return>
 map <C-q> :q<Return>
+" disable shift+k
+map <S-k> <Nop>
 vnoremap / <Esc>/\%V
 vnoremap : <Esc>:'<,'>s///g
 " don't overwrite register by pasting yanked lines
 xnoremap p pgvy
+
+
 
 " Center display line after searches
 nnoremap n nzz
@@ -127,10 +120,35 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+
+
 " Return to last edit position when opening files (You want this!)
-autocmd BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-  \   exe "normal! g`\"" |
-  \ endif
-" Remember info about open buffers on close
-set viminfo^=%
+"autocmd BufReadPost *
+"  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+"  \   exe "normal! g`\"" |
+"  \ endif
+"" Remember info about open buffers on close
+"set viminfo^=%
+
+
+
+" <C-a> in visual block mode on numbers increments them (slow on millions of
+" items).
+function! Incr()
+  let a = line('.') - line("'<")
+  let c = virtcol("'<")
+  if a > 0
+    execute 'normal! '.c.'|'.a."\<C-a>"
+  endif
+  normal `<
+endfunction
+vnoremap <C-a> :call Incr()<CR>
+
+
+
+" auto wrap comments at 80 characters
+set tw=80
+set fo+=t
+
+" incr/decr not in octal number system
+set nrformats-=octal

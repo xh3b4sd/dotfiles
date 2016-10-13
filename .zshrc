@@ -21,6 +21,7 @@ export PATH=$PATH:/home/vagrant/projects/giantswarm/releaseit/
 export PATH=$PATH:/home/vagrant/projects/giantswarm/builder/
 
 export PATH=$PATH:/home/vagrant/projects/private/anna/.workspace/bin/
+export PATH=$PATH:/home/vagrant/projects/private/anna/vendor/bin/
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -101,8 +102,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
   alias l='ls -lhG'
   alias ll='ls -lahG'
 else
-  alias l='ls -lh --group-directories-first --color'
-  alias ll='ls -lah --group-directories-first --color'
+  alias l='LANG=C ls -lh --group-directories-first --color'
+  alias ll='LANG=C ls -lah --group-directories-first --color'
 fi
 
 # Show current directory name as iterm tab title
