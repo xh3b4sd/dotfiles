@@ -6,6 +6,7 @@
 .atom/.apm
 .atom/.node-gyp
 .atom/.npm
+
 .vim/autoload/
 .vim/init.vim
 .vim/plug.vim
