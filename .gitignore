@@ -1,3 +1,11 @@
+.atom/blob-store
+.atom/compile-cache
+.atom/dev
+.atom/packages
+.atom/storage
+.atom/.apm
+.atom/.node-gyp
+.atom/.npm
 .vim/autoload/
 .vim/init.vim
 .vim/plug.vim
