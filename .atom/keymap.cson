@@ -31,19 +31,34 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
-'.platform-darwin, .platform-darwin atom-text-editor, platform-darwin .command-palette atom-text-editor, html body atom-text-editor, html body atom-workspace, atom-text-editor.vim-mode-plus:not(.insert-mode)':
+'.platform-darwin':
   # toggle fuzzy finder
   'ctrl-e': 'fuzzy-finder:toggle-file-finder'
 
   # toggle command palette
   'ctrl-cmd-space': 'command-palette:toggle'
 
+'.platform-darwin atom-text-editor':
   # format any block in insert and visual mode
   'g q': 'autoflow:reflow-selection'
 
+'platform-darwin .command-palette atom-text-editor':
   # toggle command palette
   'ctrl-cmd-space': 'command-palette:toggle'
 
+'atom-text-editor':
+  # move between panes
+  'cmd-left': 'unset!'
+  'cmd-right': 'unset!'
+
+  # my custom test mapping
+  'ctrl-j': 'custom:move-to-next-fold'
+  'ctrl-k': 'custom:move-to-prev-fold'
+
+  # toggle fuzzy finder
+  'ctrl-e': 'fuzzy-finder:toggle-file-finder'
+
+'body':
   # move between panes
   'cmd-left': 'pane:show-previous-item'
   'cmd-right': 'pane:show-next-item'
@@ -54,12 +69,14 @@
   # reload window like in chrome
   'cmd-r': 'window:reload'
 
-  # my custom test mapping
-  'ctrl-j': 'custom:move-to-next-fold'
-  'ctrl-k': 'custom:move-to-prev-fold'
+'body .native-key-bindings':
+  # move between panes
+  'cmd-left': 'unset!'
+  'cmd-right': 'unset!'
 
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # toggle fuzzy finder
-  'ctrl-e': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-e': 'unset!'
 
-  # my custom bullshit I am playing with
+  # my custom test mapping
   'ctrl-q': 'vim-fold-one:toggle'
