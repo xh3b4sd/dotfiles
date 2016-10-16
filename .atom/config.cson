@@ -1,0 +1,49 @@
+"*":
+  "advanced-open-file":
+    defaultInputValue: "Empty"
+    fuzzyMatch: true
+    helmDirSwitch: true
+  autosave:
+    enabled: true
+  core:
+    disabledPackages: [
+      "welcome"
+      "symbols-view"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "fuzzy-finder"
+    ]
+    projectHome: "/Users/zyndiecate/projects"
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "no-caffeine-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "Hack"
+  "exception-reporting":
+    userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
+  "find-and-replace": {}
+  "fold-functions":
+    autofold: true
+  "fold-navigator":
+    autofold: true
+    keepFolding: true
+    keepFoldingAllTime: true
+    maxFoldLevel: 1
+    maxLineContentLength: 80
+  "package-generator":
+    packageSyntax: "coffeescript"
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "project-manager":
+    alwaysOpenInSameWindow: true
+  "project-plus": {}
+  "save-session":
+    dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
+  "tree-view":
+    alwaysOpenExisting: true
+    hideVcsIgnoredFiles: true

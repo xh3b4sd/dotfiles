@@ -1,0 +1,18 @@
+packages: [
+  "autocomplete-go"
+  "dark-flat-ui"
+  "gaia-dark-syntax"
+  "genesis-ui"
+  "go-config"
+  "go-debug"
+  "go-get"
+  "godoc"
+  "gofmt"
+  "gometalinter-linter"
+  "gorename"
+  "linter"
+  "no-caffeine-syntax"
+  "package-sync"
+  "vim-fold-one"
+  "vim-mode-plus"
+]

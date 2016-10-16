@@ -1,29 +1,33 @@
 export LC_CTYPE=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/vagrant/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 # Preferred editor for local sessions
 export EDITOR='vim'
 
 # Add paths to look for completions.
 fpath=(
-  /home/vagrant/projects/giantswarm/builder/completion/zsh
+  ${HOME}/projects/giantswarm/builder/completion/zsh
 
-  /home/vagrant/projects/private/anna/completion/zsh
+  ${HOME}/projects/private/anna/completion/zsh
 
   $fpath
 )
 
 # Add paths to look for executables.
-export PATH=$PATH:/home/vagrant/projects/giantswarm/fleet/bin/
-export PATH=$PATH:/home/vagrant/projects/giantswarm/releaseit/
-export PATH=$PATH:/home/vagrant/projects/giantswarm/builder/
+export PATH=$PATH:${HOME}/projects/giantswarm/fleet/bin
+export PATH=$PATH:${HOME}/projects/giantswarm/releaseit
+export PATH=$PATH:${HOME}/projects/giantswarm/builder
 
-export PATH=$PATH:/home/vagrant/projects/private/anna/.workspace/bin/
-export PATH=$PATH:/home/vagrant/projects/private/anna/vendor/bin/
+export PATH=$PATH:${HOME}/projects/private/anna/.workspace/bin
+export PATH=$PATH:${HOME}/projects/private/anna/vendor/bin
 
-export PATH=$PATH:/home/vagrant/.linuxbrew/bin/
+export PATH=$PATH:${HOME}/.linuxbrew/bin
+
+export GOPATH=/usr/local/Cellar/go/1.6.2/bin/src
+export PATH=$PATH:$GOPATH
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -118,5 +122,5 @@ add-zsh-hook precmd prompt_cwd_in_tab
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
-export NVM_DIR="/home/vagrant/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
