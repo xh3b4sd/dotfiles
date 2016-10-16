@@ -34,6 +34,8 @@
     keepFoldingAllTime: true
     maxFoldLevel: 1
     maxLineContentLength: 80
+  "fuzzy-finder":
+    preserveLastSearch: true
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
