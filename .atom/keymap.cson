@@ -36,7 +36,10 @@
   'ctrl-e': 'fuzzy-finder:toggle-file-finder'
 
   # toggle command palette
-  'ctrl-cmd-space': 'command-palette:toggle'
+  'shift-cmd-space': 'command-palette:toggle'
+
+  # toggle tree-view
+  'cmd-t': 'tree-view:toggle'
 
 '.platform-darwin atom-text-editor':
   # format any block in insert and visual mode
@@ -44,19 +47,19 @@
 
 'platform-darwin .command-palette atom-text-editor':
   # toggle command palette
-  'ctrl-cmd-space': 'command-palette:toggle'
+  'shift-cmd-space': 'command-palette:toggle'
 
 'atom-text-editor':
   # move between panes
-  'cmd-left': 'unset!'
-  'cmd-right': 'unset!'
-
-  # my custom test mapping
-  'ctrl-j': 'custom:move-to-next-fold'
-  'ctrl-k': 'custom:move-to-prev-fold'
+  'cmd-left': 'pane:show-previous-item'
+  'cmd-right': 'pane:show-next-item'
 
   # toggle fuzzy finder
   'ctrl-e': 'fuzzy-finder:toggle-file-finder'
+
+  # move panes
+  'cmd-shift-left': 'pane:move-item-left'
+  'cmd-shift-right': 'pane:move-item-right'
 
 'body':
   # move between panes
@@ -71,12 +74,17 @@
 
 'body .native-key-bindings':
   # move between panes
-  'cmd-left': 'unset!'
-  'cmd-right': 'unset!'
+  'cmd-left': 'pane:show-previous-item'
+  'cmd-right': 'pane:show-next-item'
+
+  # move panes
+  'cmd-shift-left': 'pane:move-item-left'
+  'cmd-shift-right': 'pane:move-item-right'
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # toggle fuzzy finder
-  'ctrl-e': 'unset!'
+  'ctrl-e': 'fuzzy-finder:toggle-file-finder'
 
   # my custom test mapping
-  'ctrl-q': 'vim-fold-one:toggle'
+  'ctrl-k': 'vim-fold-one:move-up'
+  'ctrl-j': 'vim-fold-one:move-down'

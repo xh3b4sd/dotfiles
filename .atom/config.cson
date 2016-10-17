@@ -3,26 +3,34 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
+  "autocomplete-plus":
+    strictMatching: true
   autosave:
     enabled: true
+  "color-picker":
+    preferredFormat: "HEX"
   core:
     disabledPackages: [
       "welcome"
       "symbols-view"
     ]
+    excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "fuzzy-finder"
+      "color-picker"
     ]
-    projectHome: "/Users/zyndiecate/projects"
+    projectHome: "/Users/zyndiecate/.atom/packages"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "no-caffeine-syntax"
     ]
-    useCustomTitleBar: true
+  "custom-title":
+    template: "Atom <%= atom.getVersion() %>"
   editor:
     fontFamily: "Hack"
+    fontSize: 13
   "exception-reporting":
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
   "find-and-replace": {}
@@ -46,6 +54,16 @@
   "project-plus": {}
   "save-session":
     dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
+  "todo-show":
+    ignoreThesePaths: [
+      "**/node_modules/"
+      "**/vendor/"
+      "**/bower_components/"
+      "**/.workspace/"
+      "**/.gobuild/"
+      "**/.atom/"
+      "**/dotfiles/"
+      "**/.vim/"
+    ]
   "tree-view":
     alwaysOpenExisting: true
-    hideVcsIgnoredFiles: true
