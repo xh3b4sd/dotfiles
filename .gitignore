@@ -1,3 +1,6 @@
+.DS_Store
+
+.atom/.DS_Store
 .atom/blob-store
 .atom/compile-cache
 .atom/dev
@@ -13,3 +16,4 @@
 .vim/plug/
 .vim/plugged/
 .vim/view/
+.vim/.netrwhist
