@@ -10,6 +10,7 @@ packages: [
   "gorename"
   "no-caffeine-syntax"
   "package-sync"
+  "project-folder"
   "todo-show"
   "vim-fold-one"
   "vim-mode-plus"

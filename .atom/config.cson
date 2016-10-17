@@ -19,8 +19,9 @@
     packagesWithKeymapsDisabled: [
       "fuzzy-finder"
       "color-picker"
+      "project-folder"
     ]
-    projectHome: "/Users/zyndiecate/.atom/packages"
+    projectHome: "/Users/zyndiecate/github"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -49,6 +50,13 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "project-folder":
+    gitProjectDirectories: [
+      "~/projects"
+    ]
+    projectRootDirectories: [
+      "~/projects/private/dotfiles/.atom/packages"
+    ]
   "project-manager":
     alwaysOpenInSameWindow: true
   "project-plus": {}

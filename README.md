@@ -14,8 +14,9 @@ git clone https://github.com/xh3b4sd/dotfiles.git ~/projects/private/dotfiles
 Package backups currently work with https://atom.io/packages/package-sync.
 
 - Open the atom editor.
-- Use the shortcut `ctrl-cmd-space` to open the command palette.
-- Type `package sync` to fuzzy find the command to install packages
+- Use the shortcut `shift-cmd-space` to open the command palette.
+- Type `package sync` to fuzzy find the command to install packages.
+- Wait until all packages are installed and relaunch atom.
 
 ## TODO
 Automatically install https://github.com/bitboxer/de-coding.keylayout on OSX
