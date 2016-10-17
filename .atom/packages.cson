@@ -1,6 +1,5 @@
 packages: [
   "color-picker"
-  "custom-title"
   "gaia-dark-syntax"
   "go-config"
   "go-debug"
