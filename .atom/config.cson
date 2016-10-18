@@ -1,9 +1,11 @@
 "*":
   "advanced-open-file":
+    createDirectories: true
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
   "autocomplete-plus":
+    autoActivationDelay: 50
     strictMatching: true
   autosave:
     enabled: true
@@ -20,6 +22,7 @@
       "fuzzy-finder"
       "color-picker"
       "project-folder"
+      "project-plus"
     ]
     projectHome: "/Users/zyndiecate/github"
     telemetryConsent: "limited"
@@ -30,8 +33,8 @@
   "custom-title":
     template: "Atom <%= atom.getVersion() %>"
   editor:
+    autoIndentOnPaste: false
     fontFamily: "Hack"
-    fontSize: 13
   "exception-reporting":
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
   "find-and-replace": {}
@@ -43,8 +46,9 @@
     keepFoldingAllTime: true
     maxFoldLevel: 1
     maxLineContentLength: 80
-  "fuzzy-finder":
-    preserveLastSearch: true
+  "fuzzy-finder": {}
+  "go-config":
+    gopath: "/usr/local/Cellar/go/1.6.2/bin/src"
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
@@ -59,9 +63,11 @@
     ]
   "project-manager":
     alwaysOpenInSameWindow: true
-  "project-plus": {}
+  "project-plus":
+    showPath: true
   "save-session":
     dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
+  tabs: {}
   "todo-show":
     ignoreThesePaths: [
       "**/node_modules/"

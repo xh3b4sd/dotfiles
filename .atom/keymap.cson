@@ -38,7 +38,10 @@
   # toggle command palette
   'shift-cmd-space': 'command-palette:toggle'
 
-  #'cmd-p': 'project-switcher:toggle'
+  # add and remove project from workspace
+  'ctrl-+': 'project-plus:open'
+  'ctrl--': 'project-plus:remove'
+  'cmd-p': 'project-plus:toggle-project-finder'
 
 '.platform-darwin atom-text-editor':
   # format any block in insert and visual mode
@@ -59,6 +62,11 @@
   # move panes
   'cmd-shift-left': 'pane:move-item-left'
   'cmd-shift-right': 'pane:move-item-right'
+
+  # add and remove project from workspace
+  'ctrl-+': 'project-plus:open'
+  'ctrl--': 'project-plus:remove'
+  'cmd-p': 'project-plus:toggle-project-finder'
 
 'body':
   # move between panes
