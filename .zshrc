@@ -3,8 +3,19 @@ export LC_CTYPE=en_US.UTF-8
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
-# Preferred editor for local sessions
+# Preferred editor for local sessions.
 export EDITOR='vim'
+
+# Golang compilation arguments.
+export GOOS=$(go env GOOS)
+export GOARCH=$(go env GOARCH)
+
+# Vault credentials.
+export VAULT_ADDR=$(cat ~/.giantswarm-vault-addr)
+export VAULT_TOKEN=$(cat ~/.giantswarm-vault-token)
+
+# Do not get annoyed by homebrew Github API magic.
+export HOMEBREW_NO_GITHUB_API=true
 
 # Add paths to look for completions.
 fpath=(
@@ -19,15 +30,15 @@ fpath=(
 export PATH=$PATH:${HOME}/projects/giantswarm/fleet/bin
 export PATH=$PATH:${HOME}/projects/giantswarm/releaseit
 export PATH=$PATH:${HOME}/projects/giantswarm/builder
+export PATH=$PATH:${HOME}/projects/giantswarm/certctl
 
 export PATH=$PATH:${HOME}/projects/private/anna/.workspace/bin
 export PATH=$PATH:${HOME}/projects/private/anna/vendor/bin
 
 export PATH=$PATH:${HOME}/.linuxbrew/bin
 
-export GOPATH=/usr/local/Cellar/go/1.6.2/bin/src
-export PATH=$PATH:$GOPATH
-
+#export GOPATH=/usr/local/Cellar/go/1.6.2/bin/src
+#export PATH=$PATH:$GOPATH
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -48,7 +59,14 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode history-substring-search)
+plugins=(git vi-mode history-substring-search kubectl)
+
+# User configuration
+
+# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+# export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # Always receive unique search results.
 setopt HIST_IGNORE_ALL_DUPS
@@ -59,14 +77,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 zmodload zsh/complist
 bindkey -M menuselect '^[[Z' reverse-menu-complete
 bindkey -s '^[[Z' '\t'
-
-
-# User configuration
-
-# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -102,6 +112,7 @@ alias gcm='git commit'
 alias gps='git push'
 alias gpl='git pull'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit
+alias vault="docker run --rm -ti --net host --privileged=true -e VAULT_ADDR -e VAULT_TOKEN giantswarm/docker-vault:0.1.0"
 
 # ls
 if [[ "$(uname)" == "Darwin" ]]; then
