@@ -4,9 +4,6 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
-  "autocomplete-plus":
-    autoActivationDelay: 50
-    strictMatching: true
   autosave:
     enabled: true
   "color-picker":
@@ -49,6 +46,10 @@
   "fuzzy-finder": {}
   "go-config":
     gopath: "/usr/local/Cellar/go/1.6.2/bin/src"
+  gofmt:
+    formatTool: "gofmt"
+  "markdown-preview":
+    openPreviewInSplitPane: false
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
