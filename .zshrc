@@ -6,10 +6,6 @@ export ZSH=${HOME}/.oh-my-zsh
 # Preferred editor for local sessions.
 export EDITOR='atom'
 
-# Golang compilation arguments.
-export GOOS=$(go env GOOS)
-export GOARCH=$(go env GOARCH)
-
 # Vault credentials.
 export VAULT_ADDR=$(cat ~/.giantswarm-vault-addr)
 export VAULT_TOKEN=$(cat ~/.giantswarm-vault-token)
@@ -132,6 +128,10 @@ add-zsh-hook precmd prompt_cwd_in_tab
 
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+# Golang compilation arguments.
+export GOARCH=$(go env GOARCH)
+export GOOS=$(go env GOOS)
 
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

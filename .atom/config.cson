@@ -4,6 +4,10 @@
     defaultInputValue: "Empty"
     fuzzyMatch: true
     helmDirSwitch: true
+  "autocomplete-plus":
+    autoActivationDelay: 50
+    backspaceTriggersAutocomplete: true
+    defaultProvider: "Fuzzy"
   autosave:
     enabled: true
   "color-picker":
@@ -44,8 +48,7 @@
     maxFoldLevel: 1
     maxLineContentLength: 80
   "fuzzy-finder": {}
-  "go-config":
-    gopath: "/usr/local/Cellar/go/1.6.2/bin/src"
+  "go-config": {}
   gofmt:
     formatTool: "gofmt"
   "markdown-preview":
