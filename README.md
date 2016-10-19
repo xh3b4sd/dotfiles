@@ -4,7 +4,7 @@ Just a little dotfile collection.
 ## install
 ```bash
 mkdir -p ~/projects/private/dotfiles
-git clone https://github.com/xh3b4sd/dotfiles.git ~/projects/private/dotfiles
+git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/private/dotfiles
 ~/projects/private/dotfiles/install.sh
 ```
 
