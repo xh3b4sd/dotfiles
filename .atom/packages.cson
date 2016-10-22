@@ -1,6 +1,7 @@
 packages: [
   "atom-sort-projects"
   "color-picker"
+  "cursor-history"
   "gaia-dark-syntax"
   "go-config"
   "go-debug"
@@ -8,6 +9,8 @@ packages: [
   "godoc"
   "gofmt"
   "gorename"
+  "language-hcl"
+  "language-protobuf"
   "no-caffeine-syntax"
   "package-sync"
   "project-folder"

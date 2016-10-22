@@ -68,6 +68,9 @@
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-plus:toggle-project-finder'
 
+  # vim-fold-one
+  'ctrl-k': 'unset!'
+
 'body':
   # move between panes
   'cmd-left': 'pane:show-previous-item'
@@ -79,6 +82,10 @@
   # reload window like in chrome
   'cmd-r': 'window:reload'
 
+  # vim-fold-one
+  'ctrl-f': 'unset!'
+  'ctrl-c': 'unset!'
+
 'body .native-key-bindings':
   # move between panes
   'cmd-left': 'pane:show-previous-item'
@@ -88,10 +95,27 @@
   'cmd-shift-left': 'pane:move-item-left'
   'cmd-shift-right': 'pane:move-item-right'
 
+  # vim-fold-one
+  'ctrl-f': 'unset!'
+  'ctrl-c': 'unset!'
+
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # toggle fuzzy finder
   'cmd-t': 'fuzzy-finder:toggle-file-finder'
 
-  # my custom test mapping
-  'ctrl-k': 'vim-fold-one:move-up'
-  'ctrl-j': 'vim-fold-one:move-down'
+  'ctrl-f': 'vim-fold-one:toggle-current-fold'
+
+  'ctrl-o': 'cursor-history:next'
+  'ctrl-i': 'cursor-history:prev'
+
+'atom-text-editor.vim-mode-plus':
+  'ctrl-c': 'unset!'
+
+'.platform-darwin atom-text-editor.vim-mode-plus:not(.normal-mode)':
+  'ctrl-c': 'unset!'
+
+'atom-text-editor.vim-mode-plus-input':
+  'ctrl-c': 'unset!'
+
+'atom-text-editor.vim-mode-plus-search':
+  'ctrl-c': 'unset!'
