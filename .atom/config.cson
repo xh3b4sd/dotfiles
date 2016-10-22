@@ -1,9 +1,4 @@
 "*":
-  "advanced-open-file":
-    createDirectories: true
-    defaultInputValue: "Empty"
-    fuzzyMatch: true
-    helmDirSwitch: true
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
@@ -14,6 +9,7 @@
     preferredFormat: "HEX"
   core:
     allowPendingPaneItems: false
+    audioBeep: false
     disabledPackages: [
       "welcome"
       "symbols-view"
@@ -32,28 +28,16 @@
       "one-dark-ui"
       "no-caffeine-syntax"
     ]
-  "custom-title":
-    template: "Atom <%= atom.getVersion() %>"
   editor:
     autoIndentOnPaste: false
     fontFamily: "Hack"
   "exception-reporting":
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
   "find-and-replace": {}
-  "fold-functions":
-    autofold: true
-  "fold-navigator":
-    autofold: true
-    keepFolding: true
-    keepFoldingAllTime: true
-    maxFoldLevel: 1
-    maxLineContentLength: 80
   "fuzzy-finder": {}
   "go-config": {}
-  gofmt:
-    formatTool: "gofmt"
-  "markdown-preview":
-    openPreviewInSplitPane: false
+  gofmt: {}
+  "markdown-preview": {}
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
@@ -66,8 +50,6 @@
     projectRootDirectories: [
       "~/projects/private/dotfiles/.atom/packages"
     ]
-  "project-manager":
-    alwaysOpenInSameWindow: true
   "project-plus":
     showPath: true
   "save-session":
@@ -86,3 +68,9 @@
     ]
   "tree-view":
     alwaysOpenExisting: true
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+".gfm.source":
+  editor:
+    softWrap: false
