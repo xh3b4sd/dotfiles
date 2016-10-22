@@ -13,6 +13,8 @@ export VAULT_TOKEN=$(cat ~/.giantswarm-vault-token)
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
 
+
+
 # Add paths to look for completions.
 fpath=(
   ${HOME}/projects/giantswarm/builder/completion/zsh
@@ -33,8 +35,7 @@ export PATH=$PATH:${HOME}/projects/private/anna/vendor/bin
 
 export PATH=$PATH:${HOME}/.linuxbrew/bin
 
-#export GOPATH=/usr/local/Cellar/go/1.6.2/bin/src
-#export PATH=$PATH:$GOPATH
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,16 +52,15 @@ CASE_SENSITIVE="true"
 # Disable command auto-correction.
 DISABLE_CORRECTION="true"
 
+
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git vi-mode history-substring-search kubectl)
 
-# User configuration
 
-# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,6 +88,8 @@ setopt clobber
 # ESC).
 export KEYTIMEOUT=1
 
+
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -97,27 +99,28 @@ export KEYTIMEOUT=1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# git
 alias ga='git add'
-alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
-alias tree='tree --dirsfirst'
 alias gb='git branch'
 alias gc='git checkout'
 alias gd='git diff'
+alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
 alias gs='git status'
 alias gcm='git commit'
-alias gps='git push'
-alias gpl='git pull'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit
-alias vault="docker run --rm -ti --net host --privileged=true -e VAULT_ADDR -e VAULT_TOKEN giantswarm/docker-vault:0.1.0"
+alias gpl='git pull'
+alias gps='git push'
 
-# ls
-if [[ "$(uname)" == "Darwin" ]]; then
-  alias l='ls -lhG'
-  alias ll='ls -lahG'
-else
-  alias l='LANG=C ls -lh --group-directories-first --color'
-  alias ll='LANG=C ls -lah --group-directories-first --color'
-fi
+# 3rd party
+alias vault="docker run --rm -ti --net host --privileged=true -e VAULT_ADDR -e VAULT_TOKEN giantswarm/docker-vault:0.1.0"
+alias etcdctl="docker run --rm quay.io/coreos/etcd:v3.0.12 etcdctl"
+
+# core utils
+alias l='/usr/local/bin/gls --color --group-directories-first -l --human-readable'
+alias ll='/usr/local/bin/gls --color --group-directories-first -l --human-readable --all'
+alias tree='tree --dirsfirst'
+
+
 
 # Show current directory name as iterm tab title
 autoload -Uz add-zsh-hook
@@ -126,12 +129,16 @@ function prompt_cwd_in_tab {
 }
 add-zsh-hook precmd prompt_cwd_in_tab
 
+
+
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Golang compilation arguments.
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
+
+
 
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

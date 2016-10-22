@@ -69,7 +69,6 @@
   "tree-view":
     alwaysOpenExisting: true
   whitespace:
-    ensureSingleTrailingNewline: false
     ignoreWhitespaceOnCurrentLine: false
 ".gfm.source":
   editor:
