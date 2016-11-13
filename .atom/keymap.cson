@@ -68,9 +68,6 @@
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-plus:toggle-project-finder'
 
-  # vim-fold-one
-  'ctrl-k': 'unset!'
-
 'body':
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
@@ -82,10 +79,6 @@
   # reload window like in chrome
   'cmd-r': 'window:reload'
 
-  # vim-fold-one
-  'ctrl-f': 'unset!'
-  'ctrl-c': 'unset!'
-
 'body .native-key-bindings':
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
@@ -94,10 +87,6 @@
   # move panes
   'ctrl-shift-h': 'pane:move-item-left'
   'ctrl-shift-l': 'pane:move-item-right'
-
-  # vim-fold-one
-  'ctrl-f': 'unset!'
-  'ctrl-c': 'unset!'
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # toggle fuzzy finder
@@ -108,20 +97,8 @@
   'ctrl-o': 'cursor-history:next'
   'ctrl-i': 'cursor-history:prev'
 
-  # format any block in insert and visual mode
+  # format any block in visual mode
   'g q': 'autoflow:reflow-selection'
-
-'atom-text-editor.vim-mode-plus':
-  'ctrl-c': 'unset!'
-
-'.platform-darwin atom-text-editor.vim-mode-plus:not(.normal-mode)':
-  'ctrl-c': 'unset!'
-
-'atom-text-editor.vim-mode-plus-input':
-  'ctrl-c': 'unset!'
-
-'atom-text-editor.vim-mode-plus-search':
-  'ctrl-c': 'unset!'
 
 'body atom-text-editor.autocomplete-active':
   # move inside autocomplete suggestions
