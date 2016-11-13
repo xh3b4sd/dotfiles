@@ -69,10 +69,6 @@ setopt HIST_IGNORE_ALL_DUPS
 # bind k and j for VI mode history substring seach
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
-# Enable shift-tab to access previous completion entries.
-zmodload zsh/complist
-bindkey -M menuselect '^[[Z' reverse-menu-complete
-bindkey -s '^[[Z' '\t'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
