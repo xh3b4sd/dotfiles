@@ -4,7 +4,7 @@ export LC_CTYPE=en_US.UTF-8
 export ZSH=${HOME}/.oh-my-zsh
 
 # Preferred editor for local sessions.
-export EDITOR='atom'
+export EDITOR='atom -w'
 
 # Vault credentials.
 export VAULT_ADDR=$(cat ~/.giantswarm-vault-addr)
