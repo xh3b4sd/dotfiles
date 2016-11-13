@@ -2,7 +2,15 @@
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
-    defaultProvider: "Fuzzy"
+    minimumWordLength: 2
+    strictMatching: true
+    suppressActivationForEditorClasses: [
+      "vim-mode-plus.normal-mode"
+      "vim-mode-plus.visual-mode"
+      "vim-mode-plus.operator-pending-mode"
+      "vim-mode-plus.insert-mode.replace"
+    ]
+    useCoreMovementCommands: false
   autosave:
     enabled: true
   "color-picker":
