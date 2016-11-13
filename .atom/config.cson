@@ -42,11 +42,13 @@
     fontFamily: "Hack"
   "exception-reporting":
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
-  "find-and-replace": {}
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
   "fuzzy-finder": {}
   "go-config": {}
   gofmt: {}
   "markdown-preview": {}
+  "one-dark-ui": {}
   "package-generator":
     packageSyntax: "coffeescript"
   "package-sync":
