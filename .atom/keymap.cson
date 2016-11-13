@@ -31,76 +31,40 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
-'.platform-darwin':
-  # toggle fuzzy finder
-  'cmd-t': 'fuzzy-finder:toggle-file-finder'
-
+'body':
   # toggle command palette
   'shift-cmd-space': 'command-palette:toggle'
-
+  # toggle dev console like in chrome
+  'alt-cmd-j': 'window:toggle-dev-tools'
+  # reload window like in chrome
+  'cmd-r': 'window:reload'
+  # toggle fuzzy finder
+  'cmd-t': 'fuzzy-finder:toggle-file-finder'
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-plus:toggle-project-finder'
-
-'platform-darwin .command-palette atom-text-editor':
-  # toggle command palette
-  'shift-cmd-space': 'command-palette:toggle'
-
-'.platform-darwin atom-text-editor':
-  'ctrl-shift-h': 'pane:move-item-left'
-  'ctrl-shift-l': 'pane:move-item-right'
 
 'atom-text-editor':
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
   'ctrl-l': 'pane:show-next-item'
-
-  # toggle fuzzy finder
-  'cmd-t': 'fuzzy-finder:toggle-file-finder'
-
   # move panes
   'ctrl-shift-h': 'pane:move-item-left'
   'ctrl-shift-l': 'pane:move-item-right'
-
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-plus:toggle-project-finder'
-
-'body':
-  # move between panes
-  'ctrl-h': 'pane:show-previous-item'
-  'ctrl-l': 'pane:show-next-item'
-
-  # toggle dev console like in chrome
-  'alt-cmd-j': 'window:toggle-dev-tools'
-
-  # reload window like in chrome
-  'cmd-r': 'window:reload'
-
-'body .native-key-bindings':
-  # move between panes
-  'ctrl-h': 'pane:show-previous-item'
-  'ctrl-l': 'pane:show-next-item'
-
-  # move panes
-  'ctrl-shift-h': 'pane:move-item-left'
-  'ctrl-shift-l': 'pane:move-item-right'
-
-'atom-text-editor.vim-mode-plus:not(.insert-mode)':
-  # toggle fuzzy finder
-  'cmd-t': 'fuzzy-finder:toggle-file-finder'
-
-  'ctrl-f': 'vim-fold-one:toggle-current-fold'
-
+  # jump in cursor position history
   'ctrl-o': 'cursor-history:next'
   'ctrl-i': 'cursor-history:prev'
 
-  # format any block in visual mode
-  'g q': 'autoflow:reflow-selection'
-
-'body atom-text-editor.autocomplete-active':
+'atom-text-editor.autocomplete-active':
   # move inside autocomplete suggestions
   'ctrl-k': 'autocomplete-plus:move-up'
   'ctrl-j': 'autocomplete-plus:move-down'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  # format any block in visual mode
+  'g q': 'autoflow:reflow-selection'
