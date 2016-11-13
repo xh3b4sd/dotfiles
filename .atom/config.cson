@@ -65,6 +65,10 @@
     showPath: true
   "save-session":
     dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
+  "spell-check":
+    locales: [
+      "en-GB"
+    ]
   tabs: {}
   "todo-show":
     ignoreThesePaths: [
