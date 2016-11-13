@@ -18,6 +18,7 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    automaticallyUpdate: false
     disabledPackages: [
       "welcome"
       "symbols-view"
