@@ -108,7 +108,7 @@ alias gpl='git pull'
 alias gps='git push'
 
 # 3rd party
-alias vault="docker run --rm -ti --net host --privileged=true -e VAULT_ADDR -e VAULT_TOKEN giantswarm/docker-vault:0.1.0"
+alias vault="docker run --rm -ti --net host --privileged=true -e VAULT_ADDR -e VAULT_TOKEN vault:0.6.2"
 alias etcdctl="docker run --rm quay.io/coreos/etcd:v3.0.12 etcdctl"
 
 # core utils
