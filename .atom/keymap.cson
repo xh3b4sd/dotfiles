@@ -43,25 +43,25 @@
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-plus:toggle-project-finder'
 
-'.platform-darwin atom-text-editor':
-  # format any block in insert and visual mode
-  'g q': 'autoflow:reflow-selection'
-
 'platform-darwin .command-palette atom-text-editor':
   # toggle command palette
   'shift-cmd-space': 'command-palette:toggle'
 
+'.platform-darwin atom-text-editor':
+  'ctrl-shift-h': 'pane:move-item-left'
+  'ctrl-shift-l': 'pane:move-item-right'
+
 'atom-text-editor':
   # move between panes
-  'cmd-left': 'pane:show-previous-item'
-  'cmd-right': 'pane:show-next-item'
+  'ctrl-h': 'pane:show-previous-item'
+  'ctrl-l': 'pane:show-next-item'
 
   # toggle fuzzy finder
   'cmd-t': 'fuzzy-finder:toggle-file-finder'
 
   # move panes
-  'cmd-shift-left': 'pane:move-item-left'
-  'cmd-shift-right': 'pane:move-item-right'
+  'ctrl-shift-h': 'pane:move-item-left'
+  'ctrl-shift-l': 'pane:move-item-right'
 
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
@@ -73,8 +73,8 @@
 
 'body':
   # move between panes
-  'cmd-left': 'pane:show-previous-item'
-  'cmd-right': 'pane:show-next-item'
+  'ctrl-h': 'pane:show-previous-item'
+  'ctrl-l': 'pane:show-next-item'
 
   # toggle dev console like in chrome
   'alt-cmd-j': 'window:toggle-dev-tools'
@@ -88,12 +88,12 @@
 
 'body .native-key-bindings':
   # move between panes
-  'cmd-left': 'pane:show-previous-item'
-  'cmd-right': 'pane:show-next-item'
+  'ctrl-h': 'pane:show-previous-item'
+  'ctrl-l': 'pane:show-next-item'
 
   # move panes
-  'cmd-shift-left': 'pane:move-item-left'
-  'cmd-shift-right': 'pane:move-item-right'
+  'ctrl-shift-h': 'pane:move-item-left'
+  'ctrl-shift-l': 'pane:move-item-right'
 
   # vim-fold-one
   'ctrl-f': 'unset!'
@@ -108,6 +108,9 @@
   'ctrl-o': 'cursor-history:next'
   'ctrl-i': 'cursor-history:prev'
 
+  # format any block in insert and visual mode
+  'g q': 'autoflow:reflow-selection'
+
 'atom-text-editor.vim-mode-plus':
   'ctrl-c': 'unset!'
 
@@ -119,3 +122,8 @@
 
 'atom-text-editor.vim-mode-plus-search':
   'ctrl-c': 'unset!'
+
+'body atom-text-editor.autocomplete-active':
+  # move inside autocomplete suggestions
+  'ctrl-k': 'autocomplete-plus:move-up'
+  'ctrl-j': 'autocomplete-plus:move-down'
