@@ -59,6 +59,11 @@
   # jump in cursor position history
   'ctrl-o': 'cursor-history:next'
   'ctrl-i': 'cursor-history:prev'
+  # move between folds
+  'ctrl-k': 'vim-fold-one:move-up'
+  'ctrl-j': 'vim-fold-one:move-down'
+  'ctrl-f': 'vim-fold-one:toggle-current-fold'
+  'ctrl-c': 'vim-fold-one:toggle-all-folds'
 
 'atom-text-editor.autocomplete-active':
   # move inside autocomplete suggestions
