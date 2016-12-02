@@ -25,13 +25,10 @@ fpath=(
 )
 
 # Add paths to look for executables.
-export PATH=$PATH:${HOME}/projects/giantswarm/fleet/bin
-export PATH=$PATH:${HOME}/projects/giantswarm/releaseit
-export PATH=$PATH:${HOME}/projects/giantswarm/builder
-export PATH=$PATH:${HOME}/projects/giantswarm/certctl
-
-export PATH=$PATH:${HOME}/projects/private/anna/.workspace/bin
-export PATH=$PATH:${HOME}/projects/private/anna/vendor/bin
+export PATH=$PATH:${HOME}/gopath/src/github.com/giantswarm/fleet/bin
+export PATH=$PATH:${HOME}/gopath/src/github.com/giantswarm/releaseit
+export PATH=$PATH:${HOME}/gopath/src/github.com/giantswarm/builder
+export PATH=$PATH:${HOME}/gopath/src/github.com/giantswarm/certctl
 
 export PATH=$PATH:${HOME}/.linuxbrew/bin
 
@@ -131,6 +128,8 @@ add-zsh-hook precmd prompt_cwd_in_tab
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Golang compilation arguments.
+export GOPATH=~/gopath
+export PATH=${PATH}:${GOPATH}/bin
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
 
