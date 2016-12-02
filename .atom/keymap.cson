@@ -44,14 +44,14 @@
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-plus:toggle-project-finder'
-
-'atom-text-editor':
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
   'ctrl-l': 'pane:show-next-item'
   # move panes
   'ctrl-shift-h': 'pane:move-item-left'
   'ctrl-shift-l': 'pane:move-item-right'
+
+'atom-text-editor':
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
