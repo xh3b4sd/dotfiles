@@ -30,6 +30,7 @@
       "color-picker"
       "project-folder"
       "project-plus"
+      "grammar-selector"
     ]
     projectHome: "/Users/zyndiecate/github"
     telemetryConsent: "limited"
@@ -50,6 +51,11 @@
     autocomplete:
       snippetMode: "nameAndType"
       suppressBuiltinAutocompleteProvider: false
+    disabledBundledPackages: [
+      "hyperclick"
+      "go-signature-statusbar"
+      "linter"
+    ]
     format: {}
     panelDisplayMode: "closed"
     test:
