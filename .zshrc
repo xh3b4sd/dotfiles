@@ -105,8 +105,7 @@ alias gpl='git pull'
 alias gps='git push'
 
 # 3rd party
-alias vault="docker run --rm -ti --net host --privileged=true -e VAULT_ADDR -e VAULT_TOKEN vault:0.6.2"
-alias etcdctl="docker run --rm quay.io/coreos/etcd:v3.0.12 etcdctl"
+alias vault='docker run --rm -p 0.0.0.0:8200:8200 -ti --privileged=true -e VAULT_ADDR -e VAULT_TOKEN vault:0.6.0'
 
 # core utils
 alias l='/usr/local/bin/gls --color --group-directories-first -l --human-readable'
