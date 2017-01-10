@@ -1,1 +1,190 @@
-{}
+annad:
+  title: "annad"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/annad"
+  ]
+layer:
+  title: "layer"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/layer"
+  ]
+peer:
+  title: "peer"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/peer"
+  ]
+spec:
+  title: "spec"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/spec"
+  ]
+position:
+  title: "position"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/position"
+  ]
+connection:
+  title: "connection"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/connection"
+  ]
+api:
+  title: "api"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/api"
+  ]
+kubernetesd:
+  title: "kubernetesd"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/kubernetesd"
+  ]
+releaseit:
+  title: "releaseit"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/releaseit"
+  ]
+"cluster-service":
+  title: "cluster-service"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/cluster-service"
+  ]
+context:
+  title: "context"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/context"
+  ]
+clg:
+  title: "clg"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/clg"
+  ]
+microkit:
+  title: "microkit"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/microkit"
+  ]
+id:
+  title: "id"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/id"
+  ]
+kubernetesdclient:
+  title: "kubernetesdclient"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/kubernetesdclient"
+  ]
+random:
+  title: "random"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/random"
+  ]
+storage:
+  title: "storage"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/storage"
+  ]
+logger:
+  title: "logger"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/logger"
+  ]
+xh3b4sd:
+  title: "xh3b4sd"
+  paths: [
+    "/Users/xh3b4sd"
+  ]
+"microkit-example":
+  title: "microkit-example"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/microkit-example"
+  ]
+mergo:
+  title: "mergo"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/mergo"
+  ]
+instrumentor:
+  title: "instrumentor"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/instrumentor"
+  ]
+worker:
+  title: "worker"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/worker"
+  ]
+index:
+  title: "index"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/index"
+  ]
+expectation:
+  title: "expectation"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/expectation"
+  ]
+test:
+  title: "test"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/test"
+  ]
+errgo:
+  title: "errgo"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/errgo"
+  ]
+documentation:
+  title: "documentation"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/documentation"
+  ]
+event:
+  title: "event"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/event"
+  ]
+output:
+  title: "output"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/output"
+  ]
+tracker:
+  title: "tracker"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/tracker"
+  ]
+activator:
+  title: "activator"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/activator"
+  ]
+permutation:
+  title: "permutation"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/permutation"
+  ]
+configuration:
+  title: "configuration"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/configuration"
+  ]
+feature:
+  title: "feature"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/feature"
+  ]
+forwarder:
+  title: "forwarder"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/forwarder"
+  ]
+creator:
+  title: "creator"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/creator"
+  ]
+gopkg:
+  title: "gopkg"
+  paths: [
+    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/gopkg"
+  ]

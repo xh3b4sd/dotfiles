@@ -46,6 +46,14 @@
     scrollToResultOnLiveSearch: true
   "fuzzy-finder": {}
   "go-config": {}
+  "go-plus":
+    autocomplete:
+      snippetMode: "nameAndType"
+      suppressBuiltinAutocompleteProvider: false
+    format: {}
+    panelDisplayMode: "closed"
+    test:
+      runTestsOnSave: false
   gofmt: {}
   "markdown-preview": {}
   "one-dark-ui": {}
@@ -62,6 +70,8 @@
       "~/projects/private/dotfiles/.atom/packages"
     ]
   "project-plus":
+    autoDiscover: false
+    notifications: false
     showPath: true
   "save-session":
     dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
@@ -71,6 +81,7 @@
     ]
   tabs: {}
   "todo-show":
+    findUsingRegex: "/ \\b(${TODOS})[:;.,]?\\d*($|\\s.*$|\\(.*$)/g"
     ignoreThesePaths: [
       "**/node_modules/"
       "**/vendor/"
@@ -80,6 +91,7 @@
       "**/.atom/"
       "**/dotfiles/"
       "**/.vim/"
+      "**/.gitignore"
     ]
   "tree-view":
     alwaysOpenExisting: true
