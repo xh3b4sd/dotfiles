@@ -7,11 +7,20 @@ export ZSH=${HOME}/.oh-my-zsh
 export EDITOR='atom -w'
 
 # Vault credentials.
-export VAULT_ADDR=$(cat ~/.giantswarm-vault-addr)
-export VAULT_TOKEN=$(cat ~/.giantswarm-vault-token)
+export VAULT_ADDR=$(cat ~/.credential/giantswarm-vault-address)
+export VAULT_TOKEN=$(cat ~/.credential/giantswarm-vault-token)
 
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
+
+# Do not edit git merge messages in editors.
+export=GIT_MERGE_AUTOEDIT=no
+
+# Builder auto release foo
+export BUILDER_GITHUB_TOKEN=$(cat ~/.credential/github-builder-token)
+
+# opsctl GPG password
+export OPSCTL_GPG_PASSWORD=$(cat ~/.credential/opsctl-gpg-password)
 
 
 
