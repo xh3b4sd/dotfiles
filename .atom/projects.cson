@@ -1,92 +1,7 @@
-annad:
-  title: "annad"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/annad"
-  ]
-layer:
-  title: "layer"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/layer"
-  ]
-peer:
-  title: "peer"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/peer"
-  ]
-spec:
-  title: "spec"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/spec"
-  ]
-position:
-  title: "position"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/position"
-  ]
-connection:
-  title: "connection"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/connection"
-  ]
-api:
-  title: "api"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/api"
-  ]
-kubernetesd:
-  title: "kubernetesd"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/kubernetesd"
-  ]
-releaseit:
-  title: "releaseit"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/releaseit"
-  ]
-"cluster-service":
-  title: "cluster-service"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/cluster-service"
-  ]
-context:
-  title: "context"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/context"
-  ]
-clg:
-  title: "clg"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/clg"
-  ]
-microkit:
-  title: "microkit"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/microkit"
-  ]
-id:
-  title: "id"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/id"
-  ]
 kubernetesdclient:
   title: "kubernetesdclient"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/kubernetesdclient"
-  ]
-random:
-  title: "random"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/random"
-  ]
-storage:
-  title: "storage"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/storage"
-  ]
-logger:
-  title: "logger"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/logger"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesdclient"
   ]
 xh3b4sd:
   title: "xh3b4sd"
@@ -96,95 +11,180 @@ xh3b4sd:
 "microkit-example":
   title: "microkit-example"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/microkit-example"
-  ]
-mergo:
-  title: "mergo"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/mergo"
-  ]
-instrumentor:
-  title: "instrumentor"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/instrumentor"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/microkit-example"
   ]
 worker:
   title: "worker"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/worker"
-  ]
-index:
-  title: "index"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/index"
-  ]
-expectation:
-  title: "expectation"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/expectation"
-  ]
-test:
-  title: "test"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/test"
+    "/Users/xh3b4sd/go/src/github.com/the-anna-project/worker"
   ]
 errgo:
   title: "errgo"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/giantswarm/errgo"
-  ]
-documentation:
-  title: "documentation"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/documentation"
-  ]
-event:
-  title: "event"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/event"
-  ]
-output:
-  title: "output"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/output"
-  ]
-tracker:
-  title: "tracker"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/tracker"
-  ]
-activator:
-  title: "activator"
-  paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/activator"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/errgo"
   ]
 permutation:
   title: "permutation"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/permutation"
+    "/Users/xh3b4sd/go/src/github.com/the-anna-project/permutation"
   ]
-configuration:
-  title: "configuration"
+clusterclient:
+  title: "clusterclient"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/configuration"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/clusterclient"
   ]
-feature:
-  title: "feature"
+swarmctl:
+  title: "swarmctl"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/feature"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/swarmctl"
   ]
-forwarder:
-  title: "forwarder"
+gsctl:
+  title: "gsctl"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/forwarder"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl"
   ]
-creator:
-  title: "creator"
+"api-spec":
+  title: "api-spec"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/creator"
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/api-spec"
   ]
-gopkg:
-  title: "gopkg"
+"k8s-vm":
+  title: "k8s-vm"
   paths: [
-    "/Users/xh3b4sd/gopath/src/github.com/the-anna-project/gopkg"
+    "/Users/xh3b4sd/projects/giantswarm/k8s-vm"
+  ]
+"k8s-bridge-ip-configmap":
+  title: "k8s-bridge-ip-configmap"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/k8s-bridge-ip-configmap"
+  ]
+"k8s-network-bridge":
+  title: "k8s-network-bridge"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/k8s-network-bridge"
+  ]
+"k8s-network-config":
+  title: "k8s-network-config"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/k8s-network-config"
+  ]
+"k8s-network-openssl":
+  title: "k8s-network-openssl"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/k8s-network-openssl"
+  ]
+testbot:
+  title: "testbot"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/testbot"
+  ]
+"api-test-script":
+  title: "api-test-script"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/api-test-script"
+  ]
+documents:
+  title: "documents"
+  paths: [
+    "/Users/xh3b4sd/Documents"
+  ]
+"k8s-watch-master-vm":
+  title: "k8s-watch-master-vm"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/k8s-watch-master-vm"
+  ]
+utils:
+  title: "utils"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/utils"
+  ]
+"k8s-network-iptables":
+  title: "k8s-network-iptables"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/k8s-network-iptables"
+  ]
+"management-container":
+  title: "management-container"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/management-container"
+  ]
+kubernetesd:
+  title: "kubernetesd"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesd"
+  ]
+"k8s-endpoint-updater":
+  title: "k8s-endpoint-updater"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/k8s-endpoint-updater"
+  ]
+opsctl:
+  title: "opsctl"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/opsctl"
+  ]
+microkit:
+  title: "microkit"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/microkit"
+  ]
+test:
+  title: "test"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/test"
+  ]
+"cluster-service":
+  title: "cluster-service"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/cluster-service"
+  ]
+"vodafone-configuration":
+  title: "vodafone-configuration"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/vodafone-configuration"
+  ]
+api:
+  title: "api"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/api"
+  ]
+wafer:
+  title: "wafer"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/xh3b4sd/wafer"
+  ]
+logstash:
+  title: "logstash"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/logstash"
+  ]
+kvmtpr:
+  title: "kvmtpr"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/kvmtpr"
+  ]
+"kvm-operator":
+  title: "kvm-operator"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/kvm-operator"
+  ]
+"aws-operator":
+  title: "aws-operator"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/aws-operator"
+  ]
+"cert-operator":
+  title: "cert-operator"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-operator"
+  ]
+clustertpr:
+  title: "clustertpr"
+  paths: [
+    "/Users/xh3b4sd/go/src/github.com/giantswarm/clustertpr"
+  ]
+"management-ansible":
+  title: "management-ansible"
+  paths: [
+    "/Users/xh3b4sd/projects/giantswarm/management-ansible"
   ]
