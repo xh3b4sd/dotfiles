@@ -2,6 +2,7 @@ packages: [
   "atom-sort-projects"
   "color-picker"
   "cursor-history"
+  "format-shell"
   "gaia-dark-syntax"
   "go-debug"
   "go-plus"

@@ -31,8 +31,8 @@
       "project-folder"
       "project-plus"
       "grammar-selector"
+      "format-shell"
     ]
-    projectHome: "/Users/zyndiecate/github"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
