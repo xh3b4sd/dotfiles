@@ -116,6 +116,8 @@ alias gps='git push'
 
 # 3rd party
 alias vault='docker run --rm -p 0.0.0.0:8200:8200 -ti --privileged=true -e VAULT_ADDR -e VAULT_TOKEN vault:0.6.0'
+alias awsgsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api-aws.giantswarm.io'
+alias lw1gsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api-g8s.giantswarm.io'
 
 # core utils
 alias l='/usr/local/bin/gls --color --group-directories-first -l --human-readable'
