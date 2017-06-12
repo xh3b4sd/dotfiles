@@ -22,6 +22,7 @@
     disabledPackages: [
       "welcome"
       "symbols-view"
+      "project-plus"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -32,6 +33,8 @@
       "project-plus"
       "grammar-selector"
       "format-shell"
+      "project-manager"
+      "command-palette"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -51,12 +54,16 @@
     autocomplete:
       snippetMode: "nameAndType"
       suppressBuiltinAutocompleteProvider: false
+      unimportedPackages: false
     disabledBundledPackages: [
       "hyperclick"
       "go-signature-statusbar"
       "linter"
     ]
     format: {}
+    panel:
+      displayMode: "closed"
+      focusOnFailure: false
     panelDisplayMode: "closed"
     test:
       runTestsOnSave: false
@@ -75,6 +82,11 @@
     projectRootDirectories: [
       "~/projects/private/dotfiles/.atom/packages"
     ]
+  "project-manager":
+    alwaysOpenInSameWindow: true
+    prettifyTitle: false
+    showPath: false
+    sortBy: "title"
   "project-plus":
     autoDiscover: false
     notifications: false
@@ -101,6 +113,8 @@
     ]
   "tree-view":
     alwaysOpenExisting: true
+  "vim-mode-plus":
+    useClipboardAsDefaultRegister: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
 ".gfm.source":

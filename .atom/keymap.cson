@@ -43,7 +43,7 @@
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
-  'cmd-p': 'project-plus:toggle-project-finder'
+  'cmd-p': 'project-manager:list-projects'
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
   'ctrl-l': 'pane:show-next-item'
@@ -59,7 +59,7 @@
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
-  'cmd-p': 'project-plus:toggle-project-finder'
+  'cmd-p': 'project-manager:list-projects'
   # jump in cursor position history
   'ctrl-o': 'cursor-history:next'
   'ctrl-i': 'cursor-history:prev'
