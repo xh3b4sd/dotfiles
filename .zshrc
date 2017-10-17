@@ -6,20 +6,14 @@ export ZSH=${HOME}/.oh-my-zsh
 # Preferred editor for local sessions.
 export EDITOR='atom -w'
 
-# Vault credentials.
-export VAULT_ADDR=$(cat ~/.credential/giantswarm-vault-address)
-export VAULT_TOKEN=$(cat ~/.credential/giantswarm-vault-token)
-
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
 
 # Do not edit git merge messages in editors.
 export=GIT_MERGE_AUTOEDIT=no
 
-# Builder auto release foo
-export BUILDER_GITHUB_TOKEN=$(cat ~/.credential/github-builder-token)
-
-# opsctl GPG password
+# opsctl
+export OPSCTL_GITHUB_TOKEN=$(cat ~/.credential/opsctl-github-token)
 export OPSCTL_GPG_PASSWORD=$(cat ~/.credential/opsctl-gpg-password)
 
 
@@ -34,13 +28,14 @@ fpath=(
 )
 
 # Add paths to look for executables.
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/fleet/bin
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/releaseit
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/builder
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/certctl
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl/build/bin
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/releaseit
 
 export PATH=$PATH:${HOME}/.linuxbrew/bin
+export PATH=$PATH:/usr/local/opt/curl/bin
 
 
 
@@ -65,11 +60,15 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode history-substring-search kubectl)
+plugins=(git vi-mode history-substring-search kubectl zsh-syntax-highlighting)
 
 
 
 source $ZSH/oh-my-zsh.sh
+
+# Disable all highltighters of the zsh-syntax-highlighting plugin. The plugin is
+# required due to some bug in history-substring-search.
+ZSH_HIGHLIGHT_HIGHLIGHTERS=()
 
 # Always receive unique search results.
 setopt HIST_IGNORE_ALL_DUPS
@@ -115,9 +114,10 @@ alias gpl='git pull'
 alias gps='git push'
 
 # 3rd party
-alias vault='docker run --rm -p 0.0.0.0:8200:8200 -ti --privileged=true -e VAULT_ADDR -e VAULT_TOKEN vault:0.6.0'
-alias awsgsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api-aws.giantswarm.io'
-alias lw1gsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api-g8s.giantswarm.io'
+alias archongsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api.g8s.archon.ore.aws.k8s.3stripes.net'
+alias centaurgsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api.g8s.kc.cg.internal'
+alias gaussgsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api.g8s.gauss.eu-central-1.aws.gigantic.io'
+alias lycangsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api-g8s.giantswarm.io'
 
 # core utils
 alias l='/usr/local/bin/gls --color --group-directories-first -l --human-readable'

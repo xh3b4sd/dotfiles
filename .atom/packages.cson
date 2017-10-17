@@ -11,7 +11,6 @@ packages: [
   "no-caffeine-syntax"
   "package-sync"
   "project-manager"
-  "project-plus"
   "todo-show"
   "vim-fold-one"
   "vim-mode-plus"

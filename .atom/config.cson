@@ -22,7 +22,6 @@
     disabledPackages: [
       "welcome"
       "symbols-view"
-      "project-plus"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -35,6 +34,8 @@
       "format-shell"
       "project-manager"
       "command-palette"
+      "markdown-preview"
+      "go-plus"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -61,14 +62,22 @@
       "linter"
     ]
     format: {}
+    guru:
+      highlightIdentifiers: false
+    navigator:
+      mode: "guru"
     panel:
       displayMode: "closed"
       focusOnFailure: false
     panelDisplayMode: "closed"
     test:
       runTestsOnSave: false
+      runTestsWithCoverage: false
+      runTestsWithShortFlag: false
   gofmt: {}
-  "markdown-preview": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
   "one-dark-ui": {}
   "package-generator":
     packageSyntax: "coffeescript"
@@ -114,6 +123,7 @@
   "tree-view":
     alwaysOpenExisting: true
   "vim-mode-plus":
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     useClipboardAsDefaultRegister: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
