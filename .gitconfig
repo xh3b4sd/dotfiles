@@ -10,4 +10,4 @@
 [push]
   default = matching
 [credential]
-	helper = osxkeychain
+	helper = store

@@ -45,6 +45,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Hack"
+    maxScreenLineLength: 1000
   "exception-reporting":
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
   "find-and-replace":
@@ -123,7 +124,6 @@
   "tree-view":
     alwaysOpenExisting: true
   "vim-mode-plus":
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     useClipboardAsDefaultRegister: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false

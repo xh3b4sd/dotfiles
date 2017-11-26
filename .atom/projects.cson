@@ -12,6 +12,18 @@
     ]
   }
   {
+    title: "apiextensions"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/apiextensions"
+    ]
+  }
+  {
+    title: "api-spec"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/api-spec"
+    ]
+  }
+  {
     title: "architect"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/architect"
@@ -99,6 +111,12 @@
     title: "draughtsman-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman-operator"
+    ]
+  }
+  {
+    title: "endpoint-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/endpoint-operator"
     ]
   }
   {
@@ -306,6 +324,12 @@
     ]
   }
   {
+    title: "prometheus-config-controller"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/prometheus-config-controller"
+    ]
+  }
+  {
     title: "rangepool"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/rangepool"
@@ -375,6 +399,12 @@
     title: "vaulttoken"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaulttoken"
+    ]
+  }
+  {
+    title: "versionbundle"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/versionbundle"
     ]
   }
   {

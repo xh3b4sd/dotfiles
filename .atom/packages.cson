@@ -1,5 +1,4 @@
 packages: [
-  "atom-sort-projects"
   "color-picker"
   "cursor-history"
   "format-shell"
@@ -11,6 +10,7 @@ packages: [
   "no-caffeine-syntax"
   "package-sync"
   "project-manager"
+  "teletype"
   "todo-show"
   "vim-fold-one"
   "vim-mode-plus"
