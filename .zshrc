@@ -13,8 +13,11 @@ export HOMEBREW_NO_GITHUB_API=true
 export=GIT_MERGE_AUTOEDIT=no
 
 # opsctl
+export OPSCTL_AWS_ACCESS_KEY_ID=$(cat ~/.credential/opsctl-aws-access-key-id)
+export OPSCTL_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/opsctl-aws-secret-access-key)
 export OPSCTL_GITHUB_TOKEN=$(cat ~/.credential/opsctl-github-token)
 export OPSCTL_GPG_PASSWORD=$(cat ~/.credential/opsctl-gpg-password)
+export OPSCTL_OPSGENIE_TOKEN=$(cat ~/.credential/opsctl-opsgenie-token)
 
 
 
@@ -28,13 +31,14 @@ fpath=(
 )
 
 # Add paths to look for executables.
+export PATH=$PATH:${HOME}/go/bin
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/certctl
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/e2e-harness
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/releaseit
 
-export PATH=$PATH:${HOME}/.linuxbrew/bin
 export PATH=$PATH:/usr/local/opt/curl/bin
 
 
@@ -60,7 +64,7 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode history-substring-search kubectl zsh-syntax-highlighting)
+plugins=(git vi-mode history-substring-search kubectl zsh-syntax-highlighting gsctl opsctl)
 
 
 

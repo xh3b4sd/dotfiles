@@ -1,4 +1,10 @@
 "*":
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
+    use:
+      "atom-ide-code-highlight": false
+      "atom-ide-diagnostics": false
+      "atom-ide-diagnostics-ui": false
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
@@ -22,6 +28,7 @@
     disabledPackages: [
       "welcome"
       "symbols-view"
+      "atom-ide-ui"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -61,6 +68,7 @@
       "hyperclick"
       "go-signature-statusbar"
       "linter"
+      "atom-ide-ui"
     ]
     format: {}
     guru:
@@ -121,6 +129,7 @@
       "**/.vim/"
       "**/.gitignore"
     ]
+    sortBy: "Path"
   "tree-view":
     alwaysOpenExisting: true
   "vim-mode-plus":

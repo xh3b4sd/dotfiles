@@ -11,3 +11,5 @@
   default = matching
 [credential]
 	helper = store
+[core]
+	mergeoptions = --no-edit

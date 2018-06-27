@@ -6,6 +6,12 @@
     ]
   }
   {
+    title: "content"
+    paths: [
+      "/Users/xh3b4sd/projects/xh3b4sd/content"
+    ]
+  }
+  {
     title: "api"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/api"
@@ -24,15 +30,15 @@
     ]
   }
   {
-    title: "architect"
+    title: "apprclient"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/architect"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/apprclient"
     ]
   }
   {
-    title: "awstpr"
+    title: "architect"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/awstpr"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/architect"
     ]
   }
   {
@@ -42,15 +48,27 @@
     ]
   }
   {
+    title: "azure-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/azure-operator"
+    ]
+  }
+  {
     title: "certctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/certctl"
     ]
   }
   {
-    title: "certificatetpr"
+    title: "certs"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/certificatetpr"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/certs"
+    ]
+  }
+  {
+    title: "cert-exporter"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-exporter"
     ]
   }
   {
@@ -60,15 +78,27 @@
     ]
   }
   {
+    title: "cert-resource-lab"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-resource-lab"
+    ]
+  }
+  {
+    title: "chart-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/chart-operator"
+    ]
+  }
+  {
     title: "clusterclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/clusterclient"
     ]
   }
   {
-    title: "clustertpr"
+    title: "cluster-operator"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/clustertpr"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/cluster-operator"
     ]
   }
   {
@@ -84,6 +114,12 @@
     ]
   }
   {
+    title: "crdstorage"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/crdstorage"
+    ]
+  }
+  {
     title: "desmotes"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/desmotes"
@@ -93,12 +129,6 @@
     title: "draughtsman"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman"
-    ]
-  }
-  {
-    title: "draughtsmantpr"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsmantpr"
     ]
   }
   {
@@ -114,9 +144,39 @@
     ]
   }
   {
+    title: "e2e-app"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2e-app"
+    ]
+  }
+  {
+    title: "e2e-harness"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2e-harness"
+    ]
+  }
+  {
+    title: "e2etests"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2etests"
+    ]
+  }
+  {
     title: "endpoint-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/endpoint-operator"
+    ]
+  }
+  {
+    title: "errgo"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/errgo"
+    ]
+  }
+  {
+    title: "errors"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/errors"
     ]
   }
   {
@@ -126,15 +186,21 @@
     ]
   }
   {
-    title: "flanneltpr"
+    title: "extservice-operator"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/flanneltpr"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/extservice-operator"
     ]
   }
   {
     title: "flannel-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/flannel-operator"
+    ]
+  }
+  {
+    title: "fmt"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/fmt"
     ]
   }
   {
@@ -156,6 +222,12 @@
     ]
   }
   {
+    title: "gsclientgen"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/gsclientgen"
+    ]
+  }
+  {
     title: "giantswarm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/giantswarm"
@@ -174,15 +246,15 @@
     ]
   }
   {
-    title: "installations"
+    title: "helmclient"
     paths: [
-      "/Users/xh3b4sd/projects/giantswarm/installations"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/helmclient"
     ]
   }
   {
-    title: "ingresstpr"
+    title: "installations"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/ingresstpr"
+      "/Users/xh3b4sd/projects/giantswarm/installations"
     ]
   }
   {
@@ -234,6 +306,12 @@
     ]
   }
   {
+    title: "k8sportforward"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/k8sportforward"
+    ]
+  }
+  {
     title: "kubernetesd"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesd"
@@ -258,9 +336,15 @@
     ]
   }
   {
-    title: "kvmtpr"
+    title: "mayu"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/kvmtpr"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/mayu"
+    ]
+  }
+  {
+    title: "microclient"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/microclient"
     ]
   }
   {
@@ -300,6 +384,12 @@
     ]
   }
   {
+    title: "node-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/node-operator"
+    ]
+  }
+  {
     title: "operatorkit"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/operatorkit"
@@ -330,9 +420,33 @@
     ]
   }
   {
+    title: "pv-cleaner-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/pv-cleaner-operator"
+    ]
+  }
+  {
+    title: "randomkeys"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/randomkeys"
+    ]
+  }
+  {
+    title: "randomkeytpr"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/randomkeytpr"
+    ]
+  }
+  {
     title: "rangepool"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/rangepool"
+    ]
+  }
+  {
+    title: "retagger"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/retagger"
     ]
   }
   {
@@ -348,9 +462,9 @@
     ]
   }
   {
-    title: "testbot"
+    title: "test-operator"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/testbot"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/test-operator"
     ]
   }
   {
@@ -384,6 +498,12 @@
     ]
   }
   {
+    title: "vaultlab"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultlab"
+    ]
+  }
+  {
     title: "vaultpki"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultpki"
@@ -405,6 +525,12 @@
     title: "versionbundle"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/versionbundle"
+    ]
+  }
+  {
+    title: "the-anna-project"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/the-anna-project/the-anna-project"
     ]
   }
   {
