@@ -12,6 +12,15 @@ export HOMEBREW_NO_GITHUB_API=true
 # Do not edit git merge messages in editors.
 export=GIT_MERGE_AUTOEDIT=no
 
+
+
+# az
+export AZURE_CLIENT_ID=$(cat ~/.credential/azure-client-id)
+export AZURE_CLIENT_SECRET=$(cat ~/.credential/azure-client-secret)
+export AZURE_LOCATION=$(cat ~/.credential/azure-location)
+export AZURE_SUBSCRIPTION_ID=$(cat ~/.credential/azure-subscription-id)
+export AZURE_TENANT_ID=$(cat ~/.credential/azure-tenant-id)
+
 # opsctl
 export OPSCTL_AWS_ACCESS_KEY_ID=$(cat ~/.credential/opsctl-aws-access-key-id)
 export OPSCTL_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/opsctl-aws-secret-access-key)
@@ -114,14 +123,8 @@ alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout maste
 alias gs='git status'
 alias gcm='git commit'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit
-alias gpl='git pull'
+alias gpl='git pull --no-edit'
 alias gps='git push'
-
-# 3rd party
-alias archongsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api.g8s.archon.ore.aws.k8s.3stripes.net'
-alias centaurgsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api.g8s.kc.cg.internal'
-alias gaussgsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api.g8s.gauss.eu-central-1.aws.gigantic.io'
-alias lycangsctl='/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl/gsctl --api-endpoint=https://api-g8s.giantswarm.io'
 
 # core utils
 alias l='/usr/local/bin/gls --color --group-directories-first -l --human-readable'

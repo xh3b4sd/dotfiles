@@ -1,6 +1,7 @@
 packages: [
   "atom-ide-ui"
   "color-picker"
+  "counter"
   "cursor-history"
   "format-shell"
   "gaia-dark-syntax"

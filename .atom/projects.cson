@@ -1,534 +1,570 @@
 [
   {
-    title: "anubis-vpn-container"
+    title: "giantswarm/anubis-vpn-container"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/anubis-vpn-container"
     ]
   }
   {
-    title: "content"
+    title: "giantswarm/ci-cleaner"
     paths: [
-      "/Users/xh3b4sd/projects/xh3b4sd/content"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/ci-cleaner"
     ]
   }
   {
-    title: "api"
+    title: "giantswarm/api"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/api"
     ]
   }
   {
-    title: "apiextensions"
+    title: "giantswarm/apiextensions"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/apiextensions"
     ]
   }
   {
-    title: "api-spec"
+    title: "giantswarm/api-spec"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/api-spec"
     ]
   }
   {
-    title: "apprclient"
+    title: "giantswarm/apprclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/apprclient"
     ]
   }
   {
-    title: "architect"
+    title: "giantswarm/architect"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/architect"
     ]
   }
   {
-    title: "aws-operator"
+    title: "giantswarm/aws-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/aws-operator"
     ]
   }
   {
-    title: "azure-operator"
+    title: "giantswarm/azure-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/azure-operator"
     ]
   }
   {
-    title: "certctl"
+    title: "giantswarm/backoff"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/backoff"
+    ]
+  }
+  {
+    title: "giantswarm/certctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/certctl"
     ]
   }
   {
-    title: "certs"
+    title: "giantswarm/certs"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/certs"
     ]
   }
   {
-    title: "cert-exporter"
+    title: "giantswarm/cert-exporter"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-exporter"
     ]
   }
   {
-    title: "cert-operator"
+    title: "giantswarm/cert-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-operator"
     ]
   }
   {
-    title: "cert-resource-lab"
+    title: "giantswarm/cert-resource-lab"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-resource-lab"
     ]
   }
   {
-    title: "chart-operator"
+    title: "giantswarm/chart-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/chart-operator"
     ]
   }
   {
-    title: "clusterclient"
+    title: "giantswarm/clusterclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/clusterclient"
     ]
   }
   {
-    title: "cluster-operator"
+    title: "giantswarm/cluster-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/cluster-operator"
     ]
   }
   {
-    title: "cluster-service"
+    title: "giantswarm/cluster-service"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/cluster-service"
     ]
   }
   {
-    title: "companyd"
+    title: "giantswarm/companyd"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/companyd"
     ]
   }
   {
-    title: "crdstorage"
+    title: "giantswarm/crdstorage"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/crdstorage"
     ]
   }
   {
-    title: "desmotes"
+    title: "giantswarm/credentiald"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/credentiald"
+    ]
+  }
+  {
+    title: "giantswarm/desmotes"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/desmotes"
     ]
   }
   {
-    title: "draughtsman"
+    title: "giantswarm/draughtsman"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman"
     ]
   }
   {
-    title: "draughtsman-eventer"
+    title: "giantswarm/draughtsman-eventer"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman-eventer"
     ]
   }
   {
-    title: "draughtsman-operator"
+    title: "giantswarm/draughtsman-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman-operator"
     ]
   }
   {
-    title: "e2e-app"
+    title: "giantswarm/e2e-app"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/e2e-app"
     ]
   }
   {
-    title: "e2e-harness"
+    title: "giantswarm/e2e-harness"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/e2e-harness"
     ]
   }
   {
-    title: "e2etests"
+    title: "giantswarm/e2eclients"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2eclients"
+    ]
+  }
+  {
+    title: "giantswarm/e2etemplates"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2etemplates"
+    ]
+  }
+  {
+    title: "giantswarm/e2etests"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/e2etests"
     ]
   }
   {
-    title: "endpoint-operator"
+    title: "giantswarm/endpoint-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/endpoint-operator"
     ]
   }
   {
-    title: "errgo"
+    title: "giantswarm/errgo"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/errgo"
     ]
   }
   {
-    title: "errors"
+    title: "giantswarm/errors"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/errors"
     ]
   }
   {
-    title: "etcdstorage"
+    title: "giantswarm/etcdstorage"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/etcdstorage"
     ]
   }
   {
-    title: "extservice-operator"
+    title: "giantswarm/extservice-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/extservice-operator"
     ]
   }
   {
-    title: "flannel-operator"
+    title: "giantswarm/flannel-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/flannel-operator"
     ]
   }
   {
-    title: "fmt"
+    title: "giantswarm/fmt"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/fmt"
     ]
   }
   {
-    title: "g8s-etcd-operator"
+    title: "giantswarm/g8s-etcd-operator"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/g8s-etcd-operator"
     ]
   }
   {
-    title: "g8s-grafana"
+    title: "giantswarm/g8s-grafana"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/g8s-grafana"
     ]
   }
   {
-    title: "g8s-prometheus"
+    title: "giantswarm/g8s-prometheus"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/g8s-prometheus"
     ]
   }
   {
-    title: "gsclientgen"
+    title: "giantswarm/giantnetes-terraform"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/giantnetes-terraform"
+    ]
+  }
+  {
+    title: "giantswarm/gsclientgen"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/gsclientgen"
     ]
   }
   {
-    title: "giantswarm"
+    title: "giantswarm/giantswarm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/giantswarm"
     ]
   }
   {
-    title: "gsctl"
+    title: "giantswarm/gsctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl"
     ]
   }
   {
-    title: "happa"
+    title: "giantswarm/guestcluster"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/guestcluster"
+    ]
+  }
+  {
+    title: "giantswarm/happa"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/happa"
     ]
   }
   {
-    title: "helmclient"
+    title: "giantswarm/helmclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/helmclient"
     ]
   }
   {
-    title: "installations"
+    title: "giantswarm/installations"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/installations"
     ]
   }
   {
-    title: "ingress-operator"
+    title: "giantswarm/ingress-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/ingress-operator"
     ]
   }
   {
-    title: "ipam"
+    title: "giantswarm/ipam"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/ipam"
     ]
   }
   {
-    title: "k8s-endpoint-updater"
+    title: "giantswarm/k8s-endpoint-updater"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/k8s-endpoint-updater"
     ]
   }
   {
-    title: "k8s-kvm"
+    title: "giantswarm/k8s-kvm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/k8s-kvm"
     ]
   }
   {
-    title: "k8s-network-bridge"
+    title: "giantswarm/k8s-migrator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/k8s-migrator"
+    ]
+  }
+  {
+    title: "giantswarm/k8s-network-bridge"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/k8s-network-bridge"
     ]
   }
   {
-    title: "k8s-network-config"
+    title: "giantswarm/k8s-network-config"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/k8s-network-config"
     ]
   }
   {
-    title: "k8scloudconfig"
+    title: "giantswarm/k8scloudconfig"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/k8scloudconfig"
     ]
   }
   {
-    title: "k8shealthz"
+    title: "giantswarm/k8shealthz"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/k8shealthz"
     ]
   }
   {
-    title: "k8sportforward"
+    title: "giantswarm/k8sportforward"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/k8sportforward"
     ]
   }
   {
-    title: "kubernetesd"
+    title: "giantswarm/kubernetesd"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesd"
     ]
   }
   {
-    title: "kubernetesdclient"
+    title: "giantswarm/kubernetesdclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesdclient"
     ]
   }
   {
-    title: "kvm-operator"
+    title: "giantswarm/kvm-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kvm-operator"
     ]
   }
   {
-    title: "kvmcrd"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/kvmcrd"
-    ]
-  }
-  {
-    title: "mayu"
+    title: "giantswarm/mayu"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/mayu"
     ]
   }
   {
-    title: "microclient"
+    title: "giantswarm/microclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/microclient"
     ]
   }
   {
-    title: "microendpoint"
+    title: "giantswarm/microendpoint"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/microendpoint"
     ]
   }
   {
-    title: "microerror"
+    title: "giantswarm/microerror"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/microerror"
     ]
   }
   {
-    title: "microkit"
+    title: "giantswarm/microkit"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/microkit"
     ]
   }
   {
-    title: "micrologger"
+    title: "giantswarm/micrologger"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/micrologger"
     ]
   }
   {
-    title: "microstorage"
+    title: "giantswarm/microstorage"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/microstorage"
     ]
   }
   {
-    title: "microkit-example"
+    title: "giantswarm/microkit-example"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/microkit-example"
     ]
   }
   {
-    title: "node-operator"
+    title: "giantswarm/node-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/node-operator"
     ]
   }
   {
-    title: "operatorkit"
+    title: "giantswarm/operatorkit"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/operatorkit"
     ]
   }
   {
-    title: "opsctl"
+    title: "giantswarm/opsctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/opsctl"
     ]
   }
   {
-    title: "passage"
+    title: "giantswarm/ops-recipes"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/ops-recipes"
+    ]
+  }
+  {
+    title: "giantswarm/passage"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/passage"
     ]
   }
   {
-    title: "pipelines"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/pipelines"
-    ]
-  }
-  {
-    title: "prometheus-config-controller"
+    title: "giantswarm/prometheus-config-controller"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/prometheus-config-controller"
     ]
   }
   {
-    title: "pv-cleaner-operator"
+    title: "giantswarm/pv-cleaner-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/pv-cleaner-operator"
     ]
   }
   {
-    title: "randomkeys"
+    title: "giantswarm/randomkeys"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/randomkeys"
     ]
   }
   {
-    title: "randomkeytpr"
+    title: "giantswarm/randomkeytpr"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/randomkeytpr"
     ]
   }
   {
-    title: "rangepool"
+    title: "giantswarm/rangepool"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/rangepool"
     ]
   }
   {
-    title: "retagger"
+    title: "giantswarm/retagger"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/retagger"
     ]
   }
   {
-    title: "storagehealthz"
+    title: "giantswarm/statusresource"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/statusresource"
+    ]
+  }
+  {
+    title: "giantswarm/storagehealthz"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/storagehealthz"
     ]
   }
   {
-    title: "test"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/test"
-    ]
-  }
-  {
-    title: "test-operator"
+    title: "giantswarm/test-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/test-operator"
     ]
   }
   {
-    title: "tokend"
+    title: "giantswarm/tokend"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/tokend"
     ]
   }
   {
-    title: "userd"
+    title: "giantswarm/userd"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/userd"
     ]
   }
   {
-    title: "valuemodifier"
+    title: "giantswarm/valuemodifier"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/valuemodifier"
     ]
   }
   {
-    title: "vaultcrt"
+    title: "giantswarm/vaultcrt"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultcrt"
     ]
   }
   {
-    title: "vaulthealthz"
+    title: "giantswarm/vaulthealthz"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaulthealthz"
     ]
   }
   {
-    title: "vaultlab"
+    title: "giantswarm/vaultlab"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultlab"
     ]
   }
   {
-    title: "vaultpki"
+    title: "giantswarm/vaultpki"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultpki"
     ]
   }
   {
-    title: "vaultrole"
+    title: "giantswarm/vaultrole"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultrole"
     ]
   }
   {
-    title: "vaulttoken"
+    title: "giantswarm/vaulttoken"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaulttoken"
     ]
   }
   {
-    title: "versionbundle"
+    title: "giantswarm/versionbundle"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/versionbundle"
     ]
   }
   {
-    title: "the-anna-project"
+    title: "the-anna-project/the-anna-project"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/the-anna-project/the-anna-project"
     ]
@@ -537,6 +573,18 @@
     title: "xh3b4sd"
     paths: [
       "/Users/xh3b4sd"
+    ]
+  }
+  {
+    title: "xh3b4sd/content"
+    paths: [
+      "/Users/xh3b4sd/projects/xh3b4sd/content"
+    ]
+  }
+  {
+    title: "xh3b4sd/gotest"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/xh3b4sd/gotest"
     ]
   }
 ]
