@@ -14,10 +14,21 @@ git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
 ~/projects/xh3b4sd/dotfiles/install.sh
 ```
 
+## brew
+
+The following commands install https://brew.sh.
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ## atom
 
 #### install packages
-Package backups currently work with https://atom.io/packages/package-sync.
+
+Package backups currently work with https://atom.io/packages/package-sync, which
+has to be installed as the very first package in order to use it for restoring
+the other atom packages.
 
 - Open the atom editor.
 - Use the shortcut `shift-cmd-space` to open the command palette.
