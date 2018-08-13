@@ -4,7 +4,11 @@ Just a little dotfile collection.
 
 ## install
 
+The following commands install https://github.com/robbyrussell/oh-my-zsh and the
+custom dotfiles of this repo.
+
 ```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 mkdir -p ~/projects/xh3b4sd/dotfiles
 git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
 ~/projects/xh3b4sd/dotfiles/install.sh
