@@ -40,6 +40,15 @@ the other atom packages.
 - Type `package sync` to fuzzy find the command to install packages.
 - Wait until all packages are installed and relaunch atom.
 
+## iterm
+
+Install from https://www.iterm2.com/downloads.html and configure the profile to
+be read from the following path.
+
+```
+/Users/xh3b4sd/projects/xh3b4sd/dotfiles
+```
+
 ## font
 
 Install from https://sourcefoundry.org/hack. Simply double click the font files
