@@ -4,11 +4,9 @@ Just a little dotfile collection.
 
 ## zsh
 
-The following commands install https://github.com/robbyrussell/oh-my-zsh and the
-custom dotfiles of this repo.
+Install from https://github.com/robbyrussell/oh-my-zsh.
 
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 mkdir -p ~/projects/xh3b4sd/dotfiles
 git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
 ~/projects/xh3b4sd/dotfiles/install.sh
@@ -16,11 +14,18 @@ git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
 
 ## brew
 
-The following commands install https://brew.sh.
+Install from https://brew.sh.
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install wget
+brew install coreutils
+brew install mercurial
+brew install kubernetes-cli
 ```
+
+## go
+
+Install from https://golang.org/doc/install.
 
 ## atom
 
@@ -37,8 +42,8 @@ the other atom packages.
 
 ## font
 
-Install the hack font from https://sourcefoundry.org/hack. Simply double click
-the font files to install them once downloaded.
+Install from https://sourcefoundry.org/hack. Simply double click the font files
+to install them once downloaded.
 
 ## TODO
 

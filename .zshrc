@@ -142,16 +142,8 @@ add-zsh-hook precmd prompt_cwd_in_tab
 
 
 
-# gvm
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
 # Golang compilation arguments.
 export GOPATH=~/go
 export PATH=${PATH}:${GOPATH}/bin
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
-
-
-
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
