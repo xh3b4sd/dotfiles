@@ -582,6 +582,12 @@
     ]
   }
   {
+    title: "xh3b4sd/dotfiles"
+    paths: [
+      "/Users/xh3b4sd/projects/xh3b4sd/dotfiles"
+    ]
+  }
+  {
     title: "xh3b4sd/gotest"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/xh3b4sd/gotest"
