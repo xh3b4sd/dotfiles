@@ -2,7 +2,7 @@
 
 Just a little dotfile collection.
 
-## install
+## zsh
 
 The following commands install https://github.com/robbyrussell/oh-my-zsh and the
 custom dotfiles of this repo.
@@ -34,6 +34,11 @@ the other atom packages.
 - Use the shortcut `shift-cmd-space` to open the command palette.
 - Type `package sync` to fuzzy find the command to install packages.
 - Wait until all packages are installed and relaunch atom.
+
+## font
+
+Install the hack font from https://sourcefoundry.org/hack. Simply double click
+the font files to install them once downloaded.
 
 ## TODO
 
