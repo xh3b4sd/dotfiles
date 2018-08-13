@@ -1,11 +1,13 @@
 # dotfiles
+
 Just a little dotfile collection.
 
 ## install
+
 ```bash
-mkdir -p ~/projects/private/dotfiles
-git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/private/dotfiles
-~/projects/private/dotfiles/install.sh
+mkdir -p ~/projects/xh3b4sd/dotfiles
+git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
+~/projects/xh3b4sd/dotfiles/install.sh
 ```
 
 ## atom
@@ -19,4 +21,5 @@ Package backups currently work with https://atom.io/packages/package-sync.
 - Wait until all packages are installed and relaunch atom.
 
 ## TODO
+
 Automatically install https://github.com/bitboxer/de-coding.keylayout on OSX
