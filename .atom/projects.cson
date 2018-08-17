@@ -420,6 +420,12 @@
     ]
   }
   {
+    title: "giantswarm/node-health"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/node-health"
+    ]
+  }
+  {
     title: "giantswarm/node-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/node-operator"

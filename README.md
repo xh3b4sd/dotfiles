@@ -27,6 +27,8 @@ brew install kubernetes-cli
 
 Install from https://golang.org/doc/install.
 
+- Make sure `dlv` is installed. See https://github.com/derekparker/delve/blob/master/Documentation/installation/osx/install.md.
+
 ## atom
 
 #### install packages
