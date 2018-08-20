@@ -17,10 +17,13 @@ git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
 Install from https://brew.sh.
 
 ```
+brew install jq
+brew install yq
 brew install wget
 brew install coreutils
 brew install mercurial
 brew install kubernetes-cli
+brew install kubernetes-helm
 ```
 
 ## go
