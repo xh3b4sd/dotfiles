@@ -420,9 +420,9 @@
     ]
   }
   {
-    title: "giantswarm/node-health"
+    title: "giantswarm/kubernetes-node-health"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/node-health"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetes-node-health"
     ]
   }
   {

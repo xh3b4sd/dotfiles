@@ -26,6 +26,16 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 ```
 
+## helm
+
+In case installing helm above does not provide the right version, go with the
+following.
+
+```
+export DESIRED_VERSION=v2.8.2
+curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
+```
+
 ## go
 
 Install from https://golang.org/doc/install.

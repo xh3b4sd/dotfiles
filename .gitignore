@@ -5,6 +5,7 @@
 .atom/compile-cache
 .atom/dev
 .atom/packages
+.atom/recovery
 .atom/storage
 .atom/.apm
 .atom/.node-gyp
