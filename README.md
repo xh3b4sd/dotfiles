@@ -26,14 +26,29 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 ```
 
+## kubectl
+
+In case installing `kubectl` above does not provide the right version, go with
+the following.
+
+```
+curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.11.0/bin/darwin/amd64/kubectl
+```
+
 ## helm
 
-In case installing helm above does not provide the right version, go with the
+In case installing `helm` above does not provide the right version, go with the
 following.
 
 ```
 export DESIRED_VERSION=v2.8.2
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
+```
+
+## minikube
+
+```
+brew cask reinstall minikube
 ```
 
 ## go
