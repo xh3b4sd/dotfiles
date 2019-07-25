@@ -1,14 +1,44 @@
 [
   {
-    title: "giantswarm/anubis-vpn-container"
+    title: "kubernetes-sigs/cluster-api"
     paths: [
-      "/Users/xh3b4sd/projects/giantswarm/anubis-vpn-container"
+      "/Users/xh3b4sd/go/src/github.com/kubernetes-sigs/cluster-api"
+    ]
+  }
+  {
+    title: "kubernetes-sigs/kubebuilder"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/kubernetes-sigs/kubebuilder"
+    ]
+  }
+  {
+    title: "giantswarm/blog"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/blog"
+    ]
+  }
+  {
+    title: "giantswarm/branch-cleanup-action"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/branch-cleanup-action"
+    ]
+  }
+  {
+    title: "giantswarm/bridge-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/bridge-operator"
     ]
   }
   {
     title: "giantswarm/ci-cleaner"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/ci-cleaner"
+    ]
+  }
+  {
+    title: "giantswarm/clientk8s"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/clientk8s"
     ]
   }
   {
@@ -33,6 +63,12 @@
     title: "giantswarm/apprclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/apprclient"
+    ]
+  }
+  {
+    title: "giantswarm/app-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/app-operator"
     ]
   }
   {
@@ -138,6 +174,12 @@
     ]
   }
   {
+    title: "giantswarm/devctl"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/devctl"
+    ]
+  }
+  {
     title: "giantswarm/draughtsman"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman"
@@ -171,6 +213,18 @@
     title: "giantswarm/e2eclients"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/e2eclients"
+    ]
+  }
+  {
+    title: "giantswarm/e2ectl"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2ectl"
+    ]
+  }
+  {
+    title: "giantswarm/e2esetup"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2esetup"
     ]
   }
   {
@@ -210,9 +264,21 @@
     ]
   }
   {
+    title: "giantswarm/exporterkit"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/exporterkit"
+    ]
+  }
+  {
     title: "giantswarm/extservice-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/extservice-operator"
+    ]
+  }
+  {
+    title: "giantswarm/featureflags"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/featureflags"
     ]
   }
   {
@@ -252,6 +318,12 @@
     ]
   }
   {
+    title: "giantswarm/github-exporter"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/github-exporter"
+    ]
+  }
+  {
     title: "giantswarm/gsclientgen"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/gsclientgen"
@@ -261,6 +333,12 @@
     title: "giantswarm/giantswarm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/giantswarm"
+    ]
+  }
+  {
+    title: "giantswarm/giantswarm-js-client"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/giantswarm-js-client"
     ]
   }
   {
@@ -354,6 +432,12 @@
     ]
   }
   {
+    title: "giantswarm/kubebuilder-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/kubebuilder-operator"
+    ]
+  }
+  {
     title: "giantswarm/kubernetesd"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesd"
@@ -420,6 +504,18 @@
     ]
   }
   {
+    title: "giantswarm/mozjpeg"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/mozjpeg"
+    ]
+  }
+  {
+    title: "giantswarm/net-exporter"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/net-exporter"
+    ]
+  }
+  {
     title: "giantswarm/node-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/node-operator"
@@ -480,9 +576,33 @@
     ]
   }
   {
+    title: "giantswarm/release-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/release-operator"
+    ]
+  }
+  {
     title: "giantswarm/retagger"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/retagger"
+    ]
+  }
+  {
+    title: "giantswarm/ruleengine"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/ruleengine"
+    ]
+  }
+  {
+    title: "giantswarm/sig-operator"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/sig-operator"
+    ]
+  }
+  {
+    title: "giantswarm/slack-exporter"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/slack-exporter"
     ]
   }
   {
@@ -498,9 +618,27 @@
     ]
   }
   {
+    title: "giantswarm/tenantcluster"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/tenantcluster"
+    ]
+  }
+  {
+    title: "giantswarm/tenant-cluster-installations"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/tenant-cluster-installations"
+    ]
+  }
+  {
     title: "giantswarm/test-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/test-operator"
+    ]
+  }
+  {
+    title: "giantswarm/to"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/to"
     ]
   }
   {
@@ -564,9 +702,33 @@
     ]
   }
   {
+    title: "the-anna-project/storage"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/the-anna-project/storage"
+    ]
+  }
+  {
+    title: "the-anna-project/worker"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/the-anna-project/worker"
+    ]
+  }
+  {
     title: "the-anna-project/the-anna-project"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/the-anna-project/the-anna-project"
+    ]
+  }
+  {
+    title: "open-tunnel-infrastructure-project/documentation"
+    paths: [
+      "/Users/xh3b4sd/projects/open-tunnel-infrastructure-project/documentation"
+    ]
+  }
+  {
+    title: "prometheus/prometheus"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/prometheus/prometheus"
     ]
   }
   {
@@ -582,9 +744,27 @@
     ]
   }
   {
+    title: "xh3b4sd/dotfiles"
+    paths: [
+      "/Users/xh3b4sd/projects/xh3b4sd/dotfiles"
+    ]
+  }
+  {
     title: "xh3b4sd/gotest"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/xh3b4sd/gotest"
+    ]
+  }
+  {
+    title: "xh3b4sd/laika"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/xh3b4sd/laika"
+    ]
+  }
+  {
+    title: "xh3b4sd/poker"
+    paths: [
+      "/Users/xh3b4sd/projects/xh3b4sd/poker"
     ]
   }
 ]

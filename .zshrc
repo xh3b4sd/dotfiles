@@ -21,12 +21,19 @@ export AZURE_LOCATION=$(cat ~/.credential/azure-location)
 export AZURE_SUBSCRIPTION_ID=$(cat ~/.credential/azure-subscription-id)
 export AZURE_TENANT_ID=$(cat ~/.credential/azure-tenant-id)
 
+# ci-cleaner
+export CI_CLEANER_AWS_ACCESS_KEY_ID=$(cat ~/.credential/ci-cleaner-aws-access-key-id)
+export CI_CLEANER_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/ci-cleaner-aws-secret-access-key)
+
 # opsctl
 export OPSCTL_AWS_ACCESS_KEY_ID=$(cat ~/.credential/opsctl-aws-access-key-id)
 export OPSCTL_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/opsctl-aws-secret-access-key)
 export OPSCTL_GITHUB_TOKEN=$(cat ~/.credential/opsctl-github-token)
 export OPSCTL_GPG_PASSWORD=$(cat ~/.credential/opsctl-gpg-password)
 export OPSCTL_OPSGENIE_TOKEN=$(cat ~/.credential/opsctl-opsgenie-token)
+
+# github-exporter
+export GITHUB_EXPORTER_GITHUB_TOKEN=$(cat ~/.credential/github-exporter-github-token)
 
 
 
@@ -42,13 +49,13 @@ fpath=(
 # Add paths to look for executables.
 export PATH=$PATH:${HOME}/go/bin
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/certctl
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/e2e-harness
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/releaseit
+
+export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/laika
 
 export PATH=$PATH:/usr/local/opt/curl/bin
+export PATH=$PATH:/usr/local/kubebuilder/bin
 
 
 
@@ -73,7 +80,7 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode history-substring-search kubectl zsh-syntax-highlighting gsctl opsctl)
+plugins=(git vi-mode history-substring-search kubectl kube-ps1 gsctl opsctl)
 
 
 
@@ -102,6 +109,15 @@ setopt clobber
 # Show command indicator (<<<) immediatelly (0.1s) after activating it (hitting
 # ESC).
 export KEYTIMEOUT=1
+
+# kube-ps1 settings.
+KUBE_PS1_COLOR_CONTEXT="%{$fg[red]%}"
+KUBE_PS1_COLOR_SYMBOL="%{$fg[red]%}"
+KUBE_PS1_DIVIDER=
+KUBE_PS1_NS_ENABLE="false"
+KUBE_PS1_PREFIX=""
+KUBE_PS1_SUFFIX=""
+RPS1=$RPS1' $(kube_ps1)'
 
 
 

@@ -1,5 +1,6 @@
 packages: [
   "atom-ide-ui"
+  "busy-signal"
   "color-picker"
   "counter"
   "cursor-history"
@@ -7,6 +8,7 @@ packages: [
   "gaia-dark-syntax"
   "go-debug"
   "go-plus"
+  "intentions"
   "language-hcl"
   "language-protobuf"
   "no-caffeine-syntax"

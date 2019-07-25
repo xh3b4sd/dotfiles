@@ -18,7 +18,7 @@
 #   'ctrl-p': 'core:move-down'
 #
 # You can find more information about keymaps in these guides:
-# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing_keybindings
 # * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
 #
 # If you're having trouble with your keybindings not working, try the
@@ -31,19 +31,7 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
-'body':
-  # toggle command palette
-  'shift-cmd-space': 'command-palette:toggle'
-  # toggle dev console like in chrome
-  'alt-cmd-j': 'window:toggle-dev-tools'
-  # reload window like in chrome
-  'cmd-r': 'window:reload'
-  # toggle fuzzy finder
-  'cmd-t': 'fuzzy-finder:toggle-file-finder'
-  # add and remove project from workspace
-  'ctrl-+': 'project-plus:open'
-  'ctrl--': 'project-plus:remove'
-  'cmd-p': 'project-manager:list-projects'
+'html body atom-workspace.workspace':
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
   'ctrl-l': 'pane:show-next-item'
@@ -54,12 +42,20 @@
    # move panes
   'ctrl-shift-h': 'pane:move-item-left'
   'ctrl-shift-l': 'pane:move-item-right'
-
-'atom-text-editor':
+  # toggle dev console like in chrome
+  'alt-cmd-j': 'window:toggle-dev-tools'
+  # reload window like in chrome
+  'cmd-r': 'window:reload'
+  # toggle fuzzy finder
+  'cmd-t': 'fuzzy-finder:toggle-file-finder'
   # add and remove project from workspace
   'ctrl-+': 'project-plus:open'
   'ctrl--': 'project-plus:remove'
   'cmd-p': 'project-manager:list-projects'
+
+'atom-text-editor':
+  # toggle command palette
+  'shift-cmd-space': 'command-palette:toggle'
   # jump in cursor position history
   'ctrl-o': 'cursor-history:next'
   'ctrl-i': 'cursor-history:prev'
@@ -68,6 +64,8 @@
   'ctrl-j': 'vim-fold-one:move-down'
   'ctrl-f': 'vim-fold-one:toggle-current-fold'
   'ctrl-c': 'vim-fold-one:toggle-all-folds'
+  # jump to golang definition of golang statements under the cursor
+  'cmd-g': 'golang:godef'
 
 'atom-text-editor.autocomplete-active':
   # move inside autocomplete suggestions
@@ -77,3 +75,6 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # format any block in visual mode
   'g q': 'autoflow:reflow-selection'
+
+'.platform-darwin':
+  'cmd-ü': 'tree-view:reveal-active-file'

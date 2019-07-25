@@ -1,10 +1,11 @@
 "*":
   "atom-ide-ui":
-    "atom-ide-diagnostics-ui": {}
+    "atom-ide-code-format":
+      formatOnSave: true
+    "atom-ide-diagnostics-ui":
+      showDirectoryColumn: true
     use:
-      "atom-ide-code-highlight": false
-      "atom-ide-diagnostics": false
-      "atom-ide-diagnostics-ui": false
+      "atom-ide-definitions": "always"
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
@@ -28,7 +29,7 @@
     disabledPackages: [
       "welcome"
       "symbols-view"
-      "atom-ide-ui"
+      "github"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -49,6 +50,7 @@
       "one-dark-ui"
       "no-caffeine-syntax"
     ]
+    useTreeSitterParsers: false
   editor:
     autoIndentOnPaste: false
     fontFamily: "Hack"
@@ -58,12 +60,14 @@
   "find-and-replace":
     scrollToResultOnLiveSearch: true
   "fuzzy-finder": {}
+  github: {}
   "go-config": {}
   "go-plus":
     autocomplete:
       snippetMode: "nameAndType"
       suppressBuiltinAutocompleteProvider: false
       unimportedPackages: false
+    config: {}
     disabledBundledPackages: [
       "hyperclick"
       "go-signature-statusbar"
@@ -73,6 +77,16 @@
     format: {}
     guru:
       highlightIdentifiers: false
+    lint:
+      args: [
+        "--vendor"
+        "--disable-all"
+        "--enable=vet"
+        "--enable=ineffassign"
+        "--tests"
+        "--json"
+        "."
+      ]
     navigator:
       mode: "guru"
     panel:
@@ -84,9 +98,9 @@
       runTestsWithCoverage: false
       runTestsWithShortFlag: false
   gofmt: {}
+  "linter-ui-default": {}
   "markdown-preview":
-    breakOnSingleNewline: true
-    useGitHubStyle: true
+    openPreviewInSplitPane: false
   "one-dark-ui": {}
   "package-generator":
     packageSyntax: "coffeescript"
