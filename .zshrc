@@ -167,10 +167,13 @@ add-zsh-hook precmd prompt_cwd_in_tab
 
 
 
+# Active gvm, a golang version manager.
+[[ -s "/Users/xh3b4sd/.gvm/scripts/gvm" ]] && source "/Users/xh3b4sd/.gvm/scripts/gvm"
+
+
+
 # Golang compilation arguments.
 export GOPATH=~/go
 export PATH=${PATH}:${GOPATH}/bin
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
-
-[[ -s "/Users/xh3b4sd/.gvm/scripts/gvm" ]] && source "/Users/xh3b4sd/.gvm/scripts/gvm"
