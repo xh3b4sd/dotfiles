@@ -31,6 +31,11 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+'html body .results-view':
+  # move between results in project search view
+  'k': 'core:move-up'
+  'j': 'core:move-down'
+
 'html body atom-workspace.workspace':
   # move between panes
   'ctrl-h': 'pane:show-previous-item'
@@ -77,4 +82,4 @@
   'g q': 'autoflow:reflow-selection'
 
 '.platform-darwin':
-  'cmd-ü': 'tree-view:reveal-active-file'
+  'cmd-\\': 'tree-view:reveal-active-file'

@@ -564,15 +564,15 @@
     ]
   }
   {
-    title: "giantswarm/randomkeytpr"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/randomkeytpr"
-    ]
-  }
-  {
     title: "giantswarm/rangepool"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/rangepool"
+    ]
+  }
+  {
+    title: "giantswarm/releases"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/releases"
     ]
   }
   {
@@ -747,6 +747,12 @@
     title: "xh3b4sd/dotfiles"
     paths: [
       "/Users/xh3b4sd/projects/xh3b4sd/dotfiles"
+    ]
+  }
+  {
+    title: "xh3b4sd/github-tweeter"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/xh3b4sd/github-tweeter"
     ]
   }
   {

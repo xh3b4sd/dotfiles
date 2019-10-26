@@ -35,6 +35,15 @@ export OPSCTL_OPSGENIE_TOKEN=$(cat ~/.credential/opsctl-opsgenie-token)
 # github-exporter
 export GITHUB_EXPORTER_GITHUB_TOKEN=$(cat ~/.credential/github-exporter-github-token)
 
+# github-tweeter
+export GITHUB_TWEETER_GITHUB_TOKEN=$(cat ~/.credential/github-tweeter-github-token)
+
+# twitter
+export TWITTER_CONSUMER_KEY=$(cat ~/.credential/twitter-consumer-key)
+export TWITTER_CONSUMER_SECRET=$(cat ~/.credential/twitter-consumer-secret)
+export TWITTER_ACCESS_TOKEN=$(cat ~/.credential/twitter-access-token)
+export TWITTER_ACCESS_SECRET=$(cat ~/.credential/twitter-access-secret)
+
 
 
 # Add paths to look for completions.
@@ -163,3 +172,5 @@ export GOPATH=~/go
 export PATH=${PATH}:${GOPATH}/bin
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
+
+[[ -s "/Users/xh3b4sd/.gvm/scripts/gvm" ]] && source "/Users/xh3b4sd/.gvm/scripts/gvm"
