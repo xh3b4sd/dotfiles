@@ -14,6 +14,7 @@ packages: [
   "no-caffeine-syntax"
   "package-sync"
   "project-manager"
+  "relative-numbers"
   "teletype"
   "todo-show"
   "vim-fold-one"
