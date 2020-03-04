@@ -4,7 +4,7 @@ export LC_CTYPE=en_US.UTF-8
 export ZSH=${HOME}/.oh-my-zsh
 
 # Preferred editor for local sessions.
-export EDITOR='atom -w'
+export EDITOR='vi'
 
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
@@ -121,12 +121,14 @@ setopt clobber
 export KEYTIMEOUT=1
 
 # kube-ps1 settings.
-KUBE_PS1_COLOR_CONTEXT="%{$fg[red]%}"
-KUBE_PS1_COLOR_SYMBOL="%{$fg[red]%}"
-KUBE_PS1_DIVIDER=
+KUBE_PS1_CTX_COLOR="green"
+KUBE_PS1_DIVIDER=""
 KUBE_PS1_NS_ENABLE="false"
 KUBE_PS1_PREFIX=""
+KUBE_PS1_SEPARATOR=""
 KUBE_PS1_SUFFIX=""
+KUBE_PS1_SYMBOL_ENABLE="false"
+KUBE_PS1_SYMBOL_USE_IMG="false"
 RPS1=$RPS1' $(kube_ps1)'
 
 
