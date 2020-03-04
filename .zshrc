@@ -31,6 +31,7 @@ export OPSCTL_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/opsctl-aws-secret-access
 export OPSCTL_GITHUB_TOKEN=$(cat ~/.credential/opsctl-github-token)
 export OPSCTL_GPG_PASSWORD=$(cat ~/.credential/opsctl-gpg-password)
 export OPSCTL_OPSGENIE_TOKEN=$(cat ~/.credential/opsctl-opsgenie-token)
+export OPSCTL_SLACK_TOKEN=$(cat ~/.credential/opsctl-slack-token)
 
 # github-exporter
 export GITHUB_EXPORTER_GITHUB_TOKEN=$(cat ~/.credential/github-exporter-github-token)

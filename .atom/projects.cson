@@ -12,6 +12,18 @@
     ]
   }
   {
+    title: "giantswarm/aws-app-collection"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/aws-app-collection"
+    ]
+  }
+  {
+    title: "giantswarm/azure-app-collection"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/azure-app-collection"
+    ]
+  }
+  {
     title: "giantswarm/blog"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/blog"
@@ -240,12 +252,6 @@
     ]
   }
   {
-    title: "giantswarm/endpoint-operator"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/endpoint-operator"
-    ]
-  }
-  {
     title: "giantswarm/errgo"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/errgo"
@@ -384,12 +390,6 @@
     ]
   }
   {
-    title: "giantswarm/k8s-endpoint-updater"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/k8s-endpoint-updater"
-    ]
-  }
-  {
     title: "giantswarm/k8s-kvm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/k8s-kvm"
@@ -411,6 +411,12 @@
     title: "giantswarm/k8s-network-config"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/k8s-network-config"
+    ]
+  }
+  {
+    title: "giantswarm/k8sclient"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/k8sclient"
     ]
   }
   {
@@ -447,6 +453,12 @@
     title: "giantswarm/kubernetesdclient"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesdclient"
+    ]
+  }
+  {
+    title: "giantswarm/kvm-app-collection"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/kvm-app-collection"
     ]
   }
   {
@@ -588,15 +600,15 @@
     ]
   }
   {
-    title: "giantswarm/ruleengine"
+    title: "giantswarm/route53-manager"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/ruleengine"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/route53-manager"
     ]
   }
   {
-    title: "giantswarm/sig-operator"
+    title: "giantswarm/ruleengine"
     paths: [
-      "/Users/xh3b4sd/projects/giantswarm/sig-operator"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/ruleengine"
     ]
   }
   {
@@ -615,6 +627,12 @@
     title: "giantswarm/storagehealthz"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/storagehealthz"
+    ]
+  }
+  {
+    title: "giantswarm/template-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/template-operator"
     ]
   }
   {
@@ -645,6 +663,12 @@
     title: "giantswarm/tokend"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/tokend"
+    ]
+  }
+  {
+    title: "giantswarm/update-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/update-operator"
     ]
   }
   {

@@ -54,7 +54,8 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Hack"
-    maxScreenLineLength: 1000
+    maxScreenLineLength: 2000
+    scrollPastEnd: true
   "exception-reporting":
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
   "find-and-replace":
