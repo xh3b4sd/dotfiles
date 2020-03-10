@@ -22,6 +22,10 @@ FILE=".oh-my-zsh/themes/xh3b4sd.zsh-theme"
 rm -rf "${HOME}/${FILE}"
 ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
 
+FILE=".vimrc"
+rm -rf "${HOME}/${FILE}"
+ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
+
 FILE=".zshrc"
 rm -rf "${HOME}/${FILE}"
 ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
