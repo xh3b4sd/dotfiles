@@ -65,7 +65,6 @@ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
 
 - Make sure `go` is installed. See https://github.com/moovweb/gvm.
 - Make sure `dlv` is installed. See https://github.com/derekparker/delve/blob/master/Documentation/installation/osx/install.md.
-- Make sure `dep` is installed. See https://github.com/golang/dep.
 
 
 

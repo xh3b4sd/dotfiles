@@ -59,6 +59,7 @@ fpath=(
 # Add paths to look for executables.
 export PATH=$PATH:${HOME}/go/bin
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/devctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
 
@@ -90,7 +91,7 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode history-substring-search kubectl kube-ps1 gsctl opsctl)
+plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 gsctl opsctl)
 
 
 
@@ -102,6 +103,9 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=()
 
 # Always receive unique search results.
 setopt HIST_IGNORE_ALL_DUPS
+# Tidy up commands before comitting them to history.
+setopt HIST_REDUCE_BLANKS
+
 # bind k and j for VI mode history substring seach
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
@@ -147,7 +151,8 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
 alias gd='git diff'
-alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
+alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull --no-edit; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
+alias gr='git revert --no-edit'
 alias gs='git status'
 alias gcm='git commit'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit

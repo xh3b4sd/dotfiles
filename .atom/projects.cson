@@ -12,6 +12,18 @@
     ]
   }
   {
+    title: "giantswarm/architect"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/architect"
+    ]
+  }
+  {
+    title: "giantswarm/architect-orb"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/architect-orb"
+    ]
+  }
+  {
     title: "giantswarm/aws-app-collection"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/aws-app-collection"
@@ -21,36 +33,6 @@
     title: "giantswarm/azure-app-collection"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/azure-app-collection"
-    ]
-  }
-  {
-    title: "giantswarm/blog"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/blog"
-    ]
-  }
-  {
-    title: "giantswarm/branch-cleanup-action"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/branch-cleanup-action"
-    ]
-  }
-  {
-    title: "giantswarm/bridge-operator"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/bridge-operator"
-    ]
-  }
-  {
-    title: "giantswarm/ci-cleaner"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/ci-cleaner"
-    ]
-  }
-  {
-    title: "giantswarm/clientk8s"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/clientk8s"
     ]
   }
   {
@@ -84,12 +66,6 @@
     ]
   }
   {
-    title: "giantswarm/architect"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/architect"
-    ]
-  }
-  {
     title: "giantswarm/aws-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/aws-operator"
@@ -105,6 +81,18 @@
     title: "giantswarm/backoff"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/backoff"
+    ]
+  }
+  {
+    title: "giantswarm/blog"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/blog"
+    ]
+  }
+  {
+    title: "giantswarm/bridge-operator"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/bridge-operator"
     ]
   }
   {
@@ -132,9 +120,15 @@
     ]
   }
   {
-    title: "giantswarm/cert-resource-lab"
+    title: "giantswarm/ci-cleaner"
     paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/cert-resource-lab"
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/ci-cleaner"
+    ]
+  }
+  {
+    title: "giantswarm/clientk8s"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/clientk8s"
     ]
   }
   {
@@ -180,12 +174,6 @@
     ]
   }
   {
-    title: "giantswarm/desmotes"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/desmotes"
-    ]
-  }
-  {
     title: "giantswarm/devctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/devctl"
@@ -195,18 +183,6 @@
     title: "giantswarm/draughtsman"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman"
-    ]
-  }
-  {
-    title: "giantswarm/draughtsman-eventer"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman-eventer"
-    ]
-  }
-  {
-    title: "giantswarm/draughtsman-operator"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/draughtsman-operator"
     ]
   }
   {
@@ -228,12 +204,6 @@
     ]
   }
   {
-    title: "giantswarm/e2ectl"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/e2ectl"
-    ]
-  }
-  {
     title: "giantswarm/e2esetup"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/e2esetup"
@@ -252,21 +222,9 @@
     ]
   }
   {
-    title: "giantswarm/errgo"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/errgo"
-    ]
-  }
-  {
     title: "giantswarm/errors"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/errors"
-    ]
-  }
-  {
-    title: "giantswarm/etcdstorage"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/etcdstorage"
     ]
   }
   {
@@ -342,21 +300,9 @@
     ]
   }
   {
-    title: "giantswarm/giantswarm-js-client"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/giantswarm-js-client"
-    ]
-  }
-  {
     title: "giantswarm/gsctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/gsctl"
-    ]
-  }
-  {
-    title: "giantswarm/guestcluster"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/guestcluster"
     ]
   }
   {
@@ -378,12 +324,6 @@
     ]
   }
   {
-    title: "giantswarm/ingress-operator"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/ingress-operator"
-    ]
-  }
-  {
     title: "giantswarm/ipam"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/ipam"
@@ -393,12 +333,6 @@
     title: "giantswarm/k8s-kvm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/k8s-kvm"
-    ]
-  }
-  {
-    title: "giantswarm/k8s-migrator"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/k8s-migrator"
     ]
   }
   {
@@ -444,6 +378,18 @@
     ]
   }
   {
+    title: "giantswarm/kubeconfig"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/kubeconfig"
+    ]
+  }
+  {
+    title: "giantswarm/kubelock"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/kubelock"
+    ]
+  }
+  {
     title: "giantswarm/kubernetesd"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kubernetesd"
@@ -465,12 +411,6 @@
     title: "giantswarm/kvm-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/kvm-operator"
-    ]
-  }
-  {
-    title: "giantswarm/mayu"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/mayu"
     ]
   }
   {
@@ -510,18 +450,6 @@
     ]
   }
   {
-    title: "giantswarm/microkit-example"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/microkit-example"
-    ]
-  }
-  {
-    title: "giantswarm/mozjpeg"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/mozjpeg"
-    ]
-  }
-  {
     title: "giantswarm/net-exporter"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/net-exporter"
@@ -543,18 +471,6 @@
     title: "giantswarm/opsctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/opsctl"
-    ]
-  }
-  {
-    title: "giantswarm/ops-recipes"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/ops-recipes"
-    ]
-  }
-  {
-    title: "giantswarm/passage"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/passage"
     ]
   }
   {
@@ -591,6 +507,12 @@
     title: "giantswarm/release-operator"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/release-operator"
+    ]
+  }
+  {
+    title: "giantswarm/resource"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/resource"
     ]
   }
   {
@@ -648,12 +570,6 @@
     ]
   }
   {
-    title: "giantswarm/test-operator"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/test-operator"
-    ]
-  }
-  {
     title: "giantswarm/to"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/to"
@@ -693,12 +609,6 @@
     title: "giantswarm/vaulthealthz"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/vaulthealthz"
-    ]
-  }
-  {
-    title: "giantswarm/vaultlab"
-    paths: [
-      "/Users/xh3b4sd/go/src/github.com/giantswarm/vaultlab"
     ]
   }
   {
