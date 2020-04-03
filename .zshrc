@@ -4,7 +4,7 @@ export LC_CTYPE=en_US.UTF-8
 export ZSH=${HOME}/.oh-my-zsh
 
 # Preferred editor for local sessions.
-export EDITOR='vi'
+export EDITOR='atom -w'
 
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
@@ -60,6 +60,7 @@ fpath=(
 export PATH=$PATH:${HOME}/go/bin
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/devctl
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gg
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
 
@@ -183,5 +184,6 @@ add-zsh-hook precmd prompt_cwd_in_tab
 # Golang compilation arguments.
 export GOPATH=~/go
 export PATH=${PATH}:${GOPATH}/bin
+export GO111MODULE="auto"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)

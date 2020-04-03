@@ -258,12 +258,6 @@
     ]
   }
   {
-    title: "giantswarm/g8s-etcd-operator"
-    paths: [
-      "/Users/xh3b4sd/projects/giantswarm/g8s-etcd-operator"
-    ]
-  }
-  {
     title: "giantswarm/g8s-grafana"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/g8s-grafana"
@@ -273,6 +267,12 @@
     title: "giantswarm/g8s-prometheus"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/g8s-prometheus"
+    ]
+  }
+  {
+    title: "giantswarm/gg"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/gg"
     ]
   }
   {
@@ -549,6 +549,12 @@
     title: "giantswarm/storagehealthz"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/storagehealthz"
+    ]
+  }
+  {
+    title: "giantswarm/template"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/template"
     ]
   }
   {
