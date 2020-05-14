@@ -25,6 +25,10 @@
     'prefix': 'fmt'
     'body': 'fmt.Printf("%#v\\\\n", $1)'
 
+  'fmtn Printf':
+    'prefix': 'fmtn'
+    'body': 'fmt.Printf("$1\\\\n")'
+
   'goroutine anonymous function':
     'prefix': 'go'
     'body': 'go func($2) {\n\t$3\n}($1)'

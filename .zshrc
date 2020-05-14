@@ -4,7 +4,8 @@ export LC_CTYPE=en_US.UTF-8
 export ZSH=${HOME}/.oh-my-zsh
 
 # Preferred editor for local sessions.
-export EDITOR='atom -w'
+export VISUAL=nvim
+export EDITOR=nvim
 
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
@@ -14,7 +15,7 @@ export=GIT_MERGE_AUTOEDIT=no
 
 
 
-# az
+# azure
 export AZURE_CLIENT_ID=$(cat ~/.credential/azure-client-id)
 export AZURE_CLIENT_SECRET=$(cat ~/.credential/azure-client-secret)
 export AZURE_LOCATION=$(cat ~/.credential/azure-location)
@@ -87,7 +88,6 @@ CASE_SENSITIVE="true"
 DISABLE_CORRECTION="true"
 
 
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -98,32 +98,56 @@ plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 gsct
 
 source $ZSH/oh-my-zsh.sh
 
+
+
 # Disable all highltighters of the zsh-syntax-highlighting plugin. The plugin is
 # required due to some bug in history-substring-search.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=()
 
-# Always receive unique search results.
+
+export HISTSIZE=1000
+export SAVEHIST=1000
+setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
-# Tidy up commands before comitting them to history.
+setopt HIST_IGNORE_SPACE
+setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY_TIME
 
 # bind k and j for VI mode history substring seach
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=white,bold'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=red'
+export HISTORY_SUBSTRING_SEARCH_FUZZY="true"
+export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE="true"
+
+# Do not add commands to history file which are longer than 200 characters.
+function zshaddhistory() {
+  emulate -L zsh
+  if [[ ${#1} -le 200 ]] ; then
+      print -sr -- "${1%%$'\n'}"
+      fc -p
+  else
+      return 1
+  fi
+}
+
 
 # Clear right prompt after each command. This prevents copying the command
 # indicator (<<<) when copying terminal output.
-setopt transientrprompt
+setopt TRANSIENTRPROMPT
 
 # Prevent "zsh: file exists: <file>" warnings when redirecting using >.
-setopt clobber
+setopt CLOBBER
 
 # Show command indicator (<<<) immediatelly (0.1s) after activating it (hitting
 # ESC).
 export KEYTIMEOUT=1
+
+
 
 # kube-ps1 settings.
 KUBE_PS1_CTX_COLOR="green"
@@ -187,3 +211,5 @@ export PATH=${PATH}:${GOPATH}/bin
 export GO111MODULE="auto"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -69,8 +69,8 @@
   'ctrl-j': 'vim-fold-one:move-down'
   'ctrl-f': 'vim-fold-one:toggle-current-fold'
   'ctrl-c': 'vim-fold-one:toggle-all-folds'
-  # jump to golang definition of golang statements under the cursor
-  'cmd-g': 'golang:godef'
+  # Jump to golang definition of golang statements under the cursor.
+  'cmd-g': 'atom-ide-go-to-definition:go-to-definition'
 
 'atom-text-editor.autocomplete-active':
   # move inside autocomplete suggestions
@@ -80,6 +80,8 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # format any block in visual mode
   'g q': 'autoflow:reflow-selection'
+  # yank everything from cursour to end of line
+  'Y': 'vim-mode-plus:yank-to-last-character-of-line'
 
 '.platform-darwin':
   'cmd-\\': 'tree-view:reveal-active-file'
@@ -88,3 +90,4 @@
   # move up and down the vim way in tree view
   'shift-g': 'core:move-to-bottom'
   'g g': 'core:move-to-top'
+  'r': 'tree-view:move'

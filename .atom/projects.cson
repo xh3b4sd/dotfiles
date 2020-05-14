@@ -174,6 +174,12 @@
     ]
   }
   {
+    title: "giantswarm/culture"
+    paths: [
+      "/Users/xh3b4sd/projects/giantswarm/culture"
+    ]
+  }
+  {
     title: "giantswarm/devctl"
     paths: [
       "/Users/xh3b4sd/go/src/github.com/giantswarm/devctl"
@@ -297,6 +303,12 @@
     title: "giantswarm/giantswarm"
     paths: [
       "/Users/xh3b4sd/projects/giantswarm/giantswarm"
+    ]
+  }
+  {
+    title: "giantswarm/gscliauth"
+    paths: [
+      "/Users/xh3b4sd/go/src/github.com/giantswarm/gscliauth"
     ]
   }
   {
@@ -711,6 +723,12 @@
     title: "xh3b4sd/poker"
     paths: [
       "/Users/xh3b4sd/projects/xh3b4sd/poker"
+    ]
+  }
+  {
+    title: "xh3b4sd/xh3b4sd.github.io"
+    paths: [
+      "/Users/xh3b4sd/projects/xh3b4sd/xh3b4sd.github.io"
     ]
   }
 ]

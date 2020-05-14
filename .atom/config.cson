@@ -1,11 +1,36 @@
 "*":
+  "atom-ide-datatip":
+    showDataTipOnCursorMove: false
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnSave: true
-    "atom-ide-diagnostics-ui":
-      showDirectoryColumn: true
+      formatOnType: false
+    "atom-ide-debugger":
+      showDebuggerOnBpSet: false
+    "atom-ide-diagnostics-ui": {}
+    "atom-ide-signature-help":
+      enable: false
+    "atom-ide-terminal":
+      documentationMessage: false
+      rendererType: "canvas"
     use:
-      "atom-ide-definitions": "always"
+      "atom-ide-busy-signal": "never"
+      "atom-ide-code-actions": "never"
+      "atom-ide-code-format": "always"
+      "atom-ide-code-highlight": "never"
+      "atom-ide-console": "never"
+      "atom-ide-datatip": "never"
+      "atom-ide-debugger": "never"
+      "atom-ide-definitions": "never"
+      "atom-ide-diagnostics": "never"
+      "atom-ide-diagnostics-ui": "never"
+      "atom-ide-find-references": "never"
+      "atom-ide-global": "never"
+      "atom-ide-outline-view": "never"
+      "atom-ide-refactor": "never"
+      "atom-ide-signature-help": "never"
+      "atom-ide-terminal": "never"
+      hyperclick: "never"
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
@@ -20,6 +45,8 @@
     useCoreMovementCommands: false
   autosave:
     enabled: true
+  "bracket-matcher":
+    alwaysSkipClosingPairs: true
   "color-picker":
     preferredFormat: "HEX"
   core:
@@ -30,6 +57,11 @@
       "welcome"
       "symbols-view"
       "github"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "atom-ide-datatip"
+      "atom-ide-markdown-service"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -44,6 +76,10 @@
       "command-palette"
       "markdown-preview"
       "go-plus"
+      "go-debug"
+      "bracket-matcher"
+      "atom-ide-datatip"
+      "atom-ide-definitions"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -51,6 +87,15 @@
       "no-caffeine-syntax"
     ]
     useTreeSitterParsers: false
+    warnOnLargeFileLimit: 10
+  counter:
+    countChars: false
+    countLines: false
+    includeWhitespace: false
+  "cursor-history":
+    excludeClosedBuffer: true
+    keepSingleEntryPerBuffer: true
+    searchAllPanes: false
   editor:
     autoIndentOnPaste: false
     fontFamily: "Hack"
@@ -65,15 +110,18 @@
   "go-config": {}
   "go-plus":
     autocomplete:
-      snippetMode: "nameAndType"
+      proposeBuiltins: false
+      snippetMode: "none"
       suppressBuiltinAutocompleteProvider: false
       unimportedPackages: false
-    config: {}
+    config:
+      compileOnSave: false
     disabledBundledPackages: [
       "hyperclick"
       "go-signature-statusbar"
       "linter"
       "atom-ide-ui"
+      "go-debug"
     ]
     format: {}
     guru:
@@ -88,8 +136,8 @@
         "--json"
         "."
       ]
-    navigator:
-      mode: "guru"
+      tool: "golangci-lint"
+    navigator: {}
     panel:
       displayMode: "closed"
       focusOnFailure: false
@@ -99,6 +147,8 @@
       runTestsWithCoverage: false
       runTestsWithShortFlag: false
   gofmt: {}
+  "ide-go":
+    funcSnippetEnabled: false
   "linter-ui-default": {}
   "markdown-preview":
     openPreviewInSplitPane: false
@@ -124,6 +174,9 @@
     autoDiscover: false
     notifications: false
     showPath: true
+  "relative-numbers":
+    showAbsoluteNumbersInInsertMode: false
+    softWrapsCount: false
   "save-session":
     dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
   "spell-check":
@@ -144,7 +197,7 @@
       "**/.vim/"
       "**/.gitignore"
     ]
-    sortBy: "Path"
+    sortBy: "Type"
   "tree-view":
     alwaysOpenExisting: true
   "vim-mode-plus":
