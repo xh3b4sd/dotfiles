@@ -42,7 +42,6 @@
 
 
 
-
 'body .tree-view':
   # Move up and down the vim way in Tree View.
   'g g': 'core:move-to-top'

@@ -89,6 +89,7 @@ CASE_SENSITIVE="true"
 DISABLE_CORRECTION="true"
 
 
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -108,13 +109,17 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=()
 
 export HISTSIZE=1000
 export SAVEHIST=1000
+
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_SAVE_NO_DUPS
-setopt INC_APPEND_HISTORY_TIME
+
+setopt SHARE_HISTORY
+unsetopt NO_SHARE_HISTORY
+unsetopt INC_APPEND_HISTORY_TIME
 
 # bind k and j for VI mode history substring seach
 bindkey -M vicmd 'k' history-substring-search-up

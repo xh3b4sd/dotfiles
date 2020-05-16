@@ -9,3 +9,7 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+# Launch Atom in full screen mode.
+process.nextTick ->
+  atom.setFullScreen(true)

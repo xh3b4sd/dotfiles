@@ -1,32 +1,46 @@
 /*
- * Your Stylesheet
+ * Modifications to the material ui synatx theme are made using definitions of
+ * the following theme.
  *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
+ *     https://github.com/atom/atom/blob/master/packages/base16-tomorrow-dark-theme
  *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
  */
 
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  // background-color: #1c1c1c;
-}
+@background: #262728;
+@blue-dark: #1767A8;
+@blue-light: #5EA2D8;
+@comments: #686A6D;
+@foreground: #D2DDE0;
+@green: #8BC34A;
+@red: #F07178;
 
 atom-text-editor {
-  // background-color: #1c1c1c;
+  background-color: @background;
+  color: @foreground;
+
+  .wrap-guide {
+    background-color: @background;
+  }
+
+  .gutter {
+    background-color: @background;
+
+    .line-number {
+      padding: 0 0.25em 0 0.5em;
+      -webkit-font-smoothing: antialiased;
+      &.cursor-line {
+        background-color: @background;
+      }
+    }
+  }
+
+  .bracket-matcher .region {
+    border-color: @background;
+  }
 }
 
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
-  // border-color: red;
+atom-pane-container atom-pane {
+  background-color: @background;
 }
 
 // Make the text thinner in the editor.
@@ -34,4 +48,44 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.syntax--comment,
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: @comments;
+}
+
+// Make markers like TODO and NOTE red within comments.
+.syntax--comment .syntax--storage {
+  color: @red;
+}
+
+.tree-view {
+  background-color: @background;
+}
+
+.syntax--variable,
+.syntax--entity.syntax--name.syntax--type {
+  color: @foreground;
+}
+
+// Make quotes and strings wrapped in quotes green.
+.syntax--string,
+.syntax--punctuation.syntax--definition.syntax--array.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--array.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--parameters.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--end {
+  color: @green;
+}
+
+.syntax--entity.syntax--name.syntax--function,
+.syntax--keyword,
+.syntax--keyword.syntax--control,
+.syntax--storage,
+.syntax--support.syntax--function {
+  color: @blue-light;
 }

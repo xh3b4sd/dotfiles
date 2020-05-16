@@ -232,6 +232,8 @@
     useClipboardAsDefaultRegister: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+  "wrap-guide":
+    enabled: false
 ".gfm.source":
   editor:
     softWrap: false
