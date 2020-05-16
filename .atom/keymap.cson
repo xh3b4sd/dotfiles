@@ -31,51 +31,73 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
-'html body .results-view':
-  # move between results in project search view
-  'k': 'core:move-up'
-  'j': 'core:move-down'
+
+
+'body':
+  # Toggle project manager and fuzzy finder when having no focus. May happen
+  # either in Tree View or other modals like the key event debugger.
+  'ctrl-p': 'project-manager:list-projects'
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
+  'cmd-o': 'tree-view:toggle-focus'
+
+
+
+
+'body .tree-view':
+  # Move up and down the vim way in Tree View.
+  'g g': 'core:move-to-top'
+  'shift-g': 'core:move-to-bottom'
+  # Focus editor when being in Tree View. This works in combination with
+  # reveal-active-file.
+  'cmd-o': 'tree-view:unfocus'
+  # Rename files and folders.
+  'r': 'tree-view:move'
+  # Toggle command palette, project manager and fuzzy finder.
+  'ctrl-c': 'command-palette:toggle'
+  'ctrl-p': 'project-manager:list-projects'
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
+
+
 
 'html body atom-workspace.workspace':
-  # move between panes
+  # Move between panes.
   'ctrl-h': 'pane:show-previous-item'
   'ctrl-l': 'pane:show-next-item'
-  'ctrl-tab ^ctrl': 'unset!'
-  'ctrl-tab': 'pane:show-next-item'
-  'ctrl-shift-tab ^ctrl': 'unset!'
-  'ctrl-shift-tab': 'pane:show-previous-item'
-   # move panes
+   # Move panes around.
   'ctrl-shift-h': 'pane:move-item-left'
   'ctrl-shift-l': 'pane:move-item-right'
   # toggle dev console like in chrome
   'alt-cmd-j': 'window:toggle-dev-tools'
   # reload window like in chrome
   'cmd-r': 'window:reload'
-  # toggle fuzzy finder
-  'cmd-t': 'fuzzy-finder:toggle-file-finder'
-  # add and remove project from workspace
-  'ctrl-+': 'project-plus:open'
-  'ctrl--': 'project-plus:remove'
-  'cmd-p': 'project-manager:list-projects'
+
+
 
 'atom-text-editor':
-  # toggle command palette
-  'shift-cmd-space': 'command-palette:toggle'
+  # Toggle command palette and project manager.
+  'ctrl-c': 'command-palette:toggle'
+  'ctrl-p': 'project-manager:list-projects'
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
+  # Move between command palette results.
+  'ctrl-k': 'core:move-up'
+  'ctrl-j': 'core:move-down'
   # jump in cursor position history
-  'ctrl-o': 'cursor-history:next'
-  'ctrl-i': 'cursor-history:prev'
-  # move between folds
-  'ctrl-k': 'vim-fold-one:move-up'
-  'ctrl-j': 'vim-fold-one:move-down'
-  'ctrl-f': 'vim-fold-one:toggle-current-fold'
-  'ctrl-c': 'vim-fold-one:toggle-all-folds'
+  'ctrl-o': 'cursor-history:next-within-editor'
+  'ctrl-i': 'cursor-history:prev-within-editor'
   # Jump to golang definition of golang statements under the cursor.
   'cmd-g': 'atom-ide-go-to-definition:go-to-definition'
+  # Focus Tree View when being in editor. This works in combination with
+  # unfocus.
+  'cmd-o': 'tree-view:reveal-active-file'
+
+
 
 'atom-text-editor.autocomplete-active':
   # move inside autocomplete suggestions
   'ctrl-k': 'autocomplete-plus:move-up'
   'ctrl-j': 'autocomplete-plus:move-down'
+
+
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # format any block in visual mode
@@ -83,11 +105,16 @@
   # yank everything from cursour to end of line
   'Y': 'vim-mode-plus:yank-to-last-character-of-line'
 
-'.platform-darwin':
-  'cmd-\\': 'tree-view:reveal-active-file'
 
-'body .tree-view':
-  # move up and down the vim way in tree view
-  'shift-g': 'core:move-to-bottom'
-  'g g': 'core:move-to-top'
-  'r': 'tree-view:move'
+
+'atom-panel.modal atom-text-editor[mini]':
+  # Toggle command palette, project manager and fuzzy finder.
+  'ctrl-c': 'command-palette:toggle'
+  'ctrl-p': 'core:cancel'
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
+  # Move between panes.
+  'ctrl-h': 'pane:show-previous-item'
+  'ctrl-l': 'pane:show-next-item'
+   # Move panes around.
+  'ctrl-shift-h': 'pane:move-item-left'
+  'ctrl-shift-l': 'pane:move-item-right'

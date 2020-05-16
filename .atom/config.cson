@@ -1,6 +1,7 @@
 "*":
   "atom-ide-datatip":
     showDataTipOnCursorMove: false
+  "atom-ide-definitions": {}
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnSave: true
@@ -21,16 +22,28 @@
       "atom-ide-console": "never"
       "atom-ide-datatip": "never"
       "atom-ide-debugger": "never"
-      "atom-ide-definitions": "never"
+      "atom-ide-definitions": "always"
       "atom-ide-diagnostics": "never"
       "atom-ide-diagnostics-ui": "never"
-      "atom-ide-find-references": "never"
+      "atom-ide-find-references": "always"
       "atom-ide-global": "never"
       "atom-ide-outline-view": "never"
       "atom-ide-refactor": "never"
       "atom-ide-signature-help": "never"
       "atom-ide-terminal": "never"
       hyperclick: "never"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#1767a8"
+      accentColor: "#9e9da3"
+      predefinedColor: "Blue"
+    fonts:
+      fontSize: 18
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    ui:
+      useAnimations: false
   "autocomplete-plus":
     autoActivationDelay: 50
     backspaceTriggersAutocomplete: true
@@ -52,7 +65,6 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
-    automaticallyUpdate: false
     disabledPackages: [
       "welcome"
       "symbols-view"
@@ -60,8 +72,9 @@
       "autosave"
       "background-tips"
       "bookmarks"
-      "atom-ide-datatip"
+      "status-bar"
       "atom-ide-markdown-service"
+      "busy-signal"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -80,21 +93,23 @@
       "bracket-matcher"
       "atom-ide-datatip"
       "atom-ide-definitions"
+      "spell-check"
     ]
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "no-caffeine-syntax"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
     useTreeSitterParsers: false
-    warnOnLargeFileLimit: 10
+    warnOnLargeFileLimit: 1
   counter:
     countChars: false
     countLines: false
     includeWhitespace: false
   "cursor-history":
     excludeClosedBuffer: true
-    keepSingleEntryPerBuffer: true
+    flashOnLand: false
     searchAllPanes: false
   editor:
     autoIndentOnPaste: false
@@ -128,12 +143,10 @@
       highlightIdentifiers: false
     lint:
       args: [
-        "--vendor"
         "--disable-all"
         "--enable=vet"
         "--enable=ineffassign"
         "--tests"
-        "--json"
         "."
       ]
       tool: "golangci-lint"
@@ -183,6 +196,9 @@
     locales: [
       "en-GB"
     ]
+    useLocales: false
+  "status-bar":
+    isVisible: false
   tabs: {}
   "todo-show":
     findUsingRegex: "/ \\b(${TODOS})[:;.,]?\\d*($|\\s.*$|\\(.*$)/g"
@@ -201,6 +217,18 @@
   "tree-view":
     alwaysOpenExisting: true
   "vim-mode-plus":
+    findAcrossLines: true
+    reuseFindForRepeatFind: true
+    setCursorToStartOfChangeOnUndoRedo: true
+    smoothScrollOnFullScrollMotion: true
+    smoothScrollOnFullScrollMotionDuration: 250
+    smoothScrollOnHalfScrollMotion: true
+    smoothScrollOnHalfScrollMotionDuration: 250
+    smoothScrollOnMiniScroll: true
+    smoothScrollOnMiniScrollDuration: 250
+    smoothScrollOnRedrawCursorLine: true
+    smoothScrollOnRedrawCursorLineDuration: 250
+    stayOnYank: false
     useClipboardAsDefaultRegister: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false

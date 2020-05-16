@@ -1,4 +1,5 @@
-export LC_CTYPE=en_US.UTF-8
+export LANG="en_GB.UTF-8"
+export LC_CTYPE="en_GB.UTF-8"
 
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
@@ -183,6 +184,8 @@ alias gcm='git commit'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit
 alias gpl='git pull --no-edit'
 alias gps='git push'
+
+unalias gg
 
 # core utils
 alias l='/usr/local/bin/gls --color --group-directories-first -l --human-readable'

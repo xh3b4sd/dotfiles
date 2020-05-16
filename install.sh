@@ -6,15 +6,15 @@ WD="${HOME}/projects/xh3b4sd/dotfiles"
 echo
 echo "#### link dotfiles"
 
-FILE=".ackrc"
-rm -rf "${HOME}/${FILE}"
-ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
-
 FILE=".atom"
 rm -rf "${HOME}/${FILE}"
 ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
 
 FILE=".gitconfig"
+rm -rf "${HOME}/${FILE}"
+ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
+
+FILE=".hushlogin"
 rm -rf "${HOME}/${FILE}"
 ln -sfv "${WD}/${FILE}" "${HOME}/${FILE}"
 
