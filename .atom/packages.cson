@@ -7,6 +7,7 @@ packages: [
   "busy-signal"
   "cursor-history"
   "format-shell"
+  "hide-tree-view-icons"
   "hyperclick"
   "ide-gopls"
   "language-hcl"
