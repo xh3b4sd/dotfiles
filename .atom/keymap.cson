@@ -42,6 +42,13 @@
 
 
 
+'body .native-key-bindings':
+  # Move between panes.
+  'ctrl-h': 'pane:show-previous-item'
+  'ctrl-l': 'pane:show-next-item'
+
+
+
 'body .tree-view':
   # Move up and down the vim way in Tree View.
   'g g': 'core:move-to-top'

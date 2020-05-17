@@ -56,15 +56,12 @@
       "vim-mode-plus.insert-mode.replace"
     ]
     useCoreMovementCommands: false
-  autosave:
-    enabled: true
   "bracket-matcher":
     alwaysSkipClosingPairs: true
-  "color-picker":
-    preferredFormat: "HEX"
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    closeEmptyWindows: false
     disabledPackages: [
       "welcome"
       "symbols-view"
@@ -75,6 +72,7 @@
       "status-bar"
       "atom-ide-markdown-service"
       "busy-signal"
+      "hyperclick"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -82,7 +80,6 @@
       "fuzzy-finder"
       "color-picker"
       "project-folder"
-      "project-plus"
       "grammar-selector"
       "format-shell"
       "project-manager"
@@ -120,49 +117,26 @@
     userId: "56397ef8-b665-6545-fef9-0f22afdf33c8"
   "find-and-replace":
     scrollToResultOnLiveSearch: true
-  "fuzzy-finder": {}
-  github: {}
-  "go-config": {}
   "go-plus":
     autocomplete:
       proposeBuiltins: false
-      snippetMode: "none"
       suppressBuiltinAutocompleteProvider: false
       unimportedPackages: false
     config:
       compileOnSave: false
     disabledBundledPackages: [
-      "hyperclick"
       "go-signature-statusbar"
-      "linter"
-      "atom-ide-ui"
       "go-debug"
     ]
-    format: {}
     guru:
       highlightIdentifiers: false
-    lint:
-      args: [
-        "--disable-all"
-        "--enable=vet"
-        "--enable=ineffassign"
-        "--tests"
-        "."
-      ]
-      tool: "golangci-lint"
-    navigator: {}
     panel:
       displayMode: "closed"
       focusOnFailure: false
-    panelDisplayMode: "closed"
     test:
       runTestsOnSave: false
       runTestsWithCoverage: false
       runTestsWithShortFlag: false
-  gofmt: {}
-  "ide-go":
-    funcSnippetEnabled: false
-  "linter-ui-default": {}
   "markdown-preview":
     openPreviewInSplitPane: false
   "one-dark-ui": {}
@@ -183,15 +157,15 @@
     prettifyTitle: false
     showPath: false
     sortBy: "title"
-  "project-plus":
-    autoDiscover: false
-    notifications: false
-    showPath: true
   "relative-numbers":
     showAbsoluteNumbersInInsertMode: false
     softWrapsCount: false
   "save-session":
     dataSaveFolder: "/Users/zyndiecate/.atom/packages/save-session/projects"
+  "seti-ui":
+    disableAnimations: true
+    fileIcons: false
+    themeColor: "Red"
   "spell-check":
     locales: [
       "en-GB"

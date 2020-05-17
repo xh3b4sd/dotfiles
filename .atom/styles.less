@@ -6,8 +6,8 @@
  *
  */
 
-@background: #262728;
-@blue-dark: #1767A8;
+@background-dark: #262728;
+@background-light: rgba(171, 178, 191, 0.05);
 @blue-light: #5EA2D8;
 @comments: #686A6D;
 @foreground: #D2DDE0;
@@ -15,32 +15,32 @@
 @red: #F07178;
 
 atom-text-editor {
-  background-color: @background;
+  background-color: @background-dark;
   color: @foreground;
 
   .wrap-guide {
-    background-color: @background;
+    background-color: @background-dark;
   }
 
   .gutter {
-    background-color: @background;
+    background-color: @background-dark;
 
     .line-number {
       padding: 0 0.25em 0 0.5em;
       -webkit-font-smoothing: antialiased;
       &.cursor-line {
-        background-color: @background;
+        background-color: @background-dark;
       }
     }
   }
 
   .bracket-matcher .region {
-    border-color: @background;
+    border-color: @background-dark;
   }
 }
 
 atom-pane-container atom-pane {
-  background-color: @background;
+  background-color: @background-dark;
 }
 
 // Make the text thinner in the editor.
@@ -61,15 +61,17 @@ body {
 }
 
 .tree-view {
-  background-color: @background;
+  background-color: @background-dark;
 }
 
 .syntax--variable,
 .syntax--entity.syntax--name.syntax--type {
   color: @foreground;
+  text-decoration: none;
 }
 
 // Make quotes and strings wrapped in quotes green.
+.syntax--import,
 .syntax--string,
 .syntax--punctuation.syntax--definition.syntax--array.syntax--begin,
 .syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin,
