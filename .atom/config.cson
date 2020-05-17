@@ -41,8 +41,10 @@
       fontSize: 18
     tabs:
       compactTabs: true
+      stretchedTabs: true
       tintedTabBar: true
     ui:
+      panelShadows: true
       useAnimations: false
   "autocomplete-plus":
     autoActivationDelay: 50
