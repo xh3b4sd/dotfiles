@@ -1,0 +1,12 @@
+alefragnani.project-manager
+Equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
+golang.go
+iocave.monkey-patch
+mactkg.sonic-pi
+ms-vsliveshare.vsliveshare
+ms-vsliveshare.vsliveshare-audio
+ms-vsliveshare.vsliveshare-pack
+stkb.rewrap
+vscodevim.vim
+zhuangtongfa.material-theme
