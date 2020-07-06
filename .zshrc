@@ -5,8 +5,8 @@ export LC_CTYPE="en_GB.UTF-8"
 export ZSH=${HOME}/.oh-my-zsh
 
 # Preferred editor for local sessions.
-export VISUAL=nvim
-export EDITOR=nvim
+export VISUAL="code -w"
+export EDITOR="code -w"
 
 # Do not get annoyed by homebrew Github API magic.
 export HOMEBREW_NO_GITHUB_API=true
@@ -49,18 +49,10 @@ export TWITTER_ACCESS_SECRET=$(cat ~/.credential/twitter-access-secret)
 
 
 
-# Add paths to look for completions.
-fpath=(
-  ${HOME}/projects/giantswarm/builder/completion/zsh
-
-  ${HOME}/projects/private/anna/completion/zsh
-
-  $fpath
-)
-
 # Add paths to look for executables.
 export PATH=$PATH:${HOME}/go/bin
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
+export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/awscnfm
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/devctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gg
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
@@ -94,7 +86,7 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 gsctl opsctl)
+plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 awscnfm gsctl opsctl)
 
 
 
@@ -219,5 +211,7 @@ export PATH=${PATH}:${GOPATH}/bin
 export GO111MODULE="auto"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
+
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

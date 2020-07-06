@@ -49,6 +49,13 @@
 
 
 
+'body .results-view':
+  # Move between results in project search view.
+  'k': 'core:move-up'
+  'j': 'core:move-down'
+
+
+
 'body .tree-view':
   # Move up and down the vim way in Tree View.
   'g g': 'core:move-to-top'
@@ -65,7 +72,7 @@
 
 
 
-'html body atom-workspace.workspace':
+'body atom-workspace.workspace':
   # Move between panes.
   'ctrl-h': 'pane:show-previous-item'
   'ctrl-l': 'pane:show-next-item'

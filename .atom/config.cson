@@ -4,7 +4,6 @@
   "atom-ide-definitions": {}
   "atom-ide-ui":
     "atom-ide-code-format":
-      formatOnSave: true
       formatOnType: false
     "atom-ide-debugger":
       showDebuggerOnBpSet: false
@@ -17,7 +16,7 @@
     use:
       "atom-ide-busy-signal": "never"
       "atom-ide-code-actions": "never"
-      "atom-ide-code-format": "always"
+      "atom-ide-code-format": "never"
       "atom-ide-code-highlight": "never"
       "atom-ide-console": "never"
       "atom-ide-datatip": "never"
@@ -25,13 +24,13 @@
       "atom-ide-definitions": "always"
       "atom-ide-diagnostics": "never"
       "atom-ide-diagnostics-ui": "never"
-      "atom-ide-find-references": "always"
+      "atom-ide-find-references": "never"
       "atom-ide-global": "never"
       "atom-ide-outline-view": "never"
       "atom-ide-refactor": "never"
       "atom-ide-signature-help": "never"
       "atom-ide-terminal": "never"
-      hyperclick: "never"
+      hyperclick: "always"
   "atom-material-ui":
     colors:
       abaseColor: "#1767a8"
@@ -41,10 +40,7 @@
       fontSize: 18
     tabs:
       compactTabs: true
-      stretchedTabs: true
-      tintedTabBar: true
     ui:
-      panelShadows: true
       useAnimations: false
   "autocomplete-plus":
     autoActivationDelay: 50
@@ -74,7 +70,12 @@
       "status-bar"
       "atom-ide-markdown-service"
       "busy-signal"
+      "spell-check"
+      "go-plus"
+      "atom-ide-definitions"
+      "ide-gopls"
       "hyperclick"
+      "atom-ide-ui"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -113,6 +114,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Hack"
+    fontSize: 15
     maxScreenLineLength: 2000
     scrollPastEnd: true
   "exception-reporting":
@@ -129,6 +131,7 @@
     disabledBundledPackages: [
       "go-signature-statusbar"
       "go-debug"
+      "linter"
     ]
     guru:
       highlightIdentifiers: false
@@ -193,7 +196,7 @@
   "tree-view":
     alwaysOpenExisting: true
   "vim-mode-plus":
-    findAcrossLines: true
+    flashOnSearch: false
     reuseFindForRepeatFind: true
     setCursorToStartOfChangeOnUndoRedo: true
     smoothScrollOnFullScrollMotion: true
@@ -204,7 +207,6 @@
     smoothScrollOnMiniScrollDuration: 250
     smoothScrollOnRedrawCursorLine: true
     smoothScrollOnRedrawCursorLineDuration: 250
-    stayOnYank: false
     useClipboardAsDefaultRegister: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
