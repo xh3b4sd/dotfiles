@@ -86,7 +86,7 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 awscnfm gsctl opsctl)
+plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 awscnfm devctl gsctl opsctl)
 
 
 
@@ -109,9 +109,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_SAVE_NO_DUPS
 
-setopt SHARE_HISTORY
-unsetopt NO_SHARE_HISTORY
-unsetopt INC_APPEND_HISTORY_TIME
+setopt INC_APPEND_HISTORY_TIME
 
 # bind k and j for VI mode history substring seach
 bindkey -M vicmd 'k' history-substring-search-up
@@ -122,16 +120,6 @@ export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=red'
 export HISTORY_SUBSTRING_SEARCH_FUZZY="true"
 export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE="true"
 
-# Do not add commands to history file which are longer than 200 characters.
-function zshaddhistory() {
-  emulate -L zsh
-  if [[ ${#1} -le 200 ]] ; then
-      print -sr -- "${1%%$'\n'}"
-      fc -p
-  else
-      return 1
-  fi
-}
 
 
 # Clear right prompt after each command. This prevents copying the command
@@ -211,7 +199,3 @@ export PATH=${PATH}:${GOPATH}/bin
 export GO111MODULE="auto"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
-
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

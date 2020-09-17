@@ -1,16 +1,18 @@
 [color]
-  branch = auto
-  diff = auto
-  interactive = auto
-  status = auto
-  ui = 1
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = 1
 [user]
-  name = Tim Schindler
-  email = xh3b4sd@gmail.com
+	name = Tim Schindler
+	email = xh3b4sd@gmail.com
 [push]
-  default = matching
+	default = current
 [credential]
-  helper = store
+	helper = store
 [core]
-  editor = vim
-  mergeoptions = --no-edit
+	editor = vim
+	mergeoptions = --no-edit
+[pull]
+	rebase = false

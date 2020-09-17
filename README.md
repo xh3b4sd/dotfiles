@@ -23,6 +23,7 @@ Install from https://brew.sh.
 ```
 brew install jq
 brew install yq
+brew install git
 brew install wget
 brew install coreutils
 brew install mercurial
