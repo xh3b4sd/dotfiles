@@ -12,9 +12,14 @@ export EDITOR="code -w"
 export HOMEBREW_NO_GITHUB_API=true
 
 # Do not edit git merge messages in editors.
-export=GIT_MERGE_AUTOEDIT=no
+export GIT_MERGE_AUTOEDIT=no
 
 
+
+# aws
+export AWS_ACCESS_KEY_ID=$(cat ~/.credential/aws-access-id)
+export AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/aws-access-secret)
+export AWS_DEFAULT_REGION="eu-central-1"
 
 # azure
 export AZURE_CLIENT_ID=$(cat ~/.credential/azure-client-id)
@@ -41,6 +46,9 @@ export GITHUB_EXPORTER_GITHUB_TOKEN=$(cat ~/.credential/github-exporter-github-t
 # github-tweeter
 export GITHUB_TWEETER_GITHUB_TOKEN=$(cat ~/.credential/github-tweeter-github-token)
 
+# red
+export RED_GPG_PASS=$(cat ~/.credential/red-gpg-pass)
+
 # twitter
 export TWITTER_CONSUMER_KEY=$(cat ~/.credential/twitter-consumer-key)
 export TWITTER_CONSUMER_SECRET=$(cat ~/.credential/twitter-consumer-secret)
@@ -51,14 +59,17 @@ export TWITTER_ACCESS_SECRET=$(cat ~/.credential/twitter-access-secret)
 
 # Add paths to look for executables.
 export PATH=$PATH:${HOME}/go/bin
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/architect
+
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/awscnfm
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/devctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gg
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
 export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
 
-export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/laika
+export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/kia
+export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/pag
+export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/red
+export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/workflow
 
 export PATH=$PATH:/usr/local/opt/curl/bin
 export PATH=$PATH:/usr/local/kubebuilder/bin
@@ -80,13 +91,40 @@ CASE_SENSITIVE="true"
 # Disable command auto-correction.
 DISABLE_CORRECTION="true"
 
+# Do not remove whitespace before pipe. Without this setting "command |" becomes
+# "command|" on tab completion.
+ZLE_SPACE_SUFFIX_CHARS=$'|&'
+
+
+
+DISABLE_MAGIC_FUNCTIONS="true"
+
 
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode vi-increment history-substring-search kubectl kube-ps1 awscnfm devctl gsctl opsctl)
+plugins=(
+  aws
+  awscnfm
+  git
+  history-substring-search
+  kind
+  kubectl
+  kube-ps1
+  devctl
+  eksctl
+  gsctl
+  istioctl
+  kia
+  opsctl
+  pag
+  red
+  vi-mode
+  vi-increment
+  workflow
+)
 
 
 
@@ -99,8 +137,8 @@ source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=()
 
 
-export HISTSIZE=1000
-export SAVEHIST=1000
+export HISTSIZE=10000
+export SAVEHIST=10000
 
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
@@ -119,6 +157,11 @@ export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=white,bold'
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=red'
 export HISTORY_SUBSTRING_SEARCH_FUZZY="true"
 export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE="true"
+
+
+
+# Complete commands on first <TAB> even if suggestions are ambigious.
+setopt MENU_COMPLETE
 
 
 
@@ -162,7 +205,7 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
 alias gd='git diff'
-alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull --no-edit; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
+alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master &> /dev/null || git checkout main &> /dev/null; git pull --no-edit; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
 alias gr='git revert --no-edit'
 alias gs='git status'
 alias gcm='git commit'

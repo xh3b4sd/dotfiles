@@ -16,3 +16,5 @@
 	mergeoptions = --no-edit
 [pull]
 	rebase = false
+[pager]
+	branch = false
