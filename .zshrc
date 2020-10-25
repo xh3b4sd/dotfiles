@@ -16,10 +16,16 @@ export GIT_MERGE_AUTOEDIT=no
 
 
 
-# aws
-export AWS_ACCESS_KEY_ID=$(cat ~/.credential/aws-access-id)
-export AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/aws-access-secret)
+# The profile used by the aws CLI can be overwritten like below. Alternatively
+# aws CLI commands take the --profile flag if that is an option for the use
+# case.
+#
+#     export AWS_PROFILE=<profile>
+#
+export AWS_DEFAULT_PROFILE="venturemark"
 export AWS_DEFAULT_REGION="eu-central-1"
+
+
 
 # azure
 export AZURE_CLIENT_ID=$(cat ~/.credential/azure-client-id)
@@ -239,6 +245,6 @@ add-zsh-hook precmd prompt_cwd_in_tab
 # Golang compilation arguments.
 export GOPATH=~/go
 export PATH=${PATH}:${GOPATH}/bin
-export GO111MODULE="auto"
+export GO111MODULE="on"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
