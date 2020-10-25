@@ -4,17 +4,17 @@
 	interactive = auto
 	status = auto
 	ui = 1
-[user]
-	name = Tim Schindler
-	email = xh3b4sd@gmail.com
-[push]
-	default = current
-[credential]
-	helper = store
 [core]
 	editor = vim
 	mergeoptions = --no-edit
-[pull]
-	rebase = false
+[credential]
+	helper = store
 [pager]
 	branch = false
+[pull]
+	rebase = false
+[push]
+	default = current
+[user]
+	name = Tim Schindler
+	email = xh3b4sd@gmail.com

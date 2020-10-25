@@ -33,6 +33,15 @@ brew install kubernetes-helm
 
 
 
+## git
+
+```
+$ cat .git-credentials
+https://xh3b4sd:<PAT>@github.com
+```
+
+
+
 ## kubectl
 
 In case installing `kubectl` above does not provide the right version, go with
