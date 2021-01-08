@@ -9,9 +9,9 @@ Just a little dotfile collection.
 Install from https://github.com/robbyrussell/oh-my-zsh.
 
 ```
-mkdir -p ~/projects/xh3b4sd/dotfiles
-git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
-~/projects/xh3b4sd/dotfiles/install.sh
+mkdir -p ~/project/xh3b4sd/dotfiles
+git clone git@github.com:xh3b4sd/dotfiles.git ~/project/xh3b4sd/dotfiles
+~/project/xh3b4sd/dotfiles/install.sh
 ```
 
 
@@ -21,14 +21,15 @@ git clone git@github.com:xh3b4sd/dotfiles.git ~/projects/xh3b4sd/dotfiles
 Install from https://brew.sh.
 
 ```
-brew install jq
-brew install yq
-brew install git
-brew install wget
 brew install coreutils
+brew install git
+brew install jq
+brew install helm
+brew install kind
 brew install mercurial
-brew install kubernetes-cli
-brew install kubernetes-helm
+brew install kubectl
+brew install wget
+brew install yq
 ```
 
 
@@ -42,35 +43,6 @@ https://xh3b4sd:<PAT>@github.com
 
 
 
-## kubectl
-
-In case installing `kubectl` above does not provide the right version, go with
-the following.
-
-```
-curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.11.0/bin/darwin/amd64/kubectl
-```
-
-
-
-## helm
-
-In case installing `helm` above does not provide the right version, go with the
-following.
-
-```
-export DESIRED_VERSION=v2.8.2
-curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
-```
-
-
-
-## kind
-
-- Make sure `kind` is installed. See https://kind.sigs.k8s.io/docs/user/quick-start.
-
-
-
 ## go
 
 - Make sure `go` is installed. See https://github.com/moovweb/gvm.
@@ -78,20 +50,9 @@ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
 
 
 
-## atom
+## vscode
 
-- Make sure `atom` is installed. See https://atom.io.
-
-#### install packages
-
-Package backups currently work with https://atom.io/packages/package-sync, which
-has to be installed as the very first package in order to use it for restoring
-the other atom packages.
-
-- Open the atom editor.
-- Use the shortcut `shift-cmd-space` to open the command palette.
-- Type `package sync` to fuzzy find the command to install packages.
-- Wait until all packages are installed and relaunch atom.
+Simply install vsCode and enable settings sync using Github Profile.
 
 
 
@@ -101,7 +62,7 @@ Install from https://www.iterm2.com/downloads.html and configure the profile to
 be read from the following path.
 
 ```
-/Users/xh3b4sd/projects/xh3b4sd/dotfiles
+/Users/xh3b4sd/project/xh3b4sd/dotfiles
 ```
 
 
