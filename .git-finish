@@ -1,6 +1,0 @@
-#!/bin/bash
-
-FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-git checkout master
-git pull
-git branch -d $FINISHED_BRANCH
