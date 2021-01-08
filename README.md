@@ -36,7 +36,7 @@ brew install kubernetes-helm
 ## git
 
 ```
-$ cat .git-credentials
+$ cat ~/.git-credentials
 https://xh3b4sd:<PAT>@github.com
 ```
 
