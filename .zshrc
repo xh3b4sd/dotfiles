@@ -210,7 +210,9 @@ RPS1=$RPS1' $(kube_ps1)'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
+alias gcb='git checkout -b'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gf='FINISHED_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout master &> /dev/null || git checkout main &> /dev/null; git pull --no-edit; git fetch -p; git branch -D $FINISHED_BRANCH' # finish and cleanup feature branch
 alias gr='git revert --no-edit'
 alias gs='git status'
@@ -218,6 +220,7 @@ alias gcm='git commit'
 alias gfc='git log $(git log --pretty=format:%H|tail -1)' # show first commit
 alias gpl='git pull --no-edit'
 alias gps='git push'
+alias gpu='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 
 unalias gg
 
@@ -248,3 +251,7 @@ export PATH=${PATH}:${GOPATH}/bin
 export GO111MODULE="on"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
