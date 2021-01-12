@@ -25,60 +25,19 @@ export GIT_MERGE_AUTOEDIT=no
 export AWS_DEFAULT_PROFILE="venturemark"
 export AWS_DEFAULT_REGION="eu-central-1"
 
-
-
-# azure
-export AZURE_CLIENT_ID=$(cat ~/.credential/azure-client-id)
-export AZURE_CLIENT_SECRET=$(cat ~/.credential/azure-client-secret)
-export AZURE_LOCATION=$(cat ~/.credential/azure-location)
-export AZURE_SUBSCRIPTION_ID=$(cat ~/.credential/azure-subscription-id)
-export AZURE_TENANT_ID=$(cat ~/.credential/azure-tenant-id)
-
-# ci-cleaner
-export CI_CLEANER_AWS_ACCESS_KEY_ID=$(cat ~/.credential/ci-cleaner-aws-access-key-id)
-export CI_CLEANER_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/ci-cleaner-aws-secret-access-key)
-
-# opsctl
-export OPSCTL_AWS_ACCESS_KEY_ID=$(cat ~/.credential/opsctl-aws-access-key-id)
-export OPSCTL_AWS_SECRET_ACCESS_KEY=$(cat ~/.credential/opsctl-aws-secret-access-key)
-export OPSCTL_GITHUB_TOKEN=$(cat ~/.credential/opsctl-github-token)
-export OPSCTL_GPG_PASSWORD=$(cat ~/.credential/opsctl-gpg-password)
-export OPSCTL_OPSGENIE_TOKEN=$(cat ~/.credential/opsctl-opsgenie-token)
-export OPSCTL_SLACK_TOKEN=$(cat ~/.credential/opsctl-slack-token)
-
-# github-exporter
-export GITHUB_EXPORTER_GITHUB_TOKEN=$(cat ~/.credential/github-exporter-github-token)
-
-# github-tweeter
-export GITHUB_TWEETER_GITHUB_TOKEN=$(cat ~/.credential/github-tweeter-github-token)
-
 # red
 export RED_GPG_PASS=$(cat ~/.credential/red-gpg-pass)
-
-# twitter
-export TWITTER_CONSUMER_KEY=$(cat ~/.credential/twitter-consumer-key)
-export TWITTER_CONSUMER_SECRET=$(cat ~/.credential/twitter-consumer-secret)
-export TWITTER_ACCESS_TOKEN=$(cat ~/.credential/twitter-access-token)
-export TWITTER_ACCESS_SECRET=$(cat ~/.credential/twitter-access-secret)
 
 
 
 # Add paths to look for executables.
 export PATH=$PATH:${HOME}/go/bin
 
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/awscnfm
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/devctl
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gg
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/gsctl
-export PATH=$PATH:${HOME}/go/src/github.com/giantswarm/opsctl
-
-export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/kia
-export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/pag
-export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/red
-export PATH=$PATH:${HOME}/go/src/github.com/xh3b4sd/workflow
-
-export PATH=$PATH:/usr/local/opt/curl/bin
-export PATH=$PATH:/usr/local/kubebuilder/bin
+export PATH=$PATH:${HOME}/project/xh3b4sd/dsm
+export PATH=$PATH:${HOME}/project/xh3b4sd/kia
+export PATH=$PATH:${HOME}/project/xh3b4sd/pag
+export PATH=$PATH:${HOME}/project/xh3b4sd/red
+export PATH=$PATH:${HOME}/project/xh3b4sd/workflow
 
 
 
@@ -113,18 +72,14 @@ DISABLE_MAGIC_FUNCTIONS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aws
-  awscnfm
   git
   history-substring-search
   kind
   kubectl
   kube-ps1
-  devctl
   eksctl
-  gsctl
   istioctl
   kia
-  opsctl
   pag
   red
   vi-mode
@@ -141,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # Disable all highltighters of the zsh-syntax-highlighting plugin. The plugin is
 # required due to some bug in history-substring-search.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=()
+
 
 
 export HISTSIZE=10000
@@ -166,21 +122,19 @@ export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE="true"
 
 
 
+# Clear right prompt after each command. This prevents copying whatever RPS1 is
+# keeping track off, e.g. exit codes.
+setopt TRANSIENTRPROMPT
+
+
+
 # Complete commands on first <TAB> even if suggestions are ambigious.
 setopt MENU_COMPLETE
 
 
 
-# Clear right prompt after each command. This prevents copying the command
-# indicator (<<<) when copying terminal output.
-setopt TRANSIENTRPROMPT
-
 # Prevent "zsh: file exists: <file>" warnings when redirecting using >.
 setopt CLOBBER
-
-# Show command indicator (<<<) immediatelly (0.1s) after activating it (hitting
-# ESC).
-export KEYTIMEOUT=1
 
 
 
@@ -252,6 +206,5 @@ export GO111MODULE="on"
 export GOARCH=$(go env GOARCH)
 export GOOS=$(go env GOOS)
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Load a specific Nodejs version into PATH.
+export PATH="/usr/local/opt/node@14/bin:$PATH"
